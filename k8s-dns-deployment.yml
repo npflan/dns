@@ -1,0 +1,78 @@
+apiVersion: v1
+kind: List
+items:
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    name: dns
+- apiVersion: extensions/v1beta1
+  kind: Deployment
+  metadata:
+    name: unbound
+    namespace: dns
+  spec:
+    replicas: 2
+    template:
+      metadata:
+        labels:
+          app: unbound
+      spec:
+        affinity:
+          podAntiAffinity:
+            requiredDuringSchedulingIgnoredDuringExecution:
+              - labelSelector:
+                  matchExpressions:
+                    - key: "app"
+                      operator: In
+                      values:
+                      - unbound
+                topologyKey: "kubernetes.io/hostname"
+        containers:
+        - name: unbound
+          image: npflan/unbound:2.2
+          args:
+            - '-c'
+            - '/unbound/config/unbound.conf'
+          volumeMounts:
+            - mountPath: /unbound
+              name: unbound-config
+          resources:
+            limits:
+              memory: 200M
+          livenessProbe:
+            tcpSocket:
+              port: 53
+            initialDelaySeconds: 1
+            timeoutSeconds: 1
+            periodSeconds: 3
+          readinessProbe:
+            tcpSocket:
+              port: 53
+            initialDelaySeconds: 1
+            timeoutSeconds: 1
+            periodSeconds: 3
+        volumes:
+          - name: unbound-config
+            configMap:
+              name: unbound
+              items:
+              - key: unbound.conf
+                path: unbound.conf
+- kind: Service
+  apiVersion: v1
+  metadata:
+    name: unbound
+    namespace: dns
+  spec:
+    clusterIP: 10.96.5.1
+    selector:
+      app: unbound
+    ports:
+      - name: dns-tcp
+        port: 53
+        protocol: TCP
+        targetPort: 53
+      - name: dns-udp
+        port: 53
+        protocol: UDP
+        targetPort: 53
