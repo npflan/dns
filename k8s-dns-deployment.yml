@@ -29,7 +29,7 @@ items:
                 topologyKey: "kubernetes.io/hostname"
         containers:
         - name: unbound
-          image: npflan/unbound:2.2
+          image: npflan/unbound:2.3
           args:
             - '-c'
             - '/unbound/config/unbound.conf'
@@ -40,14 +40,20 @@ items:
             limits:
               memory: 200M
           livenessProbe:
-            tcpSocket:
-              port: 53
+            exec:
+              command:
+                - sh
+                - -ec
+                - /usr/bin/drill -4 dns.msftncsi.com @0.0.0.0 | /bin/grep 131.107.255.255 > /dev/null
             initialDelaySeconds: 1
             timeoutSeconds: 1
             periodSeconds: 3
           readinessProbe:
-            tcpSocket:
-              port: 53
+            exec:
+              command:
+                - sh
+                - -ec
+                - /usr/bin/drill -4 dns.msftncsi.com @0.0.0.0 | /bin/grep 131.107.255.255 > /dev/null
             initialDelaySeconds: 1
             timeoutSeconds: 1
             periodSeconds: 3
