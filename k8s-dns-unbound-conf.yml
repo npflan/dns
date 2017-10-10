@@ -3,6 +3,7 @@ data:
   unbound.conf: |-
     server:
       verbosity: 1
+      val-log-level: 2
       interface: 0.0.0.0
       access-control: 10.0.0.0/8 allow
       access-control: 172.16.0.0/12 allow
@@ -13,6 +14,7 @@ data:
       auto-trust-anchor-file: "/etc/unbound/root.key"
       num-threads: 8
       use-syslog: no
+      harden-dnssec-stripped: no
       username: ""
       local-zone: "CISCO-CAPWAP-CONTROLLER.npf." static
         local-data: "CISCO-CAPWAP-CONTROLLER.npf. IN A 10.0.1.11"
@@ -36,6 +38,7 @@ data:
       name: "."
       forward-addr: 8.8.8.8
       forward-addr: 8.8.4.4
+      forward-first: yes
 
 kind: ConfigMap
 metadata:
