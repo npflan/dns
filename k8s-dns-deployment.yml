@@ -34,7 +34,7 @@ items:
             - '-c'
             - '/unbound/config/unbound.conf'
           volumeMounts:
-            - mountPath: /unbound
+            - mountPath: /unbound/config
               name: unbound-config
           resources:
             limits:

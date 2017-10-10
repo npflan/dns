@@ -11,19 +11,32 @@ data:
       hide-identity: yes
       hide-version: yes
       auto-trust-anchor-file: "/etc/unbound/root.key"
-      num-threads: 1
+      num-threads: 8
       use-syslog: no
       username: ""
       local-zone: "CISCO-CAPWAP-CONTROLLER.npf." static
-        local-data: "CISCO-CAPWAP-CONTROLLER.npf. IN A 10.0.1.10"
+        local-data: "CISCO-CAPWAP-CONTROLLER.npf. IN A 10.0.1.11"
+      domain-insecure: "npf."
+      domain-insecure: "cluster.local."
+      private-domain: "npf."
+      private-domain: "cluster.local."
 
     remote-control:
       control-enable: no
+
+    stub-zone:
+      name: "cluster.local."
+      stub-addr: 10.96.0.10
+
+    stub-zone:
+      name: "npf."
+      stub-addr: 10.96.5.3@5353
 
     forward-zone:
       name: "."
       forward-addr: 8.8.8.8
       forward-addr: 8.8.4.4
+
 kind: ConfigMap
 metadata:
   creationTimestamp: null
