@@ -1,0 +1,405 @@
+apiVersion: v1
+data:
+  named.conf: |
+    options {
+        directory "/var/named";
+        pid-file "/run/named/named.pid";
+        listen-on-v6 { none; };
+        listen-on port 5353 { any; };
+        allow-recursion { none; };
+        allow-transfer { none; };
+        allow-update { none; };
+        version none;
+        hostname none;
+        server-id none;
+    };
+    zone "npf" IN {
+        type master;
+        file "/bind/config/npf.zone";
+        allow-update { none; };
+    };
+  npf.zone: |
+    $ORIGIN npf.
+    $TTL 600
+
+    @	IN	SOA	ns1.npf.	hostmaster.npf. (
+        2017101031 ; Serial
+        300 ; Refresh
+        150 ; Retry
+        600 ; Expire
+        600) ; Minimum
+
+      IN	NS	ns1.npf.
+
+    ns1 IN	A	10.96.5.3
+
+    $ORIGIN access.npf.
+    aa1 IN A 10.255.207.2
+    aa2 IN A 10.255.207.3
+    aa3 IN A 10.255.207.16
+    ab1 IN A 10.255.207.4
+    ab2 IN A 10.255.207.5
+    ac1 IN A 10.255.207.6
+    ac2 IN A 10.255.207.7
+    ad1 IN A 10.255.207.8
+    ad2 IN A 10.255.207.9
+    ae1 IN A 10.255.207.10
+    ae2 IN A 10.255.207.11
+    af1 IN A 10.255.207.12
+    af2 IN A 10.255.207.13
+    ag1 IN A 10.255.207.14
+    ag2 IN A 10.255.207.15
+    ah1 IN A 10.255.208.2
+    ah2 IN A 10.255.208.3
+    aj1 IN A 10.255.208.4
+    aj2 IN A 10.255.208.5
+    ak1 IN A 10.255.208.6
+    ak2 IN A 10.255.208.7
+    al1 IN A 10.255.208.8
+    al2 IN A 10.255.208.9
+    am1 IN A 10.255.208.10
+    am2 IN A 10.255.208.11
+    an1 IN A 10.255.208.12
+    an2 IN A 10.255.208.13
+    ap1 IN A 10.255.208.14
+    ap2 IN A 10.255.208.15
+    aq1 IN A 10.255.209.2
+    aq2 IN A 10.255.209.3
+    ar1 IN A 10.255.209.4
+    ar2 IN A 10.255.209.5
+    as1 IN A 10.255.209.6
+    as2 IN A 10.255.209.7
+    at1 IN A 10.255.209.8
+    at2 IN A 10.255.209.9
+    au1 IN A 10.255.209.10
+    au2 IN A 10.255.209.11
+    av1 IN A 10.255.209.12
+    av2 IN A 10.255.209.13
+    aw1 IN A 10.255.209.14
+    aw2 IN A 10.255.209.15
+    ax1 IN A 10.255.210.2
+    ax2 IN A 10.255.210.3
+    ay1 IN A 10.255.210.4
+    ay2 IN A 10.255.210.5
+    az1 IN A 10.255.210.6
+    az2 IN A 10.255.210.7
+    ba1 IN A 10.255.210.8
+    ba2 IN A 10.255.210.9
+    bb1 IN A 10.255.210.10
+    bb2 IN A 10.255.210.11
+    bc1 IN A 10.255.210.12
+    bc2 IN A 10.255.210.13
+    bd1 IN A 10.255.210.14
+    bd2 IN A 10.255.210.15
+    be1 IN A 10.255.211.2
+    be2 IN A 10.255.211.3
+    bf1 IN A 10.255.211.4
+    bf2 IN A 10.255.211.5
+    bg1 IN A 10.255.211.6
+    bg2 IN A 10.255.211.7
+    bh1 IN A 10.255.211.8
+    bh2 IN A 10.255.211.9
+    bj1 IN A 10.255.211.10
+    bj2 IN A 10.255.211.11
+    bk1 IN A 10.255.211.12
+    bk2 IN A 10.255.211.13
+    bl1 IN A 10.255.211.14
+    bl2 IN A 10.255.211.15
+    bm1 IN A 10.255.212.2
+    bm2 IN A 10.255.212.3
+    bn1 IN A 10.255.212.4
+    bn2 IN A 10.255.212.5
+    bp1 IN A 10.255.212.6
+    bp2 IN A 10.255.212.7
+    bq1 IN A 10.255.212.8
+    bq2 IN A 10.255.212.9
+    br1 IN A 10.255.212.10
+    br2 IN A 10.255.212.11
+    bs1 IN A 10.255.212.12
+    bs2 IN A 10.255.212.13
+    ca1 IN A 10.255.207.17
+    cb1 IN A 10.255.207.18
+    cc1 IN A 10.255.207.19
+    cd1 IN A 10.255.207.20
+    ce1 IN A 10.255.208.16
+    cf1 IN A 10.255.208.17
+    cg1 IN A 10.255.209.16
+    ch1 IN A 10.255.209.17
+    cj1 IN A 10.255.210.16
+    ck1 IN A 10.255.210.17
+    cl1 IN A 10.255.210.18
+    cm1 IN A 10.255.210.19
+    cn1 IN A 10.255.211.16
+    cp1 IN A 10.255.211.17
+    cq1 IN A 10.255.211.18
+    cr1 IN A 10.255.211.19
+    da1 IN A 10.255.201.2
+    da2 IN A 10.255.201.3
+    db1 IN A 10.255.201.5
+    db2 IN A 10.255.201.6
+    dc1 IN A 10.255.201.8
+    dc2 IN A 10.255.201.9
+    dd1 IN A 10.255.201.11
+    dd2 IN A 10.255.201.12
+    de1 IN A 10.255.201.14
+    de2 IN A 10.255.201.15
+    df1 IN A 10.255.201.17
+    df2 IN A 10.255.201.18
+    dg1 IN A 10.255.201.20
+    dg2 IN A 10.255.201.21
+    dh1 IN A 10.255.202.2
+    dh2 IN A 10.255.202.3
+    dj1 IN A 10.255.202.5
+    dj2 IN A 10.255.202.6
+    dk1 IN A 10.255.202.8
+    dk2 IN A 10.255.202.9
+    dl1 IN A 10.255.202.11
+    dl2 IN A 10.255.202.12
+    dm1 IN A 10.255.202.14
+    dm2 IN A 10.255.202.15
+    dn1 IN A 10.255.202.17
+    dn2 IN A 10.255.202.18
+    dp1 IN A 10.255.202.20
+    dp2 IN A 10.255.202.21
+    dq1 IN A 10.255.203.2
+    dq2 IN A 10.255.203.3
+    dr1 IN A 10.255.203.5
+    dr2 IN A 10.255.203.6
+    ds1 IN A 10.255.203.8
+    ds2 IN A 10.255.203.9
+    dt1 IN A 10.255.203.11
+    dt2 IN A 10.255.203.12
+    du1 IN A 10.255.203.14
+    du2 IN A 10.255.203.15
+    dv1 IN A 10.255.203.17
+    dv2 IN A 10.255.203.18
+    dw1 IN A 10.255.203.20
+    dw2 IN A 10.255.203.21
+    dx1 IN A 10.255.204.2
+    dx2 IN A 10.255.204.3
+    dy1 IN A 10.255.204.4
+    dy2 IN A 10.255.204.5
+    dz1 IN A 10.255.204.6
+    dz2 IN A 10.255.204.7
+    ea1 IN A 10.255.204.8
+    ea2 IN A 10.255.204.9
+    eb1 IN A 10.255.204.10
+    eb2 IN A 10.255.204.11
+    ec1 IN A 10.255.204.12
+    ec2 IN A 10.255.204.13
+    ed1 IN A 10.255.204.14
+    ed2 IN A 10.255.204.15
+    ee1 IN A 10.255.205.2
+    ee2 IN A 10.255.205.3
+    ef1 IN A 10.255.205.4
+    ef2 IN A 10.255.205.5
+    eg1 IN A 10.255.205.6
+    eg2 IN A 10.255.205.7
+    eh1 IN A 10.255.205.8
+    eh2 IN A 10.255.205.9
+    ej1 IN A 10.255.205.10
+    ej2 IN A 10.255.205.11
+    ek1 IN A 10.255.205.12
+    ek2 IN A 10.255.205.13
+    el1 IN A 10.255.205.14
+    el2 IN A 10.255.205.15
+    em1 IN A 10.255.205.16
+    em2 IN A 10.255.205.17
+    fa1 IN A 10.255.201.4
+    fb1 IN A 10.255.201.7
+    fc1 IN A 10.255.201.10
+    fd1 IN A 10.255.201.13
+    fe1 IN A 10.255.201.16
+    ff1 IN A 10.255.201.19
+    fg1 IN A 10.255.201.22
+    fh1 IN A 10.255.202.4
+    fj1 IN A 10.255.202.7
+    fk1 IN A 10.255.202.10
+    fl1 IN A 10.255.202.13
+    fm1 IN A 10.255.202.16
+    fn1 IN A 10.255.202.19
+    fp1 IN A 10.255.202.22
+    fq1 IN A 10.255.203.4
+    fr2 IN A 10.255.203.7
+    fs1 IN A 10.255.203.10
+    ft1 IN A 10.255.203.13
+    fu1 IN A 10.255.203.16
+    fv1 IN A 10.255.203.19
+    fw1 IN A 10.255.203.22
+    ga1 IN A 10.255.201.23
+    gb1 IN A 10.255.201.24
+    gc1 IN A 10.255.201.25
+    gd1 IN A 10.255.201.26
+    ge1 IN A 10.255.201.27
+    gg1 IN A 10.255.202.23
+    gh1 IN A 10.255.202.24
+    gj1 IN A 10.255.202.25
+    gk1 IN A 10.255.202.26
+    gl1 IN A 10.255.202.27
+    gm1 IN A 10.255.202.28
+    xa1 IN A 10.255.213.21
+    xa2 IN A 10.255.213.22
+    xb1 IN A 10.255.213.18
+    xb2 IN A 10.255.213.19
+    xc1 IN A 10.255.213.15
+    xc2 IN A 10.255.213.16
+    xd1 IN A 10.255.213.12
+    xd2 IN A 10.255.213.13
+    xe1 IN A 10.255.213.9
+    xe2 IN A 10.255.213.10
+    xf1 IN A 10.255.213.6
+    xf2 IN A 10.255.213.7
+    xg1 IN A 10.255.213.2
+    xg2 IN A 10.255.213.3
+    xh1 IN A 10.255.215.20
+    xh2 IN A 10.255.215.21
+    xj1 IN A 10.255.215.17
+    xj2 IN A 10.255.215.18
+    xk1 IN A 10.255.215.14
+    xk2 IN A 10.255.215.15
+    xl1 IN A 10.255.215.11
+    xl2 IN A 10.255.215.12
+    xm1 IN A 10.255.215.8
+    xm2 IN A 10.255.215.9
+    xn1 IN A 10.255.215.5
+    xn2 IN A 10.255.215.6
+    xp1 IN A 10.255.215.2
+    xp2 IN A 10.255.215.3
+    ya1 IN A 10.255.213.23
+    ya2 IN A 10.255.214.19
+    yb1 IN A 10.255.213.20
+    yb2 IN A 10.255.214.16
+    yc1 IN A 10.255.213.17
+    yc2 IN A 10.255.214.13
+    yd1 IN A 10.255.213.14
+    yd2 IN A 10.255.214.10
+    ye1 IN A 10.255.213.11
+    ye2 IN A 10.255.214.7
+    yf1 IN A 10.255.213.8
+    yf2 IN A 10.255.214.4
+    yg1 IN A 10.255.213.4
+    yg2 IN A 10.255.213.5
+    yh1 IN A 10.255.215.22
+    yh2 IN A 10.255.215.23
+    yj1 IN A 10.255.215.19
+    yj2 IN A 10.255.216.13
+    yk1 IN A 10.255.215.16
+    yk2 IN A 10.255.216.10
+    yl1 IN A 10.255.215.13
+    yl2 IN A 10.255.216.7
+    ym1 IN A 10.255.215.10
+    ym2 IN A 10.255.216.4
+    yn1 IN A 10.255.215.7
+    yn2 IN A 10.255.216.3
+    yp1 IN A 10.255.215.4
+    yp2 IN A 10.255.216.2
+    za1 IN A 10.255.214.20
+    za2 IN A 10.255.214.21
+    zb1 IN A 10.255.214.17
+    zb2 IN A 10.255.214.18
+    zc1 IN A 10.255.214.14
+    zc2 IN A 10.255.214.15
+    zd1 IN A 10.255.214.11
+    zd2 IN A 10.255.214.12
+    ze1 IN A 10.255.214.8
+    ze2 IN A 10.255.214.9
+    zf1 IN A 10.255.214.5
+    zf2 IN A 10.255.214.6
+    zg1 IN A 10.255.214.2
+    zg2 IN A 10.255.214.3
+    zh1 IN A 10.255.216.16
+    zh2 IN A 10.255.216.17
+    zj1 IN A 10.255.216.14
+    zj2 IN A 10.255.216.15
+    zk1 IN A 10.255.216.11
+    zk2 IN A 10.255.216.12
+    zl1 IN A 10.255.216.8
+    zl2 IN A 10.255.216.9
+    zm1 IN A 10.255.216.5
+    zm2 IN A 10.255.216.6
+    billet IN A 10.255.253.4
+    cast1.e3 IN A 10.255.252.5
+    cast1.e4 IN A 10.255.251.2
+    cast2.e3 IN A 10.255.252.6
+    cast2.e4 IN A 10.255.251.3
+    cast3.e3 IN A 10.255.252.7
+    cast3.e4 IN A 10.255.251.4
+    cast4.e3 IN A 10.255.252.8
+    cast5.e3 IN A 10.255.252.9
+    cr1 IN A 10.255.254.14
+    cr2 IN A 10.255.254.15
+    crew1 IN A 10.255.254.2
+    crew10 IN A 10.255.254.11
+    crew11 IN A 10.255.254.12
+    crew12 IN A 10.255.254.13
+    crew2 IN A 10.255.254.3
+    crew3 IN A 10.255.254.4
+    crew4 IN A 10.255.254.5
+    crew5 IN A 10.255.254.6
+    crew6 IN A 10.255.254.7
+    crew7 IN A 10.255.254.8
+    crew8 IN A 10.255.254.9
+    crew9 IN A 10.255.254.10
+    expo1.d5 IN A 10.255.205.18
+    expo1.e3 IN A 10.255.252.2
+    expo1.e4 IN A 10.255.251.7
+    expo2.d5 IN A 10.255.205.19
+    expo2.e3 IN A 10.255.252.3
+    expo2.e4 IN A 10.255.251.8
+    expo3.d5 IN A 10.255.205.20
+    expo3.e4 IN A 10.255.251.9
+    expo4.d5 IN A 10.255.205.21
+    gamecrew1 IN A 10.255.206.4
+    gamecrew2 IN A 10.255.206.5
+    gamecrew3 IN A 10.255.206.6
+    gamecrew4 IN A 10.255.206.7
+    gamecrew5 IN A 10.255.206.9
+    gamecrew6 IN A 10.255.206.11
+    gamecrew7 IN A 10.255.206.13
+    helpdesk1 IN A 10.255.206.10
+    helpdesk2 IN A 10.255.206.12
+    helpdesk3 IN A 10.255.206.14
+    magnutron IN A 10.255.252.4
+    scene1 IN A 10.255.251.5
+    scene2 IN A 10.255.251.6
+    security IN A 10.255.254.16
+    shop1 IN A 10.255.253.2
+    shop2 IN A 10.255.253.3
+    shop3 IN A 10.255.253.5
+    web1 IN A 10.255.206.8
+    youtube1 IN A 10.255.212.14
+    youtube2 IN A 10.255.212.15
+
+    $ORIGIN dist.npf.
+    c1 IN A 10.255.255.111
+    c2 IN A 10.255.255.222
+    d1 IN A 10.255.255.1
+    d2 IN A 10.255.255.2
+    d3 IN A 10.255.255.3
+    d4 IN A 10.255.255.4
+    d5 IN A 10.255.255.5
+    d6 IN A 10.255.255.6
+    d7 IN A 10.255.255.7
+    d8 IN A 10.255.255.8
+    d9 IN A 10.255.255.9
+    d10 IN A 10.255.255.10
+    d11 IN A 10.255.255.11
+    d12 IN A 10.255.255.12
+    d13 IN A 10.255.255.13
+    d14 IN A 10.255.255.14
+    e1 IN A 10.255.255.254
+    e2 IN A 10.255.255.253
+    e3 IN A 10.255.255.252
+    e4 IN A 10.255.255.251
+    e5 IN A 10.255.255.250
+    s3 IN A 10.255.255.53
+    s6 IN A 10.255.255.56
+    s7 IN A 10.255.255.57
+
+
+
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: bind
+  namespace: dns

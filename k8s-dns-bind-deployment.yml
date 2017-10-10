@@ -1,0 +1,86 @@
+apiVersion: v1
+kind: List
+items:
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    name: dns
+- apiVersion: extensions/v1beta1
+  kind: Deployment
+  metadata:
+    name: bind
+    namespace: dns
+  spec:
+    replicas: 2
+    template:
+      metadata:
+        labels:
+          app: bind
+      spec:
+        affinity:
+          podAntiAffinity:
+            requiredDuringSchedulingIgnoredDuringExecution:
+              - labelSelector:
+                  matchExpressions:
+                    - key: "app"
+                      operator: In
+                      values:
+                      - bind
+                topologyKey: "kubernetes.io/hostname"
+        containers:
+        - name: bind
+          image: npflan/bind:2.0
+          args:
+            - '-c'
+            - '/bind/config/named.conf'
+          volumeMounts:
+            - mountPath: /bind/config
+              name: bind-config
+          resources:
+            limits:
+              memory: 200M
+          livenessProbe:
+            exec:
+              command:
+                - sh
+                - -ec
+                - dig c1.dist.npf @0.0.0.0 -p 5353 | /bin/grep 10.255.255.111 > /dev/null
+            initialDelaySeconds: 1
+            timeoutSeconds: 1
+            periodSeconds: 3
+          readinessProbe:
+            exec:
+              command:
+                - sh
+                - -ec
+                - dig c1.dist.npf @0.0.0.0 -p 5353 | /bin/grep 10.255.255.111 > /dev/null
+            initialDelaySeconds: 1
+            timeoutSeconds: 1
+            periodSeconds: 3
+        volumes:
+          - name: bind-config
+            configMap:
+              name: bind
+              items:
+              - key: named.conf
+                path: named.conf
+              - key: npf.zone
+                path: npf.zone
+- kind: Service
+  apiVersion: v1
+  metadata:
+    name: bind
+    namespace: dns
+  spec:
+    clusterIP: 10.96.5.3
+    selector:
+      app: bind
+    ports:
+      - name: dns-tcp
+        port: 5353
+        protocol: TCP
+        targetPort: 5353
+      - name: dns-udp
+        port: 5353
+        protocol: UDP
+        targetPort: 5353
