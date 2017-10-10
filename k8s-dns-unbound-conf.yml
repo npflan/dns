@@ -16,6 +16,40 @@ data:
       use-syslog: no
       harden-dnssec-stripped: no
       username: ""
+      outgoing-range: 950
+      num-queries-per-thread: 512
+
+      # Reduce lock contention
+      msg-cache-slabs: 8
+      key-cache-slabs: 8
+      infra-cache-slabs: 8
+      rrset-cache-slabs: 8
+
+      edns-buffer-size: 1480
+
+      # Do both UDP and TCP
+      do-udp: yes
+      do-tcp: yes
+
+      # Protect against weirdly sized queries
+      harden-short-bufsize: yes
+      harden-large-queries: yes
+
+      # Harden against common attacks
+      harden-glue: yes
+      harden-algo-downgrade: yes
+
+      # Prefetch records when about to expire
+      prefetch: yes
+      prefetch-key: yes
+
+      # Respect round robin
+      rrset-roundrobin: yes
+
+      # Minimal responses to save network traffic
+      minimal-responses: yes
+
+
       local-zone: "CISCO-CAPWAP-CONTROLLER.npf." static
         local-data: "CISCO-CAPWAP-CONTROLLER.npf. IN A 10.0.1.11"
       domain-insecure: "npf."
