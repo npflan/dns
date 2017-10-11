@@ -50,15 +50,22 @@ data:
       minimal-responses: yes
 
 
+      # Add local zone for Cisco wireless controller
       local-zone: "CISCO-CAPWAP-CONTROLLER.npf." static
-        local-data: "CISCO-CAPWAP-CONTROLLER.npf. IN A 10.0.1.11"
+      local-data: "CISCO-CAPWAP-CONTROLLER.npf. IN A 10.0.1.11"
+
+      # Mark domains as insecure to serve as local zones
       domain-insecure: "npf."
       domain-insecure: "cluster.local."
       private-domain: "npf."
       private-domain: "cluster.local."
 
+    # Enable remote control for metrics
     remote-control:
-      control-enable: no
+      control-enable: yes
+      control-interface: 0.0.0.0
+      control-port: 8953
+      control-use-cert: yes
 
     stub-zone:
       name: "cluster.local."
