@@ -1,0 +1,222 @@
+apiVersion: v1
+data:
+  unbound.conf: |-
+    server:
+      verbosity: 1
+      val-log-level: 2
+      interface: 0.0.0.0
+      access-control: 10.0.0.0/8 allow
+      access-control: 172.16.0.0/12 allow
+      msg-cache-size: 200m
+      rrset-cache-size: 400m
+      hide-identity: yes
+      hide-version: yes
+      auto-trust-anchor-file: "/etc/unbound/root.key"
+      num-threads: 8
+      use-syslog: no
+      harden-dnssec-stripped: no
+      username: ""
+      outgoing-range: 950
+      num-queries-per-thread: 512
+
+      # Reduce lock contention
+      msg-cache-slabs: 8
+      key-cache-slabs: 8
+      infra-cache-slabs: 8
+      rrset-cache-slabs: 8
+
+      edns-buffer-size: 1480
+
+      # Do both UDP and TCP
+      do-udp: yes
+      do-tcp: yes
+
+      # Protect against weirdly sized queries
+      harden-short-bufsize: yes
+      harden-large-queries: yes
+
+      # Harden against common attacks
+      harden-glue: yes
+      harden-algo-downgrade: yes
+
+      # Prefetch records when about to expire
+      prefetch: yes
+      prefetch-key: yes
+
+      # Respect round robin
+      rrset-roundrobin: yes
+
+      # Minimal responses to save network traffic
+      minimal-responses: yes
+
+
+      # Add local zone for Cisco wireless controller
+      local-zone: "CISCO-CAPWAP-CONTROLLER.npf." static
+      local-data: "CISCO-CAPWAP-CONTROLLER.npf. IN A 10.0.1.11"
+
+      # Mark domains as insecure to serve as local zones
+      domain-insecure: "npf."
+      domain-insecure: "cluster.local."
+      private-domain: "npf."
+      private-domain: "cluster.local."
+
+    # Enable remote control for metrics
+    remote-control:
+      control-enable: yes
+      control-interface: 127.0.0.1
+      control-port: 8953
+      control-use-cert: yes
+      server-key-file: /unbound/config/unbound_server.key
+      server-cert-file: /unbound/config/unbound_server.pem
+      control-key-file: /unbound/config/unbound_control.key
+      control-cert-file: /unbound/config/unbound_control.pem
+
+    stub-zone:
+      name: "cluster.local."
+      stub-addr: 10.96.0.10
+
+    stub-zone:
+      name: "npf."
+      stub-addr: 10.96.5.3@5353
+
+    forward-zone:
+      name: "."
+      forward-addr: 8.8.8.8
+      forward-addr: 8.8.4.4
+      forward-first: yes
+  trusted-key.key: |
+    . IN DNSKEY 257 3 8 AwEAAaz/tAm8yTn4Mfeh5eyI96WSVexTBAvkMgJzkKTOiW1vkIbzxeF3+/4RgWOq7HrxRixHlFlExOLAJr5emLvN7SWXgnLh4+B5xQlNVz8Og8kvArMtNROxVQuCaSnIDdD5LKyWbRd2n9WGe2R8PzgCmr3EgVLrjyBxWezF0jLHwVN8efS3rCj/EWgvIWgb9tarpVUDK/b58Da+sqqls3eNbuv7pr+eoZG+SrDK6nWeL3c6H5Apxz7LjVc1uTIdsIXxuOLYA4/ilBmSVIzuDWfdRUfhHdY6+cn8HFRm+2hM8AnXGXws9555KrUB5qihylGa8subX2Nn6UwNR1AkUTV74bU=
+    . IN DNSKEY 256 3 8 AwEAAYvxrQOOujKdZz+37P+oL4l7e35/0diH/mZITGjlp4f81ZGQK42HNxSfkiSahinPR3t0YQhjC393NX4TorSiTJy76TBWddNOkC/IaGqcb4erU+nQ75k2Lf0oIpA7qTCk3UkzYBqhKDHHAr2UditE7uFLDcoX4nBLCoaH5FtfxhUqyTlRu0RBXAEuKO+rORTFP0XgA5vlzVmXtwCkb9G8GknHuO1jVAwu3syPRVHErIbaXs1+jahvWWL+Do4wd+lA+TL3+pUk+zKTD2ncq7ZbJBZddo9T7PZjvntWJUzIHIMWZRFAjpi+V7pgh0o1KYXZgDUbiA1s9oLAL1KLSdmoIYM=
+    . IN DNSKEY 257 3 8 AwEAAagAIKlVZrpC6Ia7gEzahOR+9W29euxhJhVVLOyQbSEW0O8gcCjFFVQUTf6v58fLjwBd0YI0EzrAcQqBGCzh/RStIoO8g0NfnfL2MTJRkxoXbfDaUeVPQuYEhg37NZWAJQ9VnMVDxP/VHL496M/QZxkjf5/Efucp2gaDX6RS6CXpoY68LsvPVjR0ZSwzz1apAzvN9dlzEheX7ICJBBtuA6G3LQpzW5hOA2hzCTMjJPJ8LbqF6dsV6DoBQzgul0sGIcGOYl7OyQdXfZ57relSQageu+ipAdTTJ25AsRTAoub8ONGcLmqrAmRLKBP1dfwhYB4N7knNnulqQxA+Uk1ihz0=
+  unbound_control.key: |
+    -----BEGIN RSA PRIVATE KEY-----
+    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
+    -----END RSA PRIVATE KEY-----
+  unbound_control.pem: |
+    -----BEGIN CERTIFICATE-----
+    MIIDqDCCAhACCQCiCqZd6OsKHzANBgkqhkiG9w0BAQsFADASMRAwDgYDVQQDDAd1
+    bmJvdW5kMB4XDTE3MTAxMTA4MjcxMFoXDTM3MDYyODA4MjcxMFowGjEYMBYGA1UE
+    AwwPdW5ib3VuZC1jb250cm9sMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKC
+    AYEAsZQLuiHhZjGCqEHfCBzB2EZbk8I4boGILQ+3lcrhN2inTuvDJVmz/y3JR2NY
+    24mZj0jloKcB/69V7EcRcFtPuwGsYbDY9HG9g7yS6Ss0BopTmiwRaAhO1f1NI9BS
+    tRah6PrhbUIe5K42CsdX6mM0rk5eEmaTKmT8LOP1BZhaztSWgiSB/m0SxPJMFs/+
+    7xwGm1+cHUbkHstIJQUdIICkpmw0azT6i6vGucEenRpgDzw605N+HeDxJH6XT8m8
+    EDdD+WmMoHnu8/JcxOuMGT5OveNMTNHNk00oGahLxr066cdHDkk1OJdaUb5I5qlF
+    4pkC92bKwNLjrEeaFlhUNKTt08dwGvkQizqvapRHWaD2GPEkU/MlgRUEJCofg+Uc
+    1fwrkH5MF909J33qMkKa8ACSzAnXIpyUSpLqsL7TI3VHTFvjmgQYBfJlo0rZWEfl
+    XjVgtYc50jUCCTEOHFwaZyEZfKPUEJVbgdhbPmgFPiKWNg4Jrsoe7YP0AUIu/+Er
+    7VA3AgMBAAEwDQYJKoZIhvcNAQELBQADggGBAGP1tVwtZvDGW3YfSfNkCjxorNqJ
+    KOr6NUzQmJ8En80fe2VwxmYWU6GQEI8ODLjb4Ww4fByOrBMUaRHXY2RKsLsEvNqb
+    Hv8KMIl0uGq8RQSoMKJxWIX/iPzDHgzo3SfNOzGNqsiNlvNBDzohFbr5/hQgCdXM
+    /eruehxf36O2X2pLEYTU2nPDj0/u+OEhVLAnAFzTqYZJR53dm+VHbMUzB0u/MxqD
+    eS30e4udCamZ5HtITa8R1j70dhtxrY/Muu/xHvPdObtDzX8nhPMWf2wAb03qmedF
+    U7WY4VgivhfCvhs1TTIgrXzpzo8FuXprejt3PrgRe/xUajfhC4pr6ln4Uow7/GXe
+    rLYycGY1v1jcQgrExvEXcr6xMStksPQZ58mDN9WYU0yfeFNg4FjtynGf3CavulCK
+    GGfq58uTFQ4PME4lQTMI44l4mHq/45+UW8C2cx9kaXigG95Bpuug6ImK1GVqYkzp
+    AydjR8G11UOxTnG2Fkf0VEGUsliHRCcIcQi6fA==
+    -----END CERTIFICATE-----
+  unbound_server.key: |
+    -----BEGIN RSA PRIVATE KEY-----
+    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
+    -----END RSA PRIVATE KEY-----
+  unbound_server.pem: |
+    -----BEGIN CERTIFICATE-----
+    MIIDoDCCAggCCQD+UzG7ol6aLDANBgkqhkiG9w0BAQsFADASMRAwDgYDVQQDDAd1
+    bmJvdW5kMB4XDTE3MTAxMTA4MjcxMFoXDTM3MDYyODA4MjcxMFowEjEQMA4GA1UE
+    AwwHdW5ib3VuZDCCAaIwDQYJKoZIhvcNAQEBBQADggGPADCCAYoCggGBAK8fn6eo
+    NueKM4NpHXbZH+XXm7/jGR/puEdgpiC8ODMdqpY69whLRuE2P06qLBi1xaYNvZTD
+    u67YpkdY4Vngdh73+IUgOgPr8ZCC1FRv4Xa3g1iBdwBZ+rWY1ed5tK7QkmYhb3BZ
+    PcG1HECT0vOMYjeTtzBcpqvRjrkBf0fhQ3YAqfOV8qEEuBf8SYINK6w/TJhyPXck
+    h8yrtzklws8UlD+dV62kTNCbuxeG0OrLGylp/xi8jmAA+Y0N1CI4BtbG3BTbOKYc
+    a8VwrP03pE18F7ROSRvZxCLH/gaLEb/oVlV2YYxf747lkVN+K4uigjYZkBJ1PCdd
+    r83Iff/9Wv2mOxcC3Y/Gnpj6/u0MpuwVwAozFgmXxJB4pER0bWKj63Qqjjaz3UB2
+    qGnbJ44NHTcuSVgqAi4izy2nTECc3B2va1mxrrPeIxmoKjBWC9u+bc/kqZAtkkWS
+    8DkGe6nSvIwD5SIGnEFPEuOYgvjo+gVA+ltaE6YkUPiF/tCq/Sb4hqQGoQIDAQAB
+    MA0GCSqGSIb3DQEBCwUAA4IBgQBr7ilKKZx7No65QygJ/TJCU7euVijL9SJWW0Rf
+    iDjo79HMsRYN734IcFQHCFJklxtQOjL5MgRLXJGnWRXCYlgHADjaHOXcbBN+gkgs
+    A/pgZ1HeQqkXcGy434zBwPXWTN5uprEQA7hnpBa6lOfbQCeSVzBgPoLSK9YCL1E0
+    esKHmm8y5CjB8qyO2zBtXhdDDmn5y7XX9FlGbxdSa/zKK1ZdbulVYQgxgcb+O+OL
+    9/YAMpKvqGBlOxQpd3r5CdolJP/tct29CcTOMa1ewocTNd9VRN1rVF6wyPvX8A3d
+    ZM4OLqKsX2bs2XHUQ1UC2L8/HM2Hx081Q1HIXvX7AMLb8PuA5DEksvpJKYIavRt8
+    q6RtUbo8pQ6lfgPTVXYe6RnJXr4kR2q53AeWmi7H8ewlTSwYTKNaR/XlhpOM3Bn5
+    8BBYW52QdGxHJ1GMkzmXX/qo+Vmik6taaFAsHf2VgIUV/JrzuGQrQL7xHKpNwAIX
+    k6vC8ejhS/h91FroOxUZX/KTBW8=
+    -----END CERTIFICATE-----
+
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: unbound
+  namespace: dns

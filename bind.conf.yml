@@ -23,7 +23,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2017101031 ; Serial
+        2017101101 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -32,6 +32,8 @@ data:
       IN	NS	ns1.npf.
 
     ns1 IN	A	10.96.5.3
+    dash IN CNAME v1-grafana.monitoring.svc.cluster.local.
+    prom IN CNAME prometheus.monitoring.svc.cluster.local.
 
     $ORIGIN access.npf.
     aa1 IN A 10.255.207.2

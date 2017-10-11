@@ -16,6 +16,8 @@ $TTL 600
 IN	NS	ns1.npf.
 
 ns1				IN	A	10.96.5.3
+dash            IN CNAME v1-grafana.monitoring.svc.cluster.local.
+prom            IN CNAME prometheus.monitoring.svc.cluster.local.
 """
 
 zone = header.replace(

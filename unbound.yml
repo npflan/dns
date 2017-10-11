@@ -29,7 +29,7 @@ items:
                 topologyKey: "kubernetes.io/hostname"
         containers:
         - name: unbound
-          image: npflan/unbound:2.5
+          image: npflan/unbound:2.6
           args:
             - '-c'
             - '/unbound/config/unbound.conf'
@@ -61,9 +61,9 @@ items:
             - containerPort: 8953
 
         - name: unbound-exporter
-          image: npflan/unbound_exporter:0.5
+          image: npflan/unbound_exporter:0.6
           volumeMounts:
-            - mountPath: /unbound/config
+            - mountPath: /etc/unbound
               name: unbound-config
           resources:
             limits:
@@ -76,6 +76,14 @@ items:
               items:
               - key: unbound.conf
                 path: unbound.conf
+              - key: unbound_control.key
+                path: unbound_control.key
+              - key: unbound_control.pem
+                path: unbound_control.pem
+              - key: unbound_server.key
+                path: unbound_server.key
+              - key: unbound_server.pem
+                path: unbound_server.pem
 - kind: Service
   apiVersion: v1
   metadata:
@@ -94,15 +102,17 @@ items:
         port: 53
         protocol: UDP
         targetPort: 53
+- kind: Service
+  apiVersion: v1
+  metadata:
+    name: unbound-metrics
+    namespace: dns
+  spec:
+    clusterIP: None
+    selector:
+      app: unbound
+    ports:
       - name: dns-metrics
         port: 9167
         protocol: TCP
         targetPort: 9167
-      #- name: unbound-control-tcp
-      #  port: 8953
-      #  protocol: TCP
-      #  targetPort: 8953
-      #- name: unbound-control-udp
-      #  port: 8953
-      #  protocol: UDP
-      #  targetPort: 8953
