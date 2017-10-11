@@ -13,4 +13,4 @@ RUN apk add git
 RUN go get github.com/kumina/unbound_exporter
 RUN go install github.com/kumina/unbound_exporter
 
-ENTRYPOINT ["unbound_exporter", "-unbound.host=unbound:8953"]
+ENTRYPOINT ["unbound_exporter", "-unbound.host=localhost:8953"]
