@@ -16,8 +16,9 @@ $TTL 600
 IN	NS	ns1.npf.
 
 ns1				IN	A	10.96.5.3
-dash            IN CNAME v1-grafana.monitoring.svc.cluster.local.
-prom            IN CNAME prometheus.monitoring.svc.cluster.local.
+dash IN CNAME v1-grafana.monitoring.svc.cluster.local.
+prom IN CNAME prometheus.monitoring.svc.cluster.local.
+kube IN CNAME kubernetes-dashboard.kube-system.svc.cluster.local.
 """
 
 zone = header.replace(
@@ -37,6 +38,7 @@ def gen(filepath):
                                 delimiter=',', quotechar='"')
         for row in reader:
             yield '{} IN A {}'.format(row['name'], row['ip'])
+            yield 'telemetry IN SRV 0 0 9167 {}.access.npf.'.format(row['name'])
 
 zone = zone + '\n$ORIGIN access.npf.\n'
 zone = zone + '\n'.join(gen(participants))

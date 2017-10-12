@@ -23,3 +23,27 @@ e5 IN A 10.255.255.250
 s3 IN A 10.255.255.53
 s6 IN A 10.255.255.56
 s7 IN A 10.255.255.57
+telemetry IN SRV 0 0 9167 c1.dist.npf.
+telemetry IN SRV 0 0 9167 c2.dist.npf.
+telemetry IN SRV 0 0 9167 d1.dist.npf.
+telemetry IN SRV 0 0 9167 d2.dist.npf.
+telemetry IN SRV 0 0 9167 d3.dist.npf.
+telemetry IN SRV 0 0 9167 d4.dist.npf.
+telemetry IN SRV 0 0 9167 d5.dist.npf.
+telemetry IN SRV 0 0 9167 d6.dist.npf.
+telemetry IN SRV 0 0 9167 d7.dist.npf.
+telemetry IN SRV 0 0 9167 d8.dist.npf.
+telemetry IN SRV 0 0 9167 d9.dist.npf.
+telemetry IN SRV 0 0 9167 d10.dist.npf.
+telemetry IN SRV 0 0 9167 d11.dist.npf.
+telemetry IN SRV 0 0 9167 d12.dist.npf.
+telemetry IN SRV 0 0 9167 d13.dist.npf.
+telemetry IN SRV 0 0 9167 d14.dist.npf.
+telemetry IN SRV 0 0 9167 e1.dist.npf.
+telemetry IN SRV 0 0 9167 e2.dist.npf.
+telemetry IN SRV 0 0 9167 e3.dist.npf.
+telemetry IN SRV 0 0 9167 e4.dist.npf.
+telemetry IN SRV 0 0 9167 e5.dist.npf.
+telemetry IN SRV 0 0 9167 s3.dist.npf.
+telemetry IN SRV 0 0 9167 s6.dist.npf.
+telemetry IN SRV 0 0 9167 s7.dist.npf.

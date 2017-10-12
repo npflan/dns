@@ -12,3 +12,17 @@ kubectl apply -f unbound.yml
 kubectl apply -f bind.yml
 ```
 
+### DNS Changes
+
+Generate the zone with
+
+``` shell
+python3 bind/generate_zone.py
+```
+
+Log into a bind pod, and check the zone syntax
+
+```Shell
+named-checkzone -d npf /bind/config/npf.zone
+```
+
