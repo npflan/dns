@@ -23,7 +23,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2017101202 ; Serial
+        2017101204 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -34,15 +34,15 @@ data:
     ns1 IN	A	10.96.5.3
     dash IN CNAME v1-grafana.monitoring.svc.cluster.local.
     prom IN CNAME prometheus.monitoring.svc.cluster.local.
-    kube IN CNAME kubernetes-dashboard.kube-system.svc.cluster.local.  
+    kube IN CNAME kubernetes-dashboard.kube-system.svc.cluster.local.
+    alert IN CNAME alertmanager.monitoring.svc.cluster.local.
+    scriptserver01 IN A 10.0.1.15
 
     $ORIGIN access.npf.
     aa1 IN A 10.255.207.2
     telemetry IN SRV 0 0 9167 aa1.access.npf.
     aa2 IN A 10.255.207.3
     telemetry IN SRV 0 0 9167 aa2.access.npf.
-    aa3 IN A 10.255.207.16
-    telemetry IN SRV 0 0 9167 aa3.access.npf.
     ab1 IN A 10.255.207.4
     telemetry IN SRV 0 0 9167 ab1.access.npf.
     ab2 IN A 10.255.207.5
@@ -199,10 +199,6 @@ data:
     telemetry IN SRV 0 0 9167 br1.access.npf.
     br2 IN A 10.255.212.11
     telemetry IN SRV 0 0 9167 br2.access.npf.
-    bs1 IN A 10.255.212.12
-    telemetry IN SRV 0 0 9167 bs1.access.npf.
-    bs2 IN A 10.255.212.13
-    telemetry IN SRV 0 0 9167 bs2.access.npf.
     ca1 IN A 10.255.207.17
     telemetry IN SRV 0 0 9167 ca1.access.npf.
     cb1 IN A 10.255.207.18
@@ -467,38 +463,6 @@ data:
     telemetry IN SRV 0 0 9167 xf1.access.npf.
     xf2 IN A 10.255.213.7
     telemetry IN SRV 0 0 9167 xf2.access.npf.
-    xg1 IN A 10.255.213.2
-    telemetry IN SRV 0 0 9167 xg1.access.npf.
-    xg2 IN A 10.255.213.3
-    telemetry IN SRV 0 0 9167 xg2.access.npf.
-    xh1 IN A 10.255.215.20
-    telemetry IN SRV 0 0 9167 xh1.access.npf.
-    xh2 IN A 10.255.215.21
-    telemetry IN SRV 0 0 9167 xh2.access.npf.
-    xj1 IN A 10.255.215.17
-    telemetry IN SRV 0 0 9167 xj1.access.npf.
-    xj2 IN A 10.255.215.18
-    telemetry IN SRV 0 0 9167 xj2.access.npf.
-    xk1 IN A 10.255.215.14
-    telemetry IN SRV 0 0 9167 xk1.access.npf.
-    xk2 IN A 10.255.215.15
-    telemetry IN SRV 0 0 9167 xk2.access.npf.
-    xl1 IN A 10.255.215.11
-    telemetry IN SRV 0 0 9167 xl1.access.npf.
-    xl2 IN A 10.255.215.12
-    telemetry IN SRV 0 0 9167 xl2.access.npf.
-    xm1 IN A 10.255.215.8
-    telemetry IN SRV 0 0 9167 xm1.access.npf.
-    xm2 IN A 10.255.215.9
-    telemetry IN SRV 0 0 9167 xm2.access.npf.
-    xn1 IN A 10.255.215.5
-    telemetry IN SRV 0 0 9167 xn1.access.npf.
-    xn2 IN A 10.255.215.6
-    telemetry IN SRV 0 0 9167 xn2.access.npf.
-    xp1 IN A 10.255.215.2
-    telemetry IN SRV 0 0 9167 xp1.access.npf.
-    xp2 IN A 10.255.215.3
-    telemetry IN SRV 0 0 9167 xp2.access.npf.
     ya1 IN A 10.255.213.23
     telemetry IN SRV 0 0 9167 ya1.access.npf.
     ya2 IN A 10.255.214.19
@@ -523,38 +487,6 @@ data:
     telemetry IN SRV 0 0 9167 yf1.access.npf.
     yf2 IN A 10.255.214.4
     telemetry IN SRV 0 0 9167 yf2.access.npf.
-    yg1 IN A 10.255.213.4
-    telemetry IN SRV 0 0 9167 yg1.access.npf.
-    yg2 IN A 10.255.213.5
-    telemetry IN SRV 0 0 9167 yg2.access.npf.
-    yh1 IN A 10.255.215.22
-    telemetry IN SRV 0 0 9167 yh1.access.npf.
-    yh2 IN A 10.255.215.23
-    telemetry IN SRV 0 0 9167 yh2.access.npf.
-    yj1 IN A 10.255.215.19
-    telemetry IN SRV 0 0 9167 yj1.access.npf.
-    yj2 IN A 10.255.216.13
-    telemetry IN SRV 0 0 9167 yj2.access.npf.
-    yk1 IN A 10.255.215.16
-    telemetry IN SRV 0 0 9167 yk1.access.npf.
-    yk2 IN A 10.255.216.10
-    telemetry IN SRV 0 0 9167 yk2.access.npf.
-    yl1 IN A 10.255.215.13
-    telemetry IN SRV 0 0 9167 yl1.access.npf.
-    yl2 IN A 10.255.216.7
-    telemetry IN SRV 0 0 9167 yl2.access.npf.
-    ym1 IN A 10.255.215.10
-    telemetry IN SRV 0 0 9167 ym1.access.npf.
-    ym2 IN A 10.255.216.4
-    telemetry IN SRV 0 0 9167 ym2.access.npf.
-    yn1 IN A 10.255.215.7
-    telemetry IN SRV 0 0 9167 yn1.access.npf.
-    yn2 IN A 10.255.216.3
-    telemetry IN SRV 0 0 9167 yn2.access.npf.
-    yp1 IN A 10.255.215.4
-    telemetry IN SRV 0 0 9167 yp1.access.npf.
-    yp2 IN A 10.255.216.2
-    telemetry IN SRV 0 0 9167 yp2.access.npf.
     za1 IN A 10.255.214.20
     telemetry IN SRV 0 0 9167 za1.access.npf.
     za2 IN A 10.255.214.21
@@ -579,30 +511,6 @@ data:
     telemetry IN SRV 0 0 9167 zf1.access.npf.
     zf2 IN A 10.255.214.6
     telemetry IN SRV 0 0 9167 zf2.access.npf.
-    zg1 IN A 10.255.214.2
-    telemetry IN SRV 0 0 9167 zg1.access.npf.
-    zg2 IN A 10.255.214.3
-    telemetry IN SRV 0 0 9167 zg2.access.npf.
-    zh1 IN A 10.255.216.16
-    telemetry IN SRV 0 0 9167 zh1.access.npf.
-    zh2 IN A 10.255.216.17
-    telemetry IN SRV 0 0 9167 zh2.access.npf.
-    zj1 IN A 10.255.216.14
-    telemetry IN SRV 0 0 9167 zj1.access.npf.
-    zj2 IN A 10.255.216.15
-    telemetry IN SRV 0 0 9167 zj2.access.npf.
-    zk1 IN A 10.255.216.11
-    telemetry IN SRV 0 0 9167 zk1.access.npf.
-    zk2 IN A 10.255.216.12
-    telemetry IN SRV 0 0 9167 zk2.access.npf.
-    zl1 IN A 10.255.216.8
-    telemetry IN SRV 0 0 9167 zl1.access.npf.
-    zl2 IN A 10.255.216.9
-    telemetry IN SRV 0 0 9167 zl2.access.npf.
-    zm1 IN A 10.255.216.5
-    telemetry IN SRV 0 0 9167 zm1.access.npf.
-    zm2 IN A 10.255.216.6
-    telemetry IN SRV 0 0 9167 zm2.access.npf.
     billet IN A 10.255.253.4
     telemetry IN SRV 0 0 9167 billet.access.npf.
     cast1.e3 IN A 10.255.252.5
@@ -695,12 +603,6 @@ data:
     telemetry IN SRV 0 0 9167 scene2.access.npf.
     security IN A 10.255.254.16
     telemetry IN SRV 0 0 9167 security.access.npf.
-    shop1 IN A 10.255.253.2
-    telemetry IN SRV 0 0 9167 shop1.access.npf.
-    shop2 IN A 10.255.253.3
-    telemetry IN SRV 0 0 9167 shop2.access.npf.
-    shop3 IN A 10.255.253.5
-    telemetry IN SRV 0 0 9167 shop3.access.npf.
     web1 IN A 10.255.206.8
     telemetry IN SRV 0 0 9167 web1.access.npf.
     youtube1 IN A 10.255.212.14
@@ -753,12 +655,9 @@ data:
     telemetry IN SRV 0 0 9167 e2.dist.npf.
     telemetry IN SRV 0 0 9167 e3.dist.npf.
     telemetry IN SRV 0 0 9167 e4.dist.npf.
-    telemetry IN SRV 0 0 9167 e5.dist.npf.
     telemetry IN SRV 0 0 9167 s3.dist.npf.
     telemetry IN SRV 0 0 9167 s6.dist.npf.
     telemetry IN SRV 0 0 9167 s7.dist.npf.
-
-
 
 kind: ConfigMap
 metadata:

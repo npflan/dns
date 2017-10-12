@@ -19,6 +19,8 @@ ns1				IN	A	10.96.5.3
 dash IN CNAME v1-grafana.monitoring.svc.cluster.local.
 prom IN CNAME prometheus.monitoring.svc.cluster.local.
 kube IN CNAME kubernetes-dashboard.kube-system.svc.cluster.local.
+alert IN CNAME alertmanager.monitoring.svc.cluster.local.
+scriptserver01 IN A 10.0.1.15
 """
 
 zone = header.replace(

@@ -43,7 +43,6 @@ telemetry IN SRV 0 0 9167 e1.dist.npf.
 telemetry IN SRV 0 0 9167 e2.dist.npf.
 telemetry IN SRV 0 0 9167 e3.dist.npf.
 telemetry IN SRV 0 0 9167 e4.dist.npf.
-telemetry IN SRV 0 0 9167 e5.dist.npf.
 telemetry IN SRV 0 0 9167 s3.dist.npf.
 telemetry IN SRV 0 0 9167 s6.dist.npf.
 telemetry IN SRV 0 0 9167 s7.dist.npf.
