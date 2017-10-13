@@ -671,8 +671,6 @@ data:
     telemetry IN SRV 0 0 9167 xe2.d13.access.npf.
     telemetry IN SRV 0 0 9167 xf1.d13.access.npf.
     telemetry IN SRV 0 0 9167 xf2.d13.access.npf.
-    telemetry IN SRV 0 0 9167 xg1.d13.access.npf.
-    telemetry IN SRV 0 0 9167 xg2.d13.access.npf.
     telemetry IN SRV 0 0 9167 ya1.d13.access.npf.
     telemetry IN SRV 0 0 9167 yb1.d13.access.npf.
     telemetry IN SRV 0 0 9167 yc1.d13.access.npf.
