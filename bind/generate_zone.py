@@ -23,6 +23,11 @@ dash IN CNAME v1-grafana.monitoring.svc.cluster.local.
 prom IN CNAME prometheus.monitoring.svc.cluster.local.
 kube IN CNAME kubernetes-dashboard.kube-system.svc.cluster.local.
 alert IN CNAME alertmanager.monitoring.svc.cluster.local.
+avatar IN A 10.0.0.1
+ragnarok IN A 10.0.0.5
+kubectl IN A 172.20.11.100
+chimera IN A 172.20.11.101
+archon IN A 172.20.22.101
 scriptserver01 IN A 10.0.1.15
 """
 

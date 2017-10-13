@@ -23,7 +23,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2017101205 ; Serial
+        2017101206 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -36,6 +36,11 @@ data:
     prom IN CNAME prometheus.monitoring.svc.cluster.local.
     kube IN CNAME kubernetes-dashboard.kube-system.svc.cluster.local.
     alert IN CNAME alertmanager.monitoring.svc.cluster.local.
+    avatar IN A 10.0.0.1
+    ragnarok IN A 10.0.0.5
+    kubectl IN A 172.20.11.100
+    chimera IN A 172.20.11.101
+    archon IN A 172.20.22.101
     scriptserver01 IN A 10.0.1.15
 
     $ORIGIN access.npf.
