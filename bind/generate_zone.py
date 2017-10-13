@@ -1,6 +1,9 @@
 import datetime
 import csv
 import os
+import sys
+import pathlib
+from collections import defaultdict
 
 header = """
 $ORIGIN npf.
@@ -31,8 +34,29 @@ zone = header.replace(
     )
 )
 
+
 participants = os.path.join(os.path.dirname(__file__), 'network_data_participants.csv')
 others = os.path.join(os.path.dirname(__file__), 'network_data_other.csv')
+
+
+distmap = defaultdict(lambda: [])
+accessmap = {}
+for f in pathlib.Path(pathlib.Path(__file__).parent, 'participants').glob('dist*.txt'):
+    distname = f.stem[0] + f.stem[4:]
+    with f.open() as d:
+        for line in d:
+            name = line.casefold()[:3]
+            distmap[distname].append(name)
+            accessmap[name] = distname
+
+othernames = []
+for f in pathlib.Path(pathlib.Path(__file__).parent, 'other').glob('*.txt'):
+    with f.open() as d:
+        for line in d:
+            othernames.append(line.casefold().strip())
+
+# print(accessmap)
+# sys.exit(0)
 
 def gen(filepath):
     with open(filepath) as csvfile:
@@ -40,12 +64,19 @@ def gen(filepath):
                                 delimiter=',', quotechar='"')
         for row in reader:
             yield '{} IN A {}'.format(row['name'], row['ip'])
-            yield 'telemetry IN SRV 0 0 9167 {}.access.npf.'.format(row['name'])
+            if row['name'] in accessmap:
+                yield '{}.{} IN CNAME {}.access.npf.'.format(row['name'], accessmap[row['name']], row['name'])
+
+def telemetry():
+    for switch, dist in accessmap.items():
+        yield 'telemetry IN SRV 0 0 9167 {}.{}.access.npf.'.format(switch, dist)
+    for switch in othernames:
+        yield 'telemetry IN SRV 0 0 9167 {}.'.format(switch)
 
 zone = zone + '\n$ORIGIN access.npf.\n'
-zone = zone + '\n'.join(gen(participants))
-zone = zone + '\n'
-zone = zone + '\n'.join(gen(others))
+zone = zone + '\n'.join(gen(participants)) + '\n'
+zone = zone + '\n'.join(gen(others)) + '\n'
+zone = zone + '\n'.join(telemetry()) + '\n'
 zone = zone + '\n\n'
 zone = zone + open(os.path.join(os.path.dirname(__file__), 'dist')).read()
 print(zone)
