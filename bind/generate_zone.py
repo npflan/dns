@@ -16,7 +16,7 @@ $TTL 600
 		600 ; Expire
 		600) ; Minimum
 
-IN	NS	ns1.npf.
+    IN	NS	ns1.npf.
 
 ns1				IN	A	10.96.5.3
 dash IN CNAME v1-grafana.monitoring.svc.cluster.local.
@@ -39,49 +39,45 @@ zone = header.replace(
     )
 )
 
+dist_to_hostname_map = {'dist1': 'd1', 
+                        'dist2': 'd2', 
+                        'dist3': 'd3', 
+                        'dist4': 'd4', 
+                        'dist5': 'd5', 
+                        'dist6': 'd6', 
+                        'dist7': 'd7',
+                        'dist8': 'd8',
+                        'dist9': 'd9',
+                        'dist10': 'd10',
+                        'dist11': 'd11',
+                        'dist12': 'd12',
+                        'dist13': 'd13',
+                        'dist14': 'd14',
+                        'dist15': 'd15',
+                        'dist16': 'd16'
+                    }
+
 
 participants = os.path.join(os.path.dirname(__file__), 'network_data_participants.csv')
 others = os.path.join(os.path.dirname(__file__), 'network_data_other.csv')
 
 
-distmap = defaultdict(lambda: [])
-accessmap = {}
-for f in pathlib.Path(pathlib.Path(__file__).parent, 'participants').glob('dist*.txt'):
-    distname = f.stem[0] + f.stem[4:]
-    with f.open() as d:
-        for line in d:
-            name = line.casefold()[:3]
-            distmap[distname].append(name)
-            accessmap[name] = distname
-
-othernames = []
-for f in pathlib.Path(pathlib.Path(__file__).parent, 'other').glob('*.txt'):
-    with f.open() as d:
-        for line in d:
-            othernames.append(line.casefold().strip())
-
-# print(accessmap)
-# sys.exit(0)
-
 def gen(filepath):
     with open(filepath) as csvfile:
-        reader = csv.DictReader(csvfile, fieldnames=['name', 'ip', 'gateway'],
-                                delimiter=',', quotechar='"')
+        reader = csv.DictReader(csvfile, delimiter=',', quotechar='"')
         for row in reader:
-            yield '{} IN A {}'.format(row['name'], row['ip'])
-            if row['name'] in accessmap:
-                yield '{}.{} IN CNAME {}.access.npf.'.format(row['name'], accessmap[row['name']], row['name'])
+            yield '{} IN A {}'.format(row['Hostname'], row['Mgmt IP'])
+            if row['Distribution'] in dist_to_hostname_map:
+                yield '{}.{} IN CNAME {}.access.npf.'.format(row['Hostname'], dist_to_hostname_map[row['Distribution']], row['Hostname'])
+                yield 'telemetry IN SRV 0 0 9167 {}.{}.access.npf.'.format(row['Hostname'], dist_to_hostname_map[row['Distribution']])
+            else:
+                yield '{}.{} IN CNAME {}.access.npf.'.format(row['Hostname'], row['Distribution'], row['Hostname'])
+                yield 'telemetry IN SRV 0 0 9167 {}.{}.access.npf.'.format(row['Hostname'], row['Distribution'])
 
-def telemetry():
-    for switch, dist in accessmap.items():
-        yield 'telemetry IN SRV 0 0 9167 {}.{}.access.npf.'.format(switch, dist)
-    for switch in othernames:
-        yield 'telemetry IN SRV 0 0 9167 {}.'.format(switch)
 
 zone = zone + '\n$ORIGIN access.npf.\n'
 zone = zone + '\n'.join(gen(participants)) + '\n'
 zone = zone + '\n'.join(gen(others)) + '\n'
-zone = zone + '\n'.join(telemetry()) + '\n'
 zone = zone + '\n\n'
 zone = zone + open(os.path.join(os.path.dirname(__file__), 'dist')).read()
 print(zone)
