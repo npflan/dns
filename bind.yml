@@ -66,6 +66,8 @@ items:
                 path: named.conf
               - key: npf.zone
                 path: npf.zone
+              - key: 255.10.in-addr.arpa.zone
+                path: 255.10.in-addr.arpa.zone
 - kind: Service
   apiVersion: v1
   metadata:

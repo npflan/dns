@@ -23,6 +23,7 @@ dash IN CNAME v1-grafana.monitoring.svc.cluster.local.
 prom IN CNAME prometheus.monitoring.svc.cluster.local.
 kube IN CNAME kubernetes-dashboard.kube-system.svc.cluster.local.
 alert IN CNAME alertmanager.monitoring.svc.cluster.local.
+kibana IN CNAME kibana-logging.logging.svc.cluster.local.
 avatar IN A 10.0.0.1
 ragnarok IN A 10.0.0.5
 kubectl IN A 172.20.11.102
@@ -31,7 +32,30 @@ archon IN A 172.20.22.104
 scriptserver01 IN A 10.0.1.15
 """
 
+reverse_header = """
+$ORIGIN 255.10.in-addr.arpa.
+$TTL 600
+
+@	IN	SOA	ns1.npf.	hostmaster.npf. (
+		{{YMDS}} ; Serial
+		300 ; Refresh
+		150 ; Retry
+		600 ; Expire
+		600) ; Minimum
+
+    IN	NS	ns1.npf.
+
+"""
+
 zone = header.replace(
+    '{{YMDS}}',
+    '{:%Y%m%d}{:02d}'.format(
+        datetime.date.today(),
+        datetime.datetime.now().hour + 10 + datetime.datetime.now().minute//10
+    )
+)
+
+reverse_zone = reverse_header.replace(
     '{{YMDS}}',
     '{:%Y%m%d}{:02d}'.format(
         datetime.date.today(),
@@ -74,6 +98,16 @@ def gen(filepath):
                 yield '{}.{} IN CNAME {}.access.npf.'.format(row['Hostname'], row['Distribution'], row['Hostname'])
                 yield 'telemetry IN SRV 0 0 9167 {}.{}.access.npf.'.format(row['Hostname'], row['Distribution'])
 
+def gen_reverse(filepath):
+    with open(filepath) as csvfile:
+        reader = csv.DictReader(csvfile, delimiter=',', quotechar='"')
+        for row in reader:
+            ip_parts = row['Mgmt IP'].split('.')
+            if row['Distribution'] in dist_to_hostname_map:
+                yield '{}.{} IN PTR {}.{}.access.npf.'.format(ip_parts[3], ip_parts[2], row['Hostname'], dist_to_hostname_map[row['Distribution']])
+            else:
+                yield '{}.{} IN PTR {}.{}.access.npf.'.format(ip_parts[3], ip_parts[2], row['Hostname'], row['Distribution'])
+
 
 zone = zone + '\n$ORIGIN access.npf.\n'
 zone = zone + '\n'.join(gen(participants)) + '\n'
@@ -81,3 +115,8 @@ zone = zone + '\n'.join(gen(others)) + '\n'
 zone = zone + '\n\n'
 zone = zone + open(os.path.join(os.path.dirname(__file__), 'dist')).read()
 print(zone)
+
+reverse_zone = reverse_zone + '\n'.join(gen_reverse(participants)) + '\n'
+reverse_zone = reverse_zone + '\n'.join(gen_reverse(others)) + '\n'
+reverse_zone = reverse_zone + open(os.path.join(os.path.dirname(__file__), 'dist_reverse')).read()
+print(reverse_zone)
