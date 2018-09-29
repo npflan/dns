@@ -1399,6 +1399,33 @@ data:
     17.212 IN PTR crew4.d12.access.npf.
     15.206 IN PTR expo2.d6.access.npf.
     16.206 IN PTR expo3.d6.access.npf.
+    111.255 IN PTR c1.dist.npf.
+    222.255 IN PTR c2.dist.npf.
+    1.255   IN PTR d1.dist.npf.
+    2.255   IN PTR d2.dist.npf.
+    3.255   IN PTR d3.dist.npf.
+    4.255   IN PTR d4.dist.npf.
+    5.255   IN PTR d5.dist.npf.
+    6.255   IN PTR d6.dist.npf.
+    7.255   IN PTR d7.dist.npf.
+    8.255   IN PTR d8.dist.npf.
+    9.255   IN PTR d9.dist.npf.
+    10.255   IN PTR d10.dist.npf.
+    11.255   IN PTR d11.dist.npf.
+    12.255   IN PTR d12.dist.npf.
+    13.255   IN PTR d13.dist.npf.
+    14.255   IN PTR d14.dist.npf.
+    15.255   IN PTR d15.dist.npf.
+    16.255   IN PTR d16.dist.npf.
+    254.255  IN PTR e1.dist.npf.
+    253.255  IN PTR e2.dist.npf.
+    252.255  IN PTR e3.dist.npf.
+    251.255  IN PTR e4.dist.npf.
+    51.255   IN PTR s1.dist.npf.
+    52.255   IN PTR s2.dist.npf.
+    53.255   IN PTR s3.dist.npf.
+    253.215  IN PTR n1.nexus.npf.
+    254.215  IN PTR n1.nexus.npf.
 
 kind: ConfigMap
 metadata:

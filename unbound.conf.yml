@@ -62,6 +62,8 @@ data:
       private-domain: "cluster.local."
       private-domain: "255.10.in-addr.arpa."
 
+      local-zone: "10.in-addr.arpa" nodefault
+
     # Enable remote control for metrics
     remote-control:
       control-enable: yes
