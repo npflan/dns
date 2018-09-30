@@ -58,9 +58,14 @@ data:
       domain-insecure: "npf."
       domain-insecure: "cluster.local."
       domain-insecure: "255.10.in-addr.arpa."
+      domain-insecure: "svc.npf.dk."
+      domain-insecure: "svr.npf.dk."
+      domain-insecure: "server.npf."
       private-domain: "npf."
       private-domain: "cluster.local."
-      private-domain: "255.10.in-addr.arpa."
+      private-domain: "svc.npf.dk."
+      private-domain: "svr.npf.dk."
+      private-domain: "server.npf."
 
       local-zone: "10.in-addr.arpa" nodefault
 
@@ -80,17 +85,39 @@ data:
       stub-addr: 10.96.0.10
 
     stub-zone:
-      name: "npf."
-      stub-addr: 10.96.5.3@5353
+      name: "100.10.in-addr.arpa."
+      stub-addr: 10.101.128.128
+
+    stub-zone:
+      name: "101.10.in-addr.arpa."
+      stub-addr: 10.101.128.128
 
     stub-zone:
       name: "255.10.in-addr.arpa."
       stub-addr: 10.96.5.3@5353
 
+    stub-zone:
+      name: "server.npf."
+      stub-addr: 10.101.128.128
+
+    stub-zone:
+      name: "npf."
+      stub-addr: 10.96.5.3@5353
+
+    forward-zone:
+      name: "svc.npf.dk."
+      forward-addr: 10.101.128.128
+      forward-first: yes
+
+    forward-zone:
+      name: "svr.npf.dk."
+      forward-addr: 10.101.128.128
+      forward-first: yes
+
     forward-zone:
       name: "."
+      forward-addr: 1.1.1.1
       forward-addr: 8.8.8.8
-      forward-addr: 8.8.4.4
       forward-first: yes
   trusted-key.key: |
     . IN DNSKEY 257 3 8 AwEAAaz/tAm8yTn4Mfeh5eyI96WSVexTBAvkMgJzkKTOiW1vkIbzxeF3+/4RgWOq7HrxRixHlFlExOLAJr5emLvN7SWXgnLh4+B5xQlNVz8Og8kvArMtNROxVQuCaSnIDdD5LKyWbRd2n9WGe2R8PzgCmr3EgVLrjyBxWezF0jLHwVN8efS3rCj/EWgvIWgb9tarpVUDK/b58Da+sqqls3eNbuv7pr+eoZG+SrDK6nWeL3c6H5Apxz7LjVc1uTIdsIXxuOLYA4/ilBmSVIzuDWfdRUfhHdY6+cn8HFRm+2hM8AnXGXws9555KrUB5qihylGa8subX2Nn6UwNR1AkUTV74bU=
