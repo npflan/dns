@@ -25,27 +25,28 @@ data:
         file "/bind/config/255.10.in-addr.arpa.zone";
     };
   npf.zone: |
-    $TTL 600
     $ORIGIN npf.
+    $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2018092901 ; Serial
-        300 ; Refresh
-        150 ; Retry
-        600 ; Expire
-        600 ; Minimum
-    ) 
+            2018100938 ; Serial
+            300 ; Refresh
+            150 ; Retry
+            600 ; Expire
+            600) ; Minimum
 
         IN	NS	ns1.npf.
 
-    ns1  IN      A       10.96.5.3
-    dash IN CNAME v1-grafana.monitoring.svc.cluster.local.
+    ns1				IN	A	10.96.5.3
+    dash IN CNAME grafana.monitoring.svc.cluster.local.
     prom IN CNAME prometheus.monitoring.svc.cluster.local.
     kube IN CNAME kubernetes-dashboard.kube-system.svc.cluster.local.
     alert IN CNAME alertmanager.monitoring.svc.cluster.local.
     kibana IN CNAME kibana-logging.logging.svc.cluster.local.
     avatar IN A 10.0.0.1
-    ragnarok IN A 10.0.0.5
+    leviathan IN A 10.0.0.5
+    ragnarok IN A 10.0.0.9
+    erebus IN A 10.0.0.13
     kubectl IN A 172.20.11.102
     chimera IN A 172.20.11.104
     archon IN A 172.20.22.104
@@ -890,31 +891,31 @@ data:
     scene.e4 IN CNAME scene.access.npf.
     telemetry IN SRV 0 0 9167 scene.e4.access.npf.
     expo1 IN A 10.255.251.4
-    expo1.e4 IN CNAME expo1.e4.access.npf.
+    expo1.e4 IN CNAME expo1.access.npf.
     telemetry IN SRV 0 0 9167 expo1.e4.access.npf.
     expo2 IN A 10.255.251.5
-    expo2.e4 IN CNAME expo2.e4.access.npf.
+    expo2.e4 IN CNAME expo2.access.npf.
     telemetry IN SRV 0 0 9167 expo2.e4.access.npf.
     expo1 IN A 10.255.205.2
-    expo1.d5 IN CNAME expo1.d5.access.npf.
+    expo1.d5 IN CNAME expo1.access.npf.
     telemetry IN SRV 0 0 9167 expo1.d5.access.npf.
     expo2 IN A 10.255.205.3
-    expo2.d5 IN CNAME expo2.d5.access.npf.
+    expo2.d5 IN CNAME expo2.access.npf.
     telemetry IN SRV 0 0 9167 expo2.d5.access.npf.
     expo3 IN A 10.255.205.4
-    expo3.d5 IN CNAME expo3.d5.access.npf.
+    expo3.d5 IN CNAME expo3.access.npf.
     telemetry IN SRV 0 0 9167 expo3.d5.access.npf.
     expo4 IN A 10.255.205.5
-    expo4.d5 IN CNAME expo4.d5.access.npf.
+    expo4.d5 IN CNAME expo4.access.npf.
     telemetry IN SRV 0 0 9167 expo4.d5.access.npf.
     expo5 IN A 10.255.205.6
-    expo5.d5 IN CNAME expo5.d5.access.npf.
+    expo5.d5 IN CNAME expo5.access.npf.
     telemetry IN SRV 0 0 9167 expo5.d5.access.npf.
     expo6 IN A 10.255.205.7
-    expo6.d5 IN CNAME expo6.d5.access.npf.
+    expo6.d5 IN CNAME expo6.access.npf.
     telemetry IN SRV 0 0 9167 expo6.d5.access.npf.
     expo7 IN A 10.255.205.8
-    expo7.d5 IN CNAME expo7.d5.access.npf.
+    expo7.d5 IN CNAME expo7.access.npf.
     telemetry IN SRV 0 0 9167 expo7.d5.access.npf.
     helpdesk1 IN A 10.255.205.9
     helpdesk1.d5 IN CNAME helpdesk1.access.npf.
@@ -962,7 +963,7 @@ data:
     gamecrew12.d6 IN CNAME gamecrew12.access.npf.
     telemetry IN SRV 0 0 9167 gamecrew12.d6.access.npf.
     expo1 IN A 10.255.206.14
-    expo1.d6 IN CNAME expo1.d6.access.npf.
+    expo1.d6 IN CNAME expo1.access.npf.
     telemetry IN SRV 0 0 9167 expo1.d6.access.npf.
     twitch1 IN A 10.255.210.16
     twitch1.d10 IN CNAME twitch1.access.npf.
@@ -989,22 +990,22 @@ data:
     twitch8.d11 IN CNAME twitch8.access.npf.
     telemetry IN SRV 0 0 9167 twitch8.d11.access.npf.
     crew1 IN A 10.255.212.14
-    crew1.d12 IN CNAME crew1.d12.access.npf.
+    crew1.d12 IN CNAME crew1.access.npf.
     telemetry IN SRV 0 0 9167 crew1.d12.access.npf.
     crew2 IN A 10.255.212.15
-    crew2.d12 IN CNAME crew2.d12.access.npf.
+    crew2.d12 IN CNAME crew2.access.npf.
     telemetry IN SRV 0 0 9167 crew2.d12.access.npf.
     crew3 IN A 10.255.212.16
-    crew3.d12 IN CNAME crew3.d12.access.npf.
+    crew3.d12 IN CNAME crew3.access.npf.
     telemetry IN SRV 0 0 9167 crew3.d12.access.npf.
     crew4 IN A 10.255.212.17
-    crew4.d12 IN CNAME crew4.d12.access.npf.
+    crew4.d12 IN CNAME crew4.access.npf.
     telemetry IN SRV 0 0 9167 crew4.d12.access.npf.
     expo2 IN A 10.255.206.15
-    expo2.d6 IN CNAME expo2.d6.access.npf.
+    expo2.d6 IN CNAME expo2.access.npf.
     telemetry IN SRV 0 0 9167 expo2.d6.access.npf.
     expo3 IN A 10.255.206.16
-    expo3.d6 IN CNAME expo3.d6.access.npf.
+    expo3.d6 IN CNAME expo3.access.npf.
     telemetry IN SRV 0 0 9167 expo3.d6.access.npf.
 
 
@@ -1034,6 +1035,8 @@ data:
     s1 IN A 10.255.255.51
     s2 IN A 10.255.255.52
     s3 IN A 10.255.255.53
+    n3k1 IN A 10.255.128.2
+    n3k2 IN A 10.255.128.3
     telemetry IN SRV 0 0 9167 c1.dist.npf.
     telemetry IN SRV 0 0 9167 c2.dist.npf.
     telemetry IN SRV 0 0 9167 d1.dist.npf.
@@ -1059,27 +1062,21 @@ data:
     telemetry IN SRV 0 0 9167 s1.dist.npf.
     telemetry IN SRV 0 0 9167 s2.dist.npf.
     telemetry IN SRV 0 0 9167 s3.dist.npf.
-
-    $ORIGIN nexus.npf.
-    n1 IN A 10.255.215.253
-    n2 IN A 10.255.215.254
-
-    telemetry IN SRV 0 0 9167 n1.nexus.npf.
-    telemetry IN SRV 0 0 9167 n2.nexus.npf.
+    telemetry IN SRV 0 0 9167 n3k1.dist.npf.
+    telemetry IN SRV 0 0 9167 n3k2.dist.npf.
 
   255.10.in-addr.arpa.zone: |
-    $TTL 600
     $ORIGIN 255.10.in-addr.arpa.
+    $TTL 600
 
-    @     IN    SOA ns1.npf. hostmaster.npf. (
-                    2018092930 ; Serial
-                    300 ; Refresh
-                    150 ; Retry
-                    600 ; Expire
-                    600 ; Minimum
-    ) 
+    @	IN	SOA	ns1.npf.	hostmaster.npf. (
+            2018100938 ; Serial
+            300 ; Refresh
+            150 ; Retry
+            600 ; Expire
+            600) ; Minimum
 
-          IN NS  ns1.npf.
+        IN	NS	ns1.npf.
 
     2.207 IN PTR aa1.d7.access.npf.
     3.207 IN PTR aa2.d7.access.npf.
@@ -1424,8 +1421,8 @@ data:
     51.255   IN PTR s1.dist.npf.
     52.255   IN PTR s2.dist.npf.
     53.255   IN PTR s3.dist.npf.
-    253.215  IN PTR n1.nexus.npf.
-    254.215  IN PTR n1.nexus.npf.
+    1.128  IN PTR n3k1.dist.npf.
+    2.128  IN PTR n3k2.dist.npf.
 
 kind: ConfigMap
 metadata:

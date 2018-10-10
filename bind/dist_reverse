@@ -23,6 +23,5 @@
 51.255   IN PTR s1.dist.npf.
 52.255   IN PTR s2.dist.npf.
 53.255   IN PTR s3.dist.npf.
-
-253.215  IN PTR n1.nexus.npf.
-254.215  IN PTR n1.nexus.npf.
+1.128  IN PTR n3k1.dist.npf.
+2.128  IN PTR n3k2.dist.npf.
