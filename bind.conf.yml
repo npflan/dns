@@ -29,7 +29,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-            2018100938 ; Serial
+            2018101027 ; Serial
             300 ; Refresh
             150 ; Retry
             600 ; Expire
@@ -890,33 +890,33 @@ data:
     scene IN A 10.255.251.3
     scene.e4 IN CNAME scene.access.npf.
     telemetry IN SRV 0 0 9167 scene.e4.access.npf.
-    expo1 IN A 10.255.251.4
-    expo1.e4 IN CNAME expo1.access.npf.
-    telemetry IN SRV 0 0 9167 expo1.e4.access.npf.
-    expo2 IN A 10.255.251.5
-    expo2.e4 IN CNAME expo2.access.npf.
-    telemetry IN SRV 0 0 9167 expo2.e4.access.npf.
-    expo1 IN A 10.255.205.2
-    expo1.d5 IN CNAME expo1.access.npf.
-    telemetry IN SRV 0 0 9167 expo1.d5.access.npf.
-    expo2 IN A 10.255.205.3
-    expo2.d5 IN CNAME expo2.access.npf.
-    telemetry IN SRV 0 0 9167 expo2.d5.access.npf.
-    expo3 IN A 10.255.205.4
-    expo3.d5 IN CNAME expo3.access.npf.
-    telemetry IN SRV 0 0 9167 expo3.d5.access.npf.
-    expo4 IN A 10.255.205.5
-    expo4.d5 IN CNAME expo4.access.npf.
-    telemetry IN SRV 0 0 9167 expo4.d5.access.npf.
-    expo5 IN A 10.255.205.6
-    expo5.d5 IN CNAME expo5.access.npf.
-    telemetry IN SRV 0 0 9167 expo5.d5.access.npf.
-    expo6 IN A 10.255.205.7
-    expo6.d5 IN CNAME expo6.access.npf.
-    telemetry IN SRV 0 0 9167 expo6.d5.access.npf.
-    expo7 IN A 10.255.205.8
-    expo7.d5 IN CNAME expo7.access.npf.
-    telemetry IN SRV 0 0 9167 expo7.d5.access.npf.
+    expo1.e4 IN A 10.255.251.4
+    expo1.e4.e4 IN CNAME expo1.e4.access.npf.
+    telemetry IN SRV 0 0 9167 expo1.e4.e4.access.npf.
+    expo2.e4 IN A 10.255.251.5
+    expo2.e4.e4 IN CNAME expo2.e4.access.npf.
+    telemetry IN SRV 0 0 9167 expo2.e4.e4.access.npf.
+    expo1.d5 IN A 10.255.205.2
+    expo1.d5.d5 IN CNAME expo1.d5.access.npf.
+    telemetry IN SRV 0 0 9167 expo1.d5.d5.access.npf.
+    expo2.d5 IN A 10.255.205.3
+    expo2.d5.d5 IN CNAME expo2.d5.access.npf.
+    telemetry IN SRV 0 0 9167 expo2.d5.d5.access.npf.
+    expo3.d5 IN A 10.255.205.4
+    expo3.d5.d5 IN CNAME expo3.d5.access.npf.
+    telemetry IN SRV 0 0 9167 expo3.d5.d5.access.npf.
+    expo4.d5 IN A 10.255.205.5
+    expo4.d5.d5 IN CNAME expo4.d5.access.npf.
+    telemetry IN SRV 0 0 9167 expo4.d5.d5.access.npf.
+    expo5.d5 IN A 10.255.205.6
+    expo5.d5.d5 IN CNAME expo5.d5.access.npf.
+    telemetry IN SRV 0 0 9167 expo5.d5.d5.access.npf.
+    expo6.d5 IN A 10.255.205.7
+    expo6.d5.d5 IN CNAME expo6.d5.access.npf.
+    telemetry IN SRV 0 0 9167 expo6.d5.d5.access.npf.
+    expo7.d5 IN A 10.255.205.8
+    expo7.d5.d5 IN CNAME expo7.d5.access.npf.
+    telemetry IN SRV 0 0 9167 expo7.d5.d5.access.npf.
     helpdesk1 IN A 10.255.205.9
     helpdesk1.d5 IN CNAME helpdesk1.access.npf.
     telemetry IN SRV 0 0 9167 helpdesk1.d5.access.npf.
@@ -962,12 +962,12 @@ data:
     gamecrew12 IN A 10.255.206.13
     gamecrew12.d6 IN CNAME gamecrew12.access.npf.
     telemetry IN SRV 0 0 9167 gamecrew12.d6.access.npf.
-    expo1 IN A 10.255.206.14
-    expo1.d6 IN CNAME expo1.access.npf.
-    telemetry IN SRV 0 0 9167 expo1.d6.access.npf.
+    expo1.d6 IN A 10.255.206.14
+    expo1.d6.d6 IN CNAME expo1.d6.access.npf.
+    telemetry IN SRV 0 0 9167 expo1.d6.d6.access.npf.
     twitch1 IN A 10.255.210.16
-    twitch1.d10 IN CNAME twitch1.access.npf.
-    telemetry IN SRV 0 0 9167 twitch1.d10.access.npf.
+    twitch1.20 IN CNAME twitch1.access.npf.
+    telemetry IN SRV 0 0 9167 twitch1.20.access.npf.
     twitch2 IN A 10.255.210.17
     twitch2.d10 IN CNAME twitch2.access.npf.
     telemetry IN SRV 0 0 9167 twitch2.d10.access.npf.
@@ -981,32 +981,32 @@ data:
     twitch5.d11 IN CNAME twitch5.access.npf.
     telemetry IN SRV 0 0 9167 twitch5.d11.access.npf.
     twitch6 IN A 10.255.211.17
-    twitch6.d11 IN CNAME twitch6.access.npf.
-    telemetry IN SRV 0 0 9167 twitch6.d11.access.npf.
+    twitch6.20 IN CNAME twitch6.access.npf.
+    telemetry IN SRV 0 0 9167 twitch6.20.access.npf.
     twitch7 IN A 10.255.211.18
     twitch7.d11 IN CNAME twitch7.access.npf.
     telemetry IN SRV 0 0 9167 twitch7.d11.access.npf.
     twitch8 IN A 10.255.211.19
     twitch8.d11 IN CNAME twitch8.access.npf.
     telemetry IN SRV 0 0 9167 twitch8.d11.access.npf.
-    crew1 IN A 10.255.212.14
-    crew1.d12 IN CNAME crew1.access.npf.
-    telemetry IN SRV 0 0 9167 crew1.d12.access.npf.
-    crew2 IN A 10.255.212.15
-    crew2.d12 IN CNAME crew2.access.npf.
-    telemetry IN SRV 0 0 9167 crew2.d12.access.npf.
-    crew3 IN A 10.255.212.16
-    crew3.d12 IN CNAME crew3.access.npf.
-    telemetry IN SRV 0 0 9167 crew3.d12.access.npf.
-    crew4 IN A 10.255.212.17
-    crew4.d12 IN CNAME crew4.access.npf.
-    telemetry IN SRV 0 0 9167 crew4.d12.access.npf.
-    expo2 IN A 10.255.206.15
-    expo2.d6 IN CNAME expo2.access.npf.
-    telemetry IN SRV 0 0 9167 expo2.d6.access.npf.
-    expo3 IN A 10.255.206.16
-    expo3.d6 IN CNAME expo3.access.npf.
-    telemetry IN SRV 0 0 9167 expo3.d6.access.npf.
+    crew1.d12 IN A 10.255.212.14
+    crew1.d12.d12 IN CNAME crew1.d12.access.npf.
+    telemetry IN SRV 0 0 9167 crew1.d12.d12.access.npf.
+    crew2.d12 IN A 10.255.212.15
+    crew2.d12.d12 IN CNAME crew2.d12.access.npf.
+    telemetry IN SRV 0 0 9167 crew2.d12.d12.access.npf.
+    crew3.d12 IN A 10.255.212.16
+    crew3.d12.d12 IN CNAME crew3.d12.access.npf.
+    telemetry IN SRV 0 0 9167 crew3.d12.d12.access.npf.
+    crew4.d12 IN A 10.255.212.17
+    crew4.d12.d12 IN CNAME crew4.d12.access.npf.
+    telemetry IN SRV 0 0 9167 crew4.d12.d12.access.npf.
+    expo2.d6 IN A 10.255.206.15
+    expo2.d6.d6 IN CNAME expo2.d6.access.npf.
+    telemetry IN SRV 0 0 9167 expo2.d6.d6.access.npf.
+    expo3.d6 IN A 10.255.206.16
+    expo3.d6.d6 IN CNAME expo3.d6.access.npf.
+    telemetry IN SRV 0 0 9167 expo3.d6.d6.access.npf.
 
 
     $ORIGIN dist.npf.
@@ -1070,7 +1070,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-            2018100938 ; Serial
+            2018101027 ; Serial
             300 ; Refresh
             150 ; Retry
             600 ; Expire
@@ -1357,15 +1357,15 @@ data:
     3.252 IN PTR pro2.e3.access.npf.
     2.251 IN PTR cast.e4.access.npf.
     3.251 IN PTR scene.e4.access.npf.
-    4.251 IN PTR expo1.e4.access.npf.
-    5.251 IN PTR expo2.e4.access.npf.
-    2.205 IN PTR expo1.d5.access.npf.
-    3.205 IN PTR expo2.d5.access.npf.
-    4.205 IN PTR expo3.d5.access.npf.
-    5.205 IN PTR expo4.d5.access.npf.
-    6.205 IN PTR expo5.d5.access.npf.
-    7.205 IN PTR expo6.d5.access.npf.
-    8.205 IN PTR expo7.d5.access.npf.
+    4.251 IN PTR expo1.e4.e4.access.npf.
+    5.251 IN PTR expo2.e4.e4.access.npf.
+    2.205 IN PTR expo1.d5.d5.access.npf.
+    3.205 IN PTR expo2.d5.d5.access.npf.
+    4.205 IN PTR expo3.d5.d5.access.npf.
+    5.205 IN PTR expo4.d5.d5.access.npf.
+    6.205 IN PTR expo5.d5.d5.access.npf.
+    7.205 IN PTR expo6.d5.d5.access.npf.
+    8.205 IN PTR expo7.d5.d5.access.npf.
     9.205 IN PTR helpdesk1.d5.access.npf.
     10.205 IN PTR helpdesk2.d5.access.npf.
     11.205 IN PTR helpdesk3.d5.access.npf.
@@ -1381,21 +1381,21 @@ data:
     11.206 IN PTR gamecrew10.d6.access.npf.
     12.206 IN PTR gamecrew11.d6.access.npf.
     13.206 IN PTR gamecrew12.d6.access.npf.
-    14.206 IN PTR expo1.d6.access.npf.
-    16.210 IN PTR twitch1.d10.access.npf.
+    14.206 IN PTR expo1.d6.d6.access.npf.
+    16.210 IN PTR twitch1.20.access.npf.
     17.210 IN PTR twitch2.d10.access.npf.
     18.210 IN PTR twitch3.d10.access.npf.
     19.210 IN PTR twitch4.d10.access.npf.
     16.211 IN PTR twitch5.d11.access.npf.
-    17.211 IN PTR twitch6.d11.access.npf.
+    17.211 IN PTR twitch6.20.access.npf.
     18.211 IN PTR twitch7.d11.access.npf.
     19.211 IN PTR twitch8.d11.access.npf.
-    14.212 IN PTR crew1.d12.access.npf.
-    15.212 IN PTR crew2.d12.access.npf.
-    16.212 IN PTR crew3.d12.access.npf.
-    17.212 IN PTR crew4.d12.access.npf.
-    15.206 IN PTR expo2.d6.access.npf.
-    16.206 IN PTR expo3.d6.access.npf.
+    14.212 IN PTR crew1.d12.d12.access.npf.
+    15.212 IN PTR crew2.d12.d12.access.npf.
+    16.212 IN PTR crew3.d12.d12.access.npf.
+    17.212 IN PTR crew4.d12.d12.access.npf.
+    15.206 IN PTR expo2.d6.d6.access.npf.
+    16.206 IN PTR expo3.d6.d6.access.npf.
     111.255 IN PTR c1.dist.npf.
     222.255 IN PTR c2.dist.npf.
     1.255   IN PTR d1.dist.npf.

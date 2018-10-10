@@ -52,7 +52,7 @@ data:
 
       # Add local zone for Cisco wireless controller
       local-zone: "CISCO-CAPWAP-CONTROLLER.npf." static
-      local-data: "CISCO-CAPWAP-CONTROLLER.npf. IN A 10.0.1.11"
+      local-data: "CISCO-CAPWAP-CONTROLLER.npf. IN A 10.0.248.140"
 
       # Mark domains as insecure to serve as local zones
       domain-insecure: "npf."
