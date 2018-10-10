@@ -29,7 +29,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-            2018101027 ; Serial
+            2018101034 ; Serial
             300 ; Refresh
             150 ; Retry
             600 ; Expire
@@ -482,24 +482,6 @@ data:
     eb2 IN A 10.255.204.11
     eb2.d4 IN CNAME eb2.access.npf.
     telemetry IN SRV 0 0 9167 eb2.d4.access.npf.
-    ec1 IN A 10.255.204.12
-    ec1.d4 IN CNAME ec1.access.npf.
-    telemetry IN SRV 0 0 9167 ec1.d4.access.npf.
-    ec2 IN A 10.255.204.13
-    ec2.d4 IN CNAME ec2.access.npf.
-    telemetry IN SRV 0 0 9167 ec2.d4.access.npf.
-    ed1 IN A 10.255.204.14
-    ed1.d4 IN CNAME ed1.access.npf.
-    telemetry IN SRV 0 0 9167 ed1.d4.access.npf.
-    ed2 IN A 10.255.204.15
-    ed2.d4 IN CNAME ed2.access.npf.
-    telemetry IN SRV 0 0 9167 ed2.d4.access.npf.
-    ee1 IN A 10.255.204.16
-    ee1.d4 IN CNAME ee1.access.npf.
-    telemetry IN SRV 0 0 9167 ee1.d4.access.npf.
-    ee2 IN A 10.255.204.17
-    ee2.d4 IN CNAME ee2.access.npf.
-    telemetry IN SRV 0 0 9167 ee2.d4.access.npf.
     fa1 IN A 10.255.201.4
     fa1.d1 IN CNAME fa1.access.npf.
     telemetry IN SRV 0 0 9167 fa1.d1.access.npf.
@@ -860,12 +842,6 @@ data:
     crew8 IN A 10.255.254.11
     crew8.e1 IN CNAME crew8.access.npf.
     telemetry IN SRV 0 0 9167 crew8.e1.access.npf.
-    crew9 IN A 10.255.254.12
-    crew9.e1 IN CNAME crew9.access.npf.
-    telemetry IN SRV 0 0 9167 crew9.e1.access.npf.
-    crew10 IN A 10.255.254.13
-    crew10.e1 IN CNAME crew10.access.npf.
-    telemetry IN SRV 0 0 9167 crew10.e1.access.npf.
     shop1 IN A 10.255.253.2
     shop1.e2 IN CNAME shop1.access.npf.
     telemetry IN SRV 0 0 9167 shop1.e2.access.npf.

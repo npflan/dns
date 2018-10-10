@@ -105,6 +105,24 @@ items:
 - kind: Service
   apiVersion: v1
   metadata:
+    name: unbound-secondary
+    namespace: dns
+  spec:
+    clusterIP: 10.96.5.2
+    selector:
+      app: unbound
+    ports:
+      - name: dns-tcp
+        port: 53
+        protocol: TCP
+        targetPort: 53
+      - name: dns-udp
+        port: 53
+        protocol: UDP
+        targetPort: 53
+- kind: Service
+  apiVersion: v1
+  metadata:
     name: unbound-metrics
     namespace: dns
   spec:

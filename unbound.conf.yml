@@ -61,11 +61,13 @@ data:
       domain-insecure: "svc.npf.dk."
       domain-insecure: "svr.npf.dk."
       domain-insecure: "server.npf."
+      domain-insecure: "srv.minserver.dk."
       private-domain: "npf."
       private-domain: "cluster.local."
       private-domain: "svc.npf.dk."
       private-domain: "svr.npf.dk."
       private-domain: "server.npf."
+      private-domain: "srv.minserver.dk."
 
       local-zone: "10.in-addr.arpa" nodefault
 
@@ -98,6 +100,10 @@ data:
 
     stub-zone:
       name: "server.npf."
+      stub-addr: 10.101.128.128
+
+    stub-zone:
+      name: "srv.minserver.dk."
       stub-addr: 10.101.128.128
 
     stub-zone:
