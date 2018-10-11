@@ -89,6 +89,10 @@ items:
   metadata:
     name: unbound
     namespace: dns
+    annotations:
+      preomtheus.io/path: /merics
+      prometheus.io/port: "9167"
+      prometheus.io/scrape: "true"
   spec:
     clusterIP: 10.96.5.1
     selector:
@@ -120,17 +124,3 @@ items:
         port: 53
         protocol: UDP
         targetPort: 53
-- kind: Service
-  apiVersion: v1
-  metadata:
-    name: unbound-metrics
-    namespace: dns
-  spec:
-    clusterIP: None
-    selector:
-      app: unbound
-    ports:
-      - name: dns-metrics
-        port: 9167
-        protocol: TCP
-        targetPort: 9167
