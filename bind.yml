@@ -27,6 +27,11 @@ items:
                       values:
                       - bind
                 topologyKey: "kubernetes.io/hostname"
+        tolerations:
+        - key: "critical"
+          operator: "Equal"
+          value: "yes"
+          effect: "NoSchedule"
         containers:
         - name: bind
           image: npflan/bind:2.0
