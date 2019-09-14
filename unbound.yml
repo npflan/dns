@@ -16,6 +16,10 @@ items:
       metadata:
         labels:
           app: unbound
+        annotations:
+          prometheus.io/scrape: "true"
+          prometheus.io/port: "9167"
+          preomtheus.io/path: "/merics"
       spec:
         affinity:
           podAntiAffinity:
@@ -94,10 +98,6 @@ items:
   metadata:
     name: unbound
     namespace: dns
-    annotations:
-      preomtheus.io/path: /merics
-      prometheus.io/port: "9167"
-      prometheus.io/scrape: "true"
   spec:
     clusterIP: 10.96.5.1
     selector:
