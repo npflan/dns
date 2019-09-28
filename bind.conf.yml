@@ -43,6 +43,8 @@ data:
     kube IN CNAME kubernetes-dashboard.kube-system.svc.cluster.local.
     alert IN CNAME alertmanager.monitoring.svc.cluster.local.
     kibana IN CNAME kibana-logging.logging.svc.cluster.local.
+    shinobi IN CNAME shinobi.shinobi.svc.cluster.local.
+    heatmap IN CNAME sw-heatmap.sw-heatmap.svc.cluster.local.
     avatar IN A 10.0.0.1
     leviathan IN A 10.0.0.5
     ragnarok IN A 10.0.0.9
