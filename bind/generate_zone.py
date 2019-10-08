@@ -19,11 +19,11 @@ $TTL 600
     IN	NS	ns1.npf.
 
 ns1				IN	A	10.96.5.3
-dash IN CNAME grafana.monitoring.svc.cluster.local.
-prom IN CNAME prometheus.monitoring.svc.cluster.local.
-kube IN CNAME kubernetes-dashboard.kube-system.svc.cluster.local.
-alert IN CNAME alertmanager.monitoring.svc.cluster.local.
-kibana IN CNAME kibana-logging.logging.svc.cluster.local.
+dash IN CNAME grafana.grafana.svc.cluster.local.
+prom IN CNAME prometheus.prometheus.svc.cluster.local.
+alert IN CNAME alertmanager.prometheus.svc.cluster.local.
+shinobi IN CNAME shinobi.shinobi.svc.cluster.local.
+heatmap IN CNAME sw-heatmap.sw-heatmap.svc.cluster.local.
 avatar IN A 10.0.0.1
 leviathan IN A 10.0.0.5
 ragnarok IN A 10.0.0.9
