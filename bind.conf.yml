@@ -30,7 +30,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2019100934 ; Serial
+        2019100936 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -947,16 +947,16 @@ data:
     expo1.e1 IN A 10.255.254.32
     expo1.e1.d6 IN CNAME expo1.e1.access.npf.
     telemetry IN SRV 0 0 9167 expo1.e1.d6.access.npf.
-    twitch1 IN A 10.255.210.16
+    twitch1 IN A 10.255.211.12
     twitch1.d11 IN CNAME twitch1.access.npf.
     telemetry IN SRV 0 0 9167 twitch1.d11.access.npf.
-    twitch2 IN A 10.255.210.17
+    twitch2 IN A 10.255.211.13
     twitch2.d11 IN CNAME twitch2.access.npf.
     telemetry IN SRV 0 0 9167 twitch2.d11.access.npf.
-    twitch3 IN A 10.255.210.18
+    twitch3 IN A 10.255.211.14
     twitch3.d11 IN CNAME twitch3.access.npf.
     telemetry IN SRV 0 0 9167 twitch3.d11.access.npf.
-    twitch4 IN A 10.255.210.19
+    twitch4 IN A 10.255.211.15
     twitch4.d11 IN CNAME twitch4.access.npf.
     telemetry IN SRV 0 0 9167 twitch4.d11.access.npf.
     twitch5 IN A 10.255.211.16
@@ -1055,7 +1055,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2019100933 ; Serial
+        2019100936 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -1360,10 +1360,10 @@ data:
     30.254 IN PTR gamecrew11.d6.access.npf.
     31.254 IN PTR gamecrew12.d6.access.npf.
     32.254 IN PTR expo1.e1.d6.access.npf.
-    16.210 IN PTR twitch1.d11.access.npf.
-    17.210 IN PTR twitch2.d11.access.npf.
-    18.210 IN PTR twitch3.d11.access.npf.
-    19.210 IN PTR twitch4.d11.access.npf.
+    12.211 IN PTR twitch1.d11.access.npf.
+    13.211 IN PTR twitch2.d11.access.npf.
+    14.211 IN PTR twitch3.d11.access.npf.
+    15.211 IN PTR twitch4.d11.access.npf.
     16.211 IN PTR twitch5.d11.access.npf.
     17.211 IN PTR twitch6.d11.access.npf.
     18.211 IN PTR twitch7.d11.access.npf.
