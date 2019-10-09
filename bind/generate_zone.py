@@ -24,6 +24,8 @@ prom IN CNAME prometheus.prometheus.svc.cluster.local.
 alert IN CNAME alertmanager.prometheus.svc.cluster.local.
 shinobi IN CNAME shinobi.shinobi.svc.cluster.local.
 heatmap IN CNAME sw-heatmap.sw-heatmap.svc.cluster.local.
+gaas IN CNAME gaas-portal.gaas.svc.cluster.local.
+
 avatar IN A 10.0.0.1
 leviathan IN A 10.0.0.5
 ragnarok IN A 10.0.0.9

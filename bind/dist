@@ -24,8 +24,8 @@ e4 IN A 10.255.255.251
 s1 IN A 10.255.255.51
 s2 IN A 10.255.255.52
 s3 IN A 10.255.255.53
-n3k1 IN A 10.255.128.2
-n3k2 IN A 10.255.128.3
+n3k1 IN A 10.255.200.11
+n3k2 IN A 10.255.200.139
 telemetry IN SRV 0 0 9167 c1.dist.npf.
 telemetry IN SRV 0 0 9167 c2.dist.npf.
 telemetry IN SRV 0 0 9167 d1.dist.npf.

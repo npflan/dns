@@ -24,16 +24,17 @@ data:
         type master;
         file "/bind/config/255.10.in-addr.arpa.zone";
     };
+
   npf.zone: |
     $ORIGIN npf.
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-            2018101034 ; Serial
-            300 ; Refresh
-            150 ; Retry
-            600 ; Expire
-            600) ; Minimum
+        2019100933 ; Serial
+        300 ; Refresh
+        150 ; Retry
+        600 ; Expire
+        600) ; Minimum
 
         IN	NS	ns1.npf.
 
@@ -43,6 +44,8 @@ data:
     alert IN CNAME alertmanager.prometheus.svc.cluster.local.
     shinobi IN CNAME shinobi.shinobi.svc.cluster.local.
     heatmap IN CNAME sw-heatmap.sw-heatmap.svc.cluster.local.
+    gaas IN CNAME gaas-portal.gaas.svc.cluster.local.
+
     avatar IN A 10.0.0.1
     leviathan IN A 10.0.0.5
     ragnarok IN A 10.0.0.9
@@ -509,28 +512,28 @@ data:
     fj1 IN A 10.255.202.7
     fj1.d2 IN CNAME fj1.access.npf.
     telemetry IN SRV 0 0 9167 fj1.d2.access.npf.
-    fk1 IN A 10.255.202.10
+    fk1 IN A 10.255.217.6
     fk1.d2 IN CNAME fk1.access.npf.
     telemetry IN SRV 0 0 9167 fk1.d2.access.npf.
-    fl1 IN A 10.255.202.13
+    fl1 IN A 10.255.217.7
     fl1.d2 IN CNAME fl1.access.npf.
     telemetry IN SRV 0 0 9167 fl1.d2.access.npf.
-    fm1 IN A 10.255.202.16
+    fm1 IN A 10.255.217.8
     fm1.d2 IN CNAME fm1.access.npf.
     telemetry IN SRV 0 0 9167 fm1.d2.access.npf.
-    fn1 IN A 10.255.202.19
+    fn1 IN A 10.255.217.9
     fn1.d2 IN CNAME fn1.access.npf.
     telemetry IN SRV 0 0 9167 fn1.d2.access.npf.
-    fp1 IN A 10.255.202.22
+    fp1 IN A 10.255.217.10
     fp1.d2 IN CNAME fp1.access.npf.
     telemetry IN SRV 0 0 9167 fp1.d2.access.npf.
-    fq1 IN A 10.255.203.4
+    fq1 IN A 10.255.217.11
     fq1.d3 IN CNAME fq1.access.npf.
     telemetry IN SRV 0 0 9167 fq1.d3.access.npf.
-    fr2 IN A 10.255.203.7
-    fr2.d3 IN CNAME fr2.access.npf.
-    telemetry IN SRV 0 0 9167 fr2.d3.access.npf.
-    fs1 IN A 10.255.203.10
+    fr1 IN A 10.255.217.12
+    fr1.d3 IN CNAME fr1.access.npf.
+    telemetry IN SRV 0 0 9167 fr1.d3.access.npf.
+    fs1 IN A 10.255.217.13
     fs1.d3 IN CNAME fs1.access.npf.
     telemetry IN SRV 0 0 9167 fs1.d3.access.npf.
     ft1 IN A 10.255.203.13
@@ -554,22 +557,25 @@ data:
     ge1 IN A 10.255.201.27
     ge1.d1 IN CNAME ge1.access.npf.
     telemetry IN SRV 0 0 9167 ge1.d1.access.npf.
-    gg1 IN A 10.255.202.23
+    gf1 IN A 10.255.202.23
+    gf1.d1 IN CNAME gf1.access.npf.
+    telemetry IN SRV 0 0 9167 gf1.d1.access.npf.
+    gg1 IN A 10.255.202.24
     gg1.d2 IN CNAME gg1.access.npf.
     telemetry IN SRV 0 0 9167 gg1.d2.access.npf.
-    gh1 IN A 10.255.202.24
+    gh1 IN A 10.255.202.25
     gh1.d2 IN CNAME gh1.access.npf.
     telemetry IN SRV 0 0 9167 gh1.d2.access.npf.
-    gj1 IN A 10.255.202.25
+    gj1 IN A 10.255.202.26
     gj1.d2 IN CNAME gj1.access.npf.
     telemetry IN SRV 0 0 9167 gj1.d2.access.npf.
-    gk1 IN A 10.255.202.26
+    gk1 IN A 10.255.202.27
     gk1.d2 IN CNAME gk1.access.npf.
     telemetry IN SRV 0 0 9167 gk1.d2.access.npf.
-    gl1 IN A 10.255.202.27
+    gl1 IN A 10.255.202.28
     gl1.d2 IN CNAME gl1.access.npf.
     telemetry IN SRV 0 0 9167 gl1.d2.access.npf.
-    gm1 IN A 10.255.202.28
+    gm1 IN A 10.255.202.29
     gm1.d2 IN CNAME gm1.access.npf.
     telemetry IN SRV 0 0 9167 gm1.d2.access.npf.
     xa1 IN A 10.255.213.21
@@ -659,37 +665,37 @@ data:
     ya1 IN A 10.255.213.23
     ya1.d13 IN CNAME ya1.access.npf.
     telemetry IN SRV 0 0 9167 ya1.d13.access.npf.
-    ya2 IN A 10.255.214.19
+    ya2 IN A 10.255.213.29
     ya2.d14 IN CNAME ya2.access.npf.
     telemetry IN SRV 0 0 9167 ya2.d14.access.npf.
     yb1 IN A 10.255.213.20
     yb1.d13 IN CNAME yb1.access.npf.
     telemetry IN SRV 0 0 9167 yb1.d13.access.npf.
-    yb2 IN A 10.255.214.16
+    yb2 IN A 10.255.213.28
     yb2.d14 IN CNAME yb2.access.npf.
     telemetry IN SRV 0 0 9167 yb2.d14.access.npf.
     yc1 IN A 10.255.213.17
     yc1.d13 IN CNAME yc1.access.npf.
     telemetry IN SRV 0 0 9167 yc1.d13.access.npf.
-    yc2 IN A 10.255.214.13
+    yc2 IN A 10.255.213.27
     yc2.d14 IN CNAME yc2.access.npf.
     telemetry IN SRV 0 0 9167 yc2.d14.access.npf.
     yd1 IN A 10.255.213.14
     yd1.d13 IN CNAME yd1.access.npf.
     telemetry IN SRV 0 0 9167 yd1.d13.access.npf.
-    yd2 IN A 10.255.214.10
+    yd2 IN A 10.255.213.26
     yd2.d14 IN CNAME yd2.access.npf.
     telemetry IN SRV 0 0 9167 yd2.d14.access.npf.
     ye1 IN A 10.255.213.11
     ye1.d13 IN CNAME ye1.access.npf.
     telemetry IN SRV 0 0 9167 ye1.d13.access.npf.
-    ye2 IN A 10.255.214.7
+    ye2 IN A 10.255.213.25
     ye2.d14 IN CNAME ye2.access.npf.
     telemetry IN SRV 0 0 9167 ye2.d14.access.npf.
     yf1 IN A 10.255.213.8
     yf1.d13 IN CNAME yf1.access.npf.
     telemetry IN SRV 0 0 9167 yf1.d13.access.npf.
-    yf2 IN A 10.255.214.4
+    yf2 IN A 10.255.213.24
     yf2.d14 IN CNAME yf2.access.npf.
     telemetry IN SRV 0 0 9167 yf2.d14.access.npf.
     yg1 IN A 10.255.213.4
@@ -902,45 +908,45 @@ data:
     helpdesk3 IN A 10.255.205.11
     helpdesk3.d5 IN CNAME helpdesk3.access.npf.
     telemetry IN SRV 0 0 9167 helpdesk3.d5.access.npf.
-    gamecrew1 IN A 10.255.206.2
+    gamecrew1 IN A 10.255.254.20
     gamecrew1.d6 IN CNAME gamecrew1.access.npf.
     telemetry IN SRV 0 0 9167 gamecrew1.d6.access.npf.
-    gamecrew2 IN A 10.255.206.3
+    gamecrew2 IN A 10.255.254.21
     gamecrew2.d6 IN CNAME gamecrew2.access.npf.
     telemetry IN SRV 0 0 9167 gamecrew2.d6.access.npf.
-    gamecrew3 IN A 10.255.206.4
+    gamecrew3 IN A 10.255.254.22
     gamecrew3.d6 IN CNAME gamecrew3.access.npf.
     telemetry IN SRV 0 0 9167 gamecrew3.d6.access.npf.
-    gamecrew4 IN A 10.255.206.5
+    gamecrew4 IN A 10.255.254.23
     gamecrew4.d6 IN CNAME gamecrew4.access.npf.
     telemetry IN SRV 0 0 9167 gamecrew4.d6.access.npf.
-    gamecrew5 IN A 10.255.206.6
+    gamecrew5 IN A 10.255.254.24
     gamecrew5.d6 IN CNAME gamecrew5.access.npf.
     telemetry IN SRV 0 0 9167 gamecrew5.d6.access.npf.
-    gamecrew6 IN A 10.255.206.7
+    gamecrew6 IN A 10.255.254.25
     gamecrew6.d6 IN CNAME gamecrew6.access.npf.
     telemetry IN SRV 0 0 9167 gamecrew6.d6.access.npf.
-    gamecrew7 IN A 10.255.206.8
+    gamecrew7 IN A 10.255.254.26
     gamecrew7.d6 IN CNAME gamecrew7.access.npf.
     telemetry IN SRV 0 0 9167 gamecrew7.d6.access.npf.
-    gamecrew8 IN A 10.255.206.9
+    gamecrew8 IN A 10.255.254.27
     gamecrew8.d6 IN CNAME gamecrew8.access.npf.
     telemetry IN SRV 0 0 9167 gamecrew8.d6.access.npf.
-    gamecrew9 IN A 10.255.206.10
+    gamecrew9 IN A 10.255.254.28
     gamecrew9.d6 IN CNAME gamecrew9.access.npf.
     telemetry IN SRV 0 0 9167 gamecrew9.d6.access.npf.
-    gamecrew10 IN A 10.255.206.11
+    gamecrew10 IN A 10.255.254.29
     gamecrew10.d6 IN CNAME gamecrew10.access.npf.
     telemetry IN SRV 0 0 9167 gamecrew10.d6.access.npf.
-    gamecrew11 IN A 10.255.206.12
+    gamecrew11 IN A 10.255.254.30
     gamecrew11.d6 IN CNAME gamecrew11.access.npf.
     telemetry IN SRV 0 0 9167 gamecrew11.d6.access.npf.
-    gamecrew12 IN A 10.255.206.13
+    gamecrew12 IN A 10.255.254.31
     gamecrew12.d6 IN CNAME gamecrew12.access.npf.
     telemetry IN SRV 0 0 9167 gamecrew12.d6.access.npf.
-    expo1.d6 IN A 10.255.206.14
-    expo1.d6.d6 IN CNAME expo1.d6.access.npf.
-    telemetry IN SRV 0 0 9167 expo1.d6.d6.access.npf.
+    expo1.e1 IN A 10.255.254.32
+    expo1.e1.d6 IN CNAME expo1.e1.access.npf.
+    telemetry IN SRV 0 0 9167 expo1.e1.d6.access.npf.
     twitch1 IN A 10.255.210.16
     twitch1.20 IN CNAME twitch1.access.npf.
     telemetry IN SRV 0 0 9167 twitch1.20.access.npf.
@@ -1011,8 +1017,8 @@ data:
     s1 IN A 10.255.255.51
     s2 IN A 10.255.255.52
     s3 IN A 10.255.255.53
-    n3k1 IN A 10.255.128.2
-    n3k2 IN A 10.255.128.3
+    n3k1 IN A 10.255.200.11
+    n3k2 IN A 10.255.200.139
     telemetry IN SRV 0 0 9167 c1.dist.npf.
     telemetry IN SRV 0 0 9167 c2.dist.npf.
     telemetry IN SRV 0 0 9167 d1.dist.npf.
@@ -1046,11 +1052,11 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-            2018101027 ; Serial
-            300 ; Refresh
-            150 ; Retry
-            600 ; Expire
-            600) ; Minimum
+        2019100933 ; Serial
+        300 ; Refresh
+        150 ; Retry
+        600 ; Expire
+        600) ; Minimum
 
         IN	NS	ns1.npf.
 
@@ -1197,12 +1203,6 @@ data:
     9.204 IN PTR ea2.d4.access.npf.
     10.204 IN PTR eb1.d4.access.npf.
     11.204 IN PTR eb2.d4.access.npf.
-    12.204 IN PTR ec1.d4.access.npf.
-    13.204 IN PTR ec2.d4.access.npf.
-    14.204 IN PTR ed1.d4.access.npf.
-    15.204 IN PTR ed2.d4.access.npf.
-    16.204 IN PTR ee1.d4.access.npf.
-    17.204 IN PTR ee2.d4.access.npf.
     4.201 IN PTR fa1.d1.access.npf.
     7.201 IN PTR fb1.d1.access.npf.
     10.201 IN PTR fc1.d1.access.npf.
@@ -1212,14 +1212,14 @@ data:
     22.201 IN PTR fg1.d1.access.npf.
     4.202 IN PTR fh1.d2.access.npf.
     7.202 IN PTR fj1.d2.access.npf.
-    10.202 IN PTR fk1.d2.access.npf.
-    13.202 IN PTR fl1.d2.access.npf.
-    16.202 IN PTR fm1.d2.access.npf.
-    19.202 IN PTR fn1.d2.access.npf.
-    22.202 IN PTR fp1.d2.access.npf.
-    4.203 IN PTR fq1.d3.access.npf.
-    7.203 IN PTR fr2.d3.access.npf.
-    10.203 IN PTR fs1.d3.access.npf.
+    6.217 IN PTR fk1.d2.access.npf.
+    7.217 IN PTR fl1.d2.access.npf.
+    8.217 IN PTR fm1.d2.access.npf.
+    9.217 IN PTR fn1.d2.access.npf.
+    10.217 IN PTR fp1.d2.access.npf.
+    11.217 IN PTR fq1.d3.access.npf.
+    12.217 IN PTR fr1.d3.access.npf.
+    13.217 IN PTR fs1.d3.access.npf.
     13.203 IN PTR ft1.d3.access.npf.
     16.203 IN PTR fu1.d3.access.npf.
     23.201 IN PTR ga1.d1.access.npf.
@@ -1227,12 +1227,13 @@ data:
     25.201 IN PTR gc1.d1.access.npf.
     26.201 IN PTR gd1.d1.access.npf.
     27.201 IN PTR ge1.d1.access.npf.
-    23.202 IN PTR gg1.d2.access.npf.
-    24.202 IN PTR gh1.d2.access.npf.
-    25.202 IN PTR gj1.d2.access.npf.
-    26.202 IN PTR gk1.d2.access.npf.
-    27.202 IN PTR gl1.d2.access.npf.
-    28.202 IN PTR gm1.d2.access.npf.
+    23.202 IN PTR gf1.d1.access.npf.
+    24.202 IN PTR gg1.d2.access.npf.
+    25.202 IN PTR gh1.d2.access.npf.
+    26.202 IN PTR gj1.d2.access.npf.
+    27.202 IN PTR gk1.d2.access.npf.
+    28.202 IN PTR gl1.d2.access.npf.
+    29.202 IN PTR gm1.d2.access.npf.
     21.213 IN PTR xa1.d13.access.npf.
     22.213 IN PTR xa2.d13.access.npf.
     18.213 IN PTR xb1.d13.access.npf.
@@ -1262,17 +1263,17 @@ data:
     2.215 IN PTR xp1.d15.access.npf.
     3.215 IN PTR xp2.d15.access.npf.
     23.213 IN PTR ya1.d13.access.npf.
-    19.214 IN PTR ya2.d14.access.npf.
+    29.213 IN PTR ya2.d14.access.npf.
     20.213 IN PTR yb1.d13.access.npf.
-    16.214 IN PTR yb2.d14.access.npf.
+    28.213 IN PTR yb2.d14.access.npf.
     17.213 IN PTR yc1.d13.access.npf.
-    13.214 IN PTR yc2.d14.access.npf.
+    27.213 IN PTR yc2.d14.access.npf.
     14.213 IN PTR yd1.d13.access.npf.
-    10.214 IN PTR yd2.d14.access.npf.
+    26.213 IN PTR yd2.d14.access.npf.
     11.213 IN PTR ye1.d13.access.npf.
-    7.214 IN PTR ye2.d14.access.npf.
+    25.213 IN PTR ye2.d14.access.npf.
     8.213 IN PTR yf1.d13.access.npf.
-    4.214 IN PTR yf2.d14.access.npf.
+    24.213 IN PTR yf2.d14.access.npf.
     4.213 IN PTR yg1.d13.access.npf.
     5.213 IN PTR yg2.d13.access.npf.
     22.215 IN PTR yh1.d15.access.npf.
@@ -1323,8 +1324,6 @@ data:
     9.254 IN PTR crew6.e1.access.npf.
     10.254 IN PTR crew7.e1.access.npf.
     11.254 IN PTR crew8.e1.access.npf.
-    12.254 IN PTR crew9.e1.access.npf.
-    13.254 IN PTR crew10.e1.access.npf.
     2.253 IN PTR shop1.e2.access.npf.
     3.253 IN PTR shop2.e2.access.npf.
     4.253 IN PTR shop3.e2.access.npf.
@@ -1345,19 +1344,19 @@ data:
     9.205 IN PTR helpdesk1.d5.access.npf.
     10.205 IN PTR helpdesk2.d5.access.npf.
     11.205 IN PTR helpdesk3.d5.access.npf.
-    2.206 IN PTR gamecrew1.d6.access.npf.
-    3.206 IN PTR gamecrew2.d6.access.npf.
-    4.206 IN PTR gamecrew3.d6.access.npf.
-    5.206 IN PTR gamecrew4.d6.access.npf.
-    6.206 IN PTR gamecrew5.d6.access.npf.
-    7.206 IN PTR gamecrew6.d6.access.npf.
-    8.206 IN PTR gamecrew7.d6.access.npf.
-    9.206 IN PTR gamecrew8.d6.access.npf.
-    10.206 IN PTR gamecrew9.d6.access.npf.
-    11.206 IN PTR gamecrew10.d6.access.npf.
-    12.206 IN PTR gamecrew11.d6.access.npf.
-    13.206 IN PTR gamecrew12.d6.access.npf.
-    14.206 IN PTR expo1.d6.d6.access.npf.
+    20.254 IN PTR gamecrew1.d6.access.npf.
+    21.254 IN PTR gamecrew2.d6.access.npf.
+    22.254 IN PTR gamecrew3.d6.access.npf.
+    23.254 IN PTR gamecrew4.d6.access.npf.
+    24.254 IN PTR gamecrew5.d6.access.npf.
+    25.254 IN PTR gamecrew6.d6.access.npf.
+    26.254 IN PTR gamecrew7.d6.access.npf.
+    27.254 IN PTR gamecrew8.d6.access.npf.
+    28.254 IN PTR gamecrew9.d6.access.npf.
+    29.254 IN PTR gamecrew10.d6.access.npf.
+    30.254 IN PTR gamecrew11.d6.access.npf.
+    31.254 IN PTR gamecrew12.d6.access.npf.
+    32.254 IN PTR expo1.e1.d6.access.npf.
     16.210 IN PTR twitch1.20.access.npf.
     17.210 IN PTR twitch2.d10.access.npf.
     18.210 IN PTR twitch3.d10.access.npf.
