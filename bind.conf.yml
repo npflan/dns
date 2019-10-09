@@ -30,7 +30,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2019100933 ; Serial
+        2019100934 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -948,29 +948,32 @@ data:
     expo1.e1.d6 IN CNAME expo1.e1.access.npf.
     telemetry IN SRV 0 0 9167 expo1.e1.d6.access.npf.
     twitch1 IN A 10.255.210.16
-    twitch1.20 IN CNAME twitch1.access.npf.
-    telemetry IN SRV 0 0 9167 twitch1.20.access.npf.
+    twitch1.d11 IN CNAME twitch1.access.npf.
+    telemetry IN SRV 0 0 9167 twitch1.d11.access.npf.
     twitch2 IN A 10.255.210.17
-    twitch2.d10 IN CNAME twitch2.access.npf.
-    telemetry IN SRV 0 0 9167 twitch2.d10.access.npf.
+    twitch2.d11 IN CNAME twitch2.access.npf.
+    telemetry IN SRV 0 0 9167 twitch2.d11.access.npf.
     twitch3 IN A 10.255.210.18
-    twitch3.d10 IN CNAME twitch3.access.npf.
-    telemetry IN SRV 0 0 9167 twitch3.d10.access.npf.
+    twitch3.d11 IN CNAME twitch3.access.npf.
+    telemetry IN SRV 0 0 9167 twitch3.d11.access.npf.
     twitch4 IN A 10.255.210.19
-    twitch4.d10 IN CNAME twitch4.access.npf.
-    telemetry IN SRV 0 0 9167 twitch4.d10.access.npf.
+    twitch4.d11 IN CNAME twitch4.access.npf.
+    telemetry IN SRV 0 0 9167 twitch4.d11.access.npf.
     twitch5 IN A 10.255.211.16
     twitch5.d11 IN CNAME twitch5.access.npf.
     telemetry IN SRV 0 0 9167 twitch5.d11.access.npf.
     twitch6 IN A 10.255.211.17
-    twitch6.20 IN CNAME twitch6.access.npf.
-    telemetry IN SRV 0 0 9167 twitch6.20.access.npf.
+    twitch6.d11 IN CNAME twitch6.access.npf.
+    telemetry IN SRV 0 0 9167 twitch6.d11.access.npf.
     twitch7 IN A 10.255.211.18
     twitch7.d11 IN CNAME twitch7.access.npf.
     telemetry IN SRV 0 0 9167 twitch7.d11.access.npf.
     twitch8 IN A 10.255.211.19
     twitch8.d11 IN CNAME twitch8.access.npf.
     telemetry IN SRV 0 0 9167 twitch8.d11.access.npf.
+    twitch9 IN A 10.255.211.20
+    twitch9.d11 IN CNAME twitch9.access.npf.
+    telemetry IN SRV 0 0 9167 twitch9.d11.access.npf.
     crew1.d12 IN A 10.255.212.14
     crew1.d12.d12 IN CNAME crew1.d12.access.npf.
     telemetry IN SRV 0 0 9167 crew1.d12.d12.access.npf.
@@ -1357,14 +1360,15 @@ data:
     30.254 IN PTR gamecrew11.d6.access.npf.
     31.254 IN PTR gamecrew12.d6.access.npf.
     32.254 IN PTR expo1.e1.d6.access.npf.
-    16.210 IN PTR twitch1.20.access.npf.
-    17.210 IN PTR twitch2.d10.access.npf.
-    18.210 IN PTR twitch3.d10.access.npf.
-    19.210 IN PTR twitch4.d10.access.npf.
+    16.210 IN PTR twitch1.d11.access.npf.
+    17.210 IN PTR twitch2.d11.access.npf.
+    18.210 IN PTR twitch3.d11.access.npf.
+    19.210 IN PTR twitch4.d11.access.npf.
     16.211 IN PTR twitch5.d11.access.npf.
-    17.211 IN PTR twitch6.20.access.npf.
+    17.211 IN PTR twitch6.d11.access.npf.
     18.211 IN PTR twitch7.d11.access.npf.
     19.211 IN PTR twitch8.d11.access.npf.
+    20.211 IN PTR twitch9.d11.access.npf.
     14.212 IN PTR crew1.d12.d12.access.npf.
     15.212 IN PTR crew2.d12.d12.access.npf.
     16.212 IN PTR crew3.d12.d12.access.npf.
