@@ -30,7 +30,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2019100936 ; Serial
+        2019101001 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -684,20 +684,20 @@ data:
     yd1.d13 IN CNAME yd1.access.npf.
     telemetry IN SRV 0 0 9167 yd1.d13.access.npf.
     yd2 IN A 10.255.213.26
-    yd2.d14 IN CNAME yd2.access.npf.
-    telemetry IN SRV 0 0 9167 yd2.d14.access.npf.
+    yd2.d13 IN CNAME yd2.access.npf.
+    telemetry IN SRV 0 0 9167 yd2.d13.access.npf.
     ye1 IN A 10.255.213.11
     ye1.d13 IN CNAME ye1.access.npf.
     telemetry IN SRV 0 0 9167 ye1.d13.access.npf.
     ye2 IN A 10.255.213.25
-    ye2.d14 IN CNAME ye2.access.npf.
-    telemetry IN SRV 0 0 9167 ye2.d14.access.npf.
+    ye2.d13 IN CNAME ye2.access.npf.
+    telemetry IN SRV 0 0 9167 ye2.d13.access.npf.
     yf1 IN A 10.255.213.8
     yf1.d13 IN CNAME yf1.access.npf.
     telemetry IN SRV 0 0 9167 yf1.d13.access.npf.
     yf2 IN A 10.255.213.24
-    yf2.d14 IN CNAME yf2.access.npf.
-    telemetry IN SRV 0 0 9167 yf2.d14.access.npf.
+    yf2.d13 IN CNAME yf2.access.npf.
+    telemetry IN SRV 0 0 9167 yf2.d13.access.npf.
     yg1 IN A 10.255.213.4
     yg1.d13 IN CNAME yg1.access.npf.
     telemetry IN SRV 0 0 9167 yg1.d13.access.npf.
@@ -747,47 +747,47 @@ data:
     yp2.d16 IN CNAME yp2.access.npf.
     telemetry IN SRV 0 0 9167 yp2.d16.access.npf.
     za1 IN A 10.255.214.20
-    za1.d14 IN CNAME za1.access.npf.
-    telemetry IN SRV 0 0 9167 za1.d14.access.npf.
+    za1.d13 IN CNAME za1.access.npf.
+    telemetry IN SRV 0 0 9167 za1.d13.access.npf.
     za2 IN A 10.255.214.21
-    za2.d14 IN CNAME za2.access.npf.
-    telemetry IN SRV 0 0 9167 za2.d14.access.npf.
+    za2.d13 IN CNAME za2.access.npf.
+    telemetry IN SRV 0 0 9167 za2.d13.access.npf.
     zb1 IN A 10.255.214.17
-    zb1.d14 IN CNAME zb1.access.npf.
-    telemetry IN SRV 0 0 9167 zb1.d14.access.npf.
+    zb1.d13 IN CNAME zb1.access.npf.
+    telemetry IN SRV 0 0 9167 zb1.d13.access.npf.
     zb2 IN A 10.255.214.18
-    zb2.d14 IN CNAME zb2.access.npf.
-    telemetry IN SRV 0 0 9167 zb2.d14.access.npf.
+    zb2.d13 IN CNAME zb2.access.npf.
+    telemetry IN SRV 0 0 9167 zb2.d13.access.npf.
     zc1 IN A 10.255.214.14
-    zc1.d14 IN CNAME zc1.access.npf.
-    telemetry IN SRV 0 0 9167 zc1.d14.access.npf.
+    zc1.d13 IN CNAME zc1.access.npf.
+    telemetry IN SRV 0 0 9167 zc1.d13.access.npf.
     zc2 IN A 10.255.214.15
-    zc2.d14 IN CNAME zc2.access.npf.
-    telemetry IN SRV 0 0 9167 zc2.d14.access.npf.
+    zc2.d13 IN CNAME zc2.access.npf.
+    telemetry IN SRV 0 0 9167 zc2.d13.access.npf.
     zd1 IN A 10.255.214.11
-    zd1.d14 IN CNAME zd1.access.npf.
-    telemetry IN SRV 0 0 9167 zd1.d14.access.npf.
+    zd1.d13 IN CNAME zd1.access.npf.
+    telemetry IN SRV 0 0 9167 zd1.d13.access.npf.
     zd2 IN A 10.255.214.12
-    zd2.d14 IN CNAME zd2.access.npf.
-    telemetry IN SRV 0 0 9167 zd2.d14.access.npf.
+    zd2.d13 IN CNAME zd2.access.npf.
+    telemetry IN SRV 0 0 9167 zd2.d13.access.npf.
     ze1 IN A 10.255.214.8
-    ze1.d14 IN CNAME ze1.access.npf.
-    telemetry IN SRV 0 0 9167 ze1.d14.access.npf.
+    ze1.d13 IN CNAME ze1.access.npf.
+    telemetry IN SRV 0 0 9167 ze1.d13.access.npf.
     ze2 IN A 10.255.214.9
-    ze2.d14 IN CNAME ze2.access.npf.
-    telemetry IN SRV 0 0 9167 ze2.d14.access.npf.
+    ze2.d13 IN CNAME ze2.access.npf.
+    telemetry IN SRV 0 0 9167 ze2.d13.access.npf.
     zf1 IN A 10.255.214.5
-    zf1.d14 IN CNAME zf1.access.npf.
-    telemetry IN SRV 0 0 9167 zf1.d14.access.npf.
+    zf1.d13 IN CNAME zf1.access.npf.
+    telemetry IN SRV 0 0 9167 zf1.d13.access.npf.
     zf2 IN A 10.255.214.6
-    zf2.d14 IN CNAME zf2.access.npf.
-    telemetry IN SRV 0 0 9167 zf2.d14.access.npf.
+    zf2.d13 IN CNAME zf2.access.npf.
+    telemetry IN SRV 0 0 9167 zf2.d13.access.npf.
     zg1 IN A 10.255.214.2
-    zg1.d14 IN CNAME zg1.access.npf.
-    telemetry IN SRV 0 0 9167 zg1.d14.access.npf.
+    zg1.d13 IN CNAME zg1.access.npf.
+    telemetry IN SRV 0 0 9167 zg1.d13.access.npf.
     zg2 IN A 10.255.214.3
-    zg2.d14 IN CNAME zg2.access.npf.
-    telemetry IN SRV 0 0 9167 zg2.d14.access.npf.
+    zg2.d13 IN CNAME zg2.access.npf.
+    telemetry IN SRV 0 0 9167 zg2.d13.access.npf.
     zh1 IN A 10.255.216.16
     zh1.d16 IN CNAME zh1.access.npf.
     telemetry IN SRV 0 0 9167 zh1.d16.access.npf.
@@ -1055,7 +1055,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2019100936 ; Serial
+        2019101001 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -1266,17 +1266,17 @@ data:
     2.215 IN PTR xp1.d15.access.npf.
     3.215 IN PTR xp2.d15.access.npf.
     23.213 IN PTR ya1.d13.access.npf.
-    29.213 IN PTR ya2.d14.access.npf.
+    29.213 IN PTR ya2.d13.access.npf.
     20.213 IN PTR yb1.d13.access.npf.
-    28.213 IN PTR yb2.d14.access.npf.
+    28.213 IN PTR yb2.d13.access.npf.
     17.213 IN PTR yc1.d13.access.npf.
-    27.213 IN PTR yc2.d14.access.npf.
+    27.213 IN PTR yc2.d13.access.npf.
     14.213 IN PTR yd1.d13.access.npf.
-    26.213 IN PTR yd2.d14.access.npf.
+    26.213 IN PTR yd2.d13.access.npf.
     11.213 IN PTR ye1.d13.access.npf.
-    25.213 IN PTR ye2.d14.access.npf.
+    25.213 IN PTR ye2.d13.access.npf.
     8.213 IN PTR yf1.d13.access.npf.
-    24.213 IN PTR yf2.d14.access.npf.
+    24.213 IN PTR yf2.d13.access.npf.
     4.213 IN PTR yg1.d13.access.npf.
     5.213 IN PTR yg2.d13.access.npf.
     22.215 IN PTR yh1.d15.access.npf.
