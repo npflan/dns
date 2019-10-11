@@ -26,6 +26,7 @@ s2 IN A 10.255.255.52
 s3 IN A 10.255.255.53
 n3k1 IN A 10.255.200.11
 n3k2 IN A 10.255.200.139
+g2 IN A 10.255.255.17
 telemetry IN SRV 0 0 9167 c1.dist.npf.
 telemetry IN SRV 0 0 9167 c2.dist.npf.
 telemetry IN SRV 0 0 9167 d1.dist.npf.
@@ -53,3 +54,4 @@ telemetry IN SRV 0 0 9167 s2.dist.npf.
 telemetry IN SRV 0 0 9167 s3.dist.npf.
 telemetry IN SRV 0 0 9167 n3k1.dist.npf.
 telemetry IN SRV 0 0 9167 n3k2.dist.npf.
+telemetry IN SRV 0 0 9167 g2.dist.npf.
