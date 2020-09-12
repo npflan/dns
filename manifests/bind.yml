@@ -5,13 +5,16 @@ items:
   kind: Namespace
   metadata:
     name: dns
-- apiVersion: extensions/v1beta1
+- apiVersion: apps/v1
   kind: Deployment
   metadata:
     name: bind
     namespace: dns
   spec:
     replicas: 2
+    selector:
+      matchLabels:
+        app: bind
     template:
       metadata:
         labels:
