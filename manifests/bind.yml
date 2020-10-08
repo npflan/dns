@@ -55,7 +55,7 @@ items:
               command:
                 - sh
                 - -ec
-                - dig c1.dist.npf @0.0.0.0 -p 5353 | /bin/grep 10.255.255.111 > /dev/null
+                - dig c1.dist.npf @0.0.0.0 -p 5353 | /bin/grep 10.255.255.1 > /dev/null
             initialDelaySeconds: 1
             timeoutSeconds: 1
             periodSeconds: 3
@@ -64,7 +64,7 @@ items:
               command:
                 - sh
                 - -ec
-                - dig c1.dist.npf @0.0.0.0 -p 5353 | /bin/grep 10.255.255.111 > /dev/null
+                - dig c1.dist.npf @0.0.0.0 -p 5353 | /bin/grep 10.255.255.1 > /dev/null
             initialDelaySeconds: 1
             timeoutSeconds: 1
             periodSeconds: 3
