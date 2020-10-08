@@ -11,7 +11,7 @@ items:
     name: unbound
     namespace: dns
   spec:
-    replicas: 5
+    replicas: 2
     selector:
       matchLabels:
         app: unbound
@@ -25,6 +25,15 @@ items:
           preomtheus.io/path: "/merics"
       spec:
         affinity:
+          nodeAffinity:
+            requiredDuringSchedulingIgnoredDuringExecution:
+              nodeSelectorTerms:
+              - matchExpressions:
+                - key: kubernetes.io/hostname
+                  operator: In
+                  values:
+                  - erebus
+                  - leviathan
           podAntiAffinity:
             requiredDuringSchedulingIgnoredDuringExecution:
               - labelSelector:
