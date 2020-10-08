@@ -67,15 +67,15 @@ data:
     isp2 IN A 10.255.254.200
     isp IN A 10.255.254.250
 
-    telemetry IN SRV 0 0 9167 e1-ab2.access.npf
-    telemetry IN SRV 0 0 9167 e1-ac1.access.npf
-    telemetry IN SRV 0 0 9167 e1-ad1.access.npf
-    telemetry IN SRV 0 0 9167 e1-ad2.access.npf
-    telemetry IN SRV 0 0 9167 e1-ae1.access.npf
-    telemetry IN SRV 0 0 9167 e1-ae1.access.npf
-    telemetry IN SRV 0 0 9167 d13-af2.access.npf
-    telemetry IN SRV 0 0 9167 isp2.access.npf
-    telemetry IN SRV 0 0 9167 isp.access.npf
+    telemetry IN SRV 0 0 9167 e1-ab2.access.npf.
+    telemetry IN SRV 0 0 9167 e1-ac1.access.npf.
+    telemetry IN SRV 0 0 9167 e1-ad1.access.npf.
+    telemetry IN SRV 0 0 9167 e1-ad2.access.npf.
+    telemetry IN SRV 0 0 9167 e1-ae1.access.npf.
+    telemetry IN SRV 0 0 9167 e1-ae1.access.npf.
+    telemetry IN SRV 0 0 9167 d13-af2.access.npf.
+    telemetry IN SRV 0 0 9167 isp2.access.npf.
+    telemetry IN SRV 0 0 9167 isp.access.npf.
 
     $ORIGIN dist.npf.
     c1 IN A 10.255.255.1
