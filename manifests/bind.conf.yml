@@ -30,7 +30,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2020100901 ; Serial
+        2020100902 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -46,6 +46,7 @@ data:
     heatmap IN CNAME sw-heatmap.sw-heatmap.svc.cluster.local.
     gaas IN CNAME gaas-portal.gaas.svc.cluster.local.
     shutdown IN CNAME shutdown-svc.cisco.svc.cluster.local.
+    argo IN CNAME argocd-server.argocd.svc.cluster.local.
 
     avatar IN A 10.0.0.1
     leviathan IN A 10.0.0.5
@@ -54,7 +55,6 @@ data:
     kubectl IN A 172.20.11.102
     chimera IN A 172.20.11.104
     archon IN A 172.20.22.104
-    scriptserver01 IN A 10.0.1.15
 
     $ORIGIN access.npf.
     e1-ab2 IN A 10.255.254.13
@@ -65,7 +65,6 @@ data:
     e1-ae1 IN A 10.255.254.19
     d13-af2 IN A 10.255.254.21
     isp2 IN A 10.255.254.200
-    isp IN A 10.255.254.250
 
     telemetry IN SRV 0 0 9167 e1-ab2.access.npf.
     telemetry IN SRV 0 0 9167 e1-ac1.access.npf.
@@ -75,20 +74,21 @@ data:
     telemetry IN SRV 0 0 9167 e1-ae1.access.npf.
     telemetry IN SRV 0 0 9167 d13-af2.access.npf.
     telemetry IN SRV 0 0 9167 isp2.access.npf.
-    telemetry IN SRV 0 0 9167 isp.access.npf.
 
     $ORIGIN dist.npf.
     c1 IN A 10.255.255.1
     c2 IN A 10.255.255.2
+    isp IN A 10.255.255.250
     telemetry IN SRV 0 0 9167 c1.dist.npf.
     telemetry IN SRV 0 0 9167 c2.dist.npf.
+    telemetry IN SRV 0 0 9167 isp.dist.npf.
 
   255.10.in-addr.arpa.zone: |
     $ORIGIN 255.10.in-addr.arpa.
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2020100901 ; Serial
+        2020100902 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -104,7 +104,7 @@ data:
     19.254 IN PTR e1-ae1.access.npf
     21.254 IN PTR d13-af2.access.npf
     200.254 IN PTR isp2.access.npf
-    250.254 IN PTR isp.access.npf
+    250.254 IN PTR isp.dist.npf
     1.255 IN PTR c1.dist.npf.
     2.255 IN PTR c2.dist.npf.
 
