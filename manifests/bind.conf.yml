@@ -30,7 +30,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2020101001 ; Serial
+        2020101003 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -47,6 +47,7 @@ data:
     gaas IN CNAME gaas-portal.gaas.svc.cluster.local.
     shutdown IN CNAME shutdown-svc.cisco.svc.cluster.local.
     argo IN CNAME argocd-server.argocd.svc.cluster.local.
+    gaas-api IN CNAME gaas-api-service.gaas.svc.cluster.local.
 
     avatar IN A 10.0.0.1
     leviathan IN A 10.0.0.5
