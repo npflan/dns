@@ -11,6 +11,9 @@ items:
     name: unbound
     namespace: dns
   spec:
+    strategy:
+      rollingUpdate:
+        maxUnavailable: 1
     replicas: 2
     selector:
       matchLabels:
