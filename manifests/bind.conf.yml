@@ -24,6 +24,10 @@ data:
         type master;
         file "/bind/config/255.10.in-addr.arpa.zone";
     };
+    zone "168.192.in-addr.arpa" IN {
+        type master;
+        file "/bind/config/168.192.in-addr.arpa.zone";
+    };
 
   npf.zone: |
     $ORIGIN npf.
@@ -85,6 +89,14 @@ data:
     telemetry IN SRV 0 0 9167 c2.dist.npf.
     telemetry IN SRV 0 0 9167 isp.dist.npf.
 
+    $ORIGIN link.npf.
+    te1-8.e1 IN A 192.168.255.161
+    te1-1.e1 IN A 192.168.255.178
+    te1-2.e1 IN A 192.168.255.182
+    te1-3.e1 IN A 192.168.255.186
+    te1-4.e1 IN A 192.168.255.190
+
+
   255.10.in-addr.arpa.zone: |
     $ORIGIN 255.10.in-addr.arpa.
     $TTL 600
@@ -109,6 +121,27 @@ data:
     250.254 IN PTR isp.dist.npf
     1.255 IN PTR c1.dist.npf.
     2.255 IN PTR c2.dist.npf.
+
+  168.192.in-addr.arpa.zone: |
+    $ORIGIN 168.192.in-addr.arpa.
+    $TTL 600
+
+    @	IN	SOA	ns1.npf.	hostmaster.npf. (
+        2020101001 ; Serial
+        300 ; Refresh
+        150 ; Retry
+        600 ; Expire
+        600) ; Minimum
+
+        IN	NS	ns1.npf.
+
+    161.255 IN PTR te1-8.e1.link.npf
+    178.255 IN PTR te1-1.e1.link.npf
+    182.255 IN PTR te1-2.e1.link.npf
+    186.255 IN PTR te1-3.e1.link.npf
+    190.255 IN PTR te1-4.e1.link.npf
+
+
 
 kind: ConfigMap
 metadata:
