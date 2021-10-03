@@ -71,6 +71,7 @@ data:
       private-domain: "srv.minserver.dk."
 
       local-zone: "10.in-addr.arpa" nodefault
+      local-zone: "168.192.in-addr.arpa." nodefault
 
     # Enable remote control for metrics
     remote-control:
@@ -98,7 +99,7 @@ data:
     stub-zone:
       name: "255.10.in-addr.arpa."
       stub-addr: 10.96.5.3@5353
-      
+
     stub-zone:
       name: "168.192.in-addr.arpa."
       stub-addr: 10.96.5.3@5353
