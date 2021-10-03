@@ -135,11 +135,11 @@ data:
 
         IN	NS	ns1.npf.
 
-    161.255 IN PTR te1-8.e1.link.npf
-    178.255 IN PTR te1-1.e1.link.npf
-    182.255 IN PTR te1-2.e1.link.npf
-    186.255 IN PTR te1-3.e1.link.npf
-    190.255 IN PTR te1-4.e1.link.npf
+    161.255 IN PTR te1-8.e1.link.npf.
+    178.255 IN PTR te1-1.e1.link.npf.
+    182.255 IN PTR te1-2.e1.link.npf.
+    186.255 IN PTR te1-3.e1.link.npf.
+    190.255 IN PTR te1-4.e1.link.npf.
 
 
 
