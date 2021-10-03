@@ -58,6 +58,7 @@ data:
       domain-insecure: "npf."
       domain-insecure: "cluster.local."
       domain-insecure: "255.10.in-addr.arpa."
+      domain-insecure: "168.192.in-addr.arpa."
       domain-insecure: "svc.npf.dk."
       domain-insecure: "svr.npf.dk."
       domain-insecure: "server.npf."
