@@ -41,7 +41,7 @@ data:
     ns1				IN	A	10.96.5.3
     dash IN CNAME grafana.grafana.svc.cluster.local.
     prom IN CNAME prometheus-server.prometheus.svc.cluster.local.
-    alert IN CNAME alertmanager.prometheus.svc.cluster.local.
+    alert IN CNAME prometheus-alertmanager.prometheus.svc.cluster.local.
     shinobi IN CNAME shinobi.shinobi.svc.cluster.local.
     heatmap IN CNAME sw-heatmap.sw-heatmap.svc.cluster.local.
     gaas IN CNAME gaas-portal.gaas.svc.cluster.local.
