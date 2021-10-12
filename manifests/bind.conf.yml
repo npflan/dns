@@ -639,36 +639,6 @@ data:
     cr2 IN A 10.255.253.18
     cr2.e2 IN CNAME cr2.access.npf.
     telemetry IN SRV 0 0 9167 cr2.e2.access.npf.
-    crew1 IN A 10.255.252.10
-    crew1.e3 IN CNAME crew1.access.npf.
-    telemetry IN SRV 0 0 9167 crew1.e3.access.npf.
-    crew2 IN A 10.255.252.11
-    crew2.e3 IN CNAME crew2.access.npf.
-    telemetry IN SRV 0 0 9167 crew2.e3.access.npf.
-    crew3 IN A 10.255.252.12
-    crew3.e3 IN CNAME crew3.access.npf.
-    telemetry IN SRV 0 0 9167 crew3.e3.access.npf.
-    crew4 IN A 10.255.252.13
-    crew4.e3 IN CNAME crew4.access.npf.
-    telemetry IN SRV 0 0 9167 crew4.e3.access.npf.
-    crew5 IN A 10.255.252.14
-    crew5.e3 IN CNAME crew5.access.npf.
-    telemetry IN SRV 0 0 9167 crew5.e3.access.npf.
-    crew6 IN A 10.255.252.15
-    crew6.e3 IN CNAME crew6.access.npf.
-    telemetry IN SRV 0 0 9167 crew6.e3.access.npf.
-    crew7 IN A 10.255.252.16
-    crew7.e3 IN CNAME crew7.access.npf.
-    telemetry IN SRV 0 0 9167 crew7.e3.access.npf.
-    crew8 IN A 10.255.252.17
-    crew8.e3 IN CNAME crew8.access.npf.
-    telemetry IN SRV 0 0 9167 crew8.e3.access.npf.
-    crew9 IN A 10.255.252.18
-    crew9.e3 IN CNAME crew9.access.npf.
-    telemetry IN SRV 0 0 9167 crew9.e3.access.npf.
-    crew10 IN A 10.255.252.19
-    crew10.e3 IN CNAME crew10.access.npf.
-    telemetry IN SRV 0 0 9167 crew10.e3.access.npf.
     expo1 IN A 10.255.251.10
     expo1.e4 IN CNAME expo1.access.npf.
     telemetry IN SRV 0 0 9167 expo1.e4.access.npf.
