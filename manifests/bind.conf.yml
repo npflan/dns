@@ -869,6 +869,45 @@ data:
     hu0-2-0-0.core2 IN A 192.168.255.210
     hu0-3-0-0.core1 IN A 192.168.255.213
     hu0-3-0-0.core2 IN A 192.168.255.214
+    eth2.avatar IN A 10.0.0.1
+    be10-301.core1 IN A 10.0.0.2
+    eth2.leviathan IN A 10.0.0.5
+    be10-302.core1 IN A 10.0.0.6
+    eth2.ragnarok IN A 10.0.0.9
+    be10-301.core2 IN A 10.0.0.10
+    eth2.erabus IN A 10.0.0.13
+    be10-302.core2 IN A 10.0.0.14
+    be1-25.core IN A 10.0.250.1
+    nvr.dc IN A 10.0.250.10
+    be1-25.core1 IN A 10.0.250.253
+    be1-25.core2 IN A 10.0.250.254
+    be1-250.core IN A 10.248.0.1
+    be1-250.core1 IN A 10.248.63.253
+    be1-250.core2 IN A 10.248.63.254
+    be1-251.core IN A 10.248.128.1
+    be1-251.core1 IN A 10.248.143.253
+    be1-251.core2 IN A 10.248.143.254
+    be1-252.core IN A 10.248.160.1
+    be1-252.core1 IN A 10.248.175.253
+    be1-252.core2 IN A 10.248.175.254
+    be1-253.core IN A 10.248.224.1
+    be1-253.core1 IN A 10.248.225.253
+    be1-253.core2 IN A 10.248.225.254
+    be1-254.core IN A 10.248.248.1
+    be1-254.core1 IN A 10.248.251.253
+    be1-254.core2 IN A 10.248.251.254
+    be1-255.core IN A 10.248.255.1
+    be1-255.core1 IN A 10.248.255.253
+    be1-255.core2 IN A 10.248.255.254
+    be1-193.core IN A 10.255.193.1
+    be1-193.core1 IN A 10.255.193.253
+    be1-193.core2 IN A 10.255.193.254
+    be1-248.core IN A 10.255.248.1
+    be1-248.core1 IN A 10.255.248.253
+    be1-248.core2 IN A 10.255.248.254
+    be1-41.core IN A 172.20.22.1
+    be1-41.core1 IN A 172.20.22.253
+    be1-41.core2 IN A 172.20.22.254
 
 
   10.in-addr.arpa.zone: |
@@ -1134,6 +1173,42 @@ data:
     53.255.255   IN PTR s3.dist.npf.
     11.200.255  IN PTR n3k1.dist.npf.
     139.200.255  IN PTR n3k2.dist.npf.
+    1.0.0 IN PTR eth2.avatar.link.npf.
+    2.0.0 IN PTR be10-301.core1.link.npf.
+    5.0.0 IN PTR eth2.leviathan.link.npf.
+    6.0.0 IN PTR be10-302.core1.link.npf.
+    9.0.0 IN PTR eth2.ragnarok.link.npf.
+    10.0.0 IN PTR be10-301.core2.link.npf.
+    13.0.0 IN PTR eth2.erabus.link.npf.
+    14.0.0 IN PTR be10-302.core2.link.npf.
+    1.250.0 IN PTR be1-25.core.link.npf.
+    10.250.0 IN PTR nvr.dc.link.npf.
+    253.250.0 IN PTR be1-25.core1.link.npf.
+    254.250.0 IN PTR be1-25.core2.link.npf.
+    1.0.248 IN PTR be1-250.core.link.npf.
+    253.63.248 IN PTR be1-250.core1.link.npf.
+    254.63.248 IN PTR be1-250.core2.link.npf.
+    1.128.248 IN PTR be1-251.core.link.npf.
+    253.143.248 IN PTR be1-251.core1.link.npf.
+    254.143.248 IN PTR be1-251.core2.link.npf.
+    1.160.248 IN PTR be1-252.core.link.npf.
+    253.175.248 IN PTR be1-252.core1.link.npf.
+    254.175.248 IN PTR be1-252.core2.link.npf.
+    1.224.248 IN PTR be1-253.core.link.npf.
+    253.225.248 IN PTR be1-253.core1.link.npf.
+    254.225.248 IN PTR be1-253.core2.link.npf.
+    1.248.248 IN PTR be1-254.core.link.npf.
+    253.251.248 IN PTR be1-254.core1.link.npf.
+    254.251.248 IN PTR be1-254.core2.link.npf.
+    1.255.248 IN PTR be1-255.core.link.npf.
+    253.255.248 IN PTR be1-255.core1.link.npf.
+    254.255.248 IN PTR be1-255.core2.link.npf.
+    1.193.255 IN PTR be1-193.core.link.npf.
+    253.193.255 IN PTR be1-193.core1.link.npf.
+    254.193.255 IN PTR be1-193.core2.link.npf.
+    1.248.255 IN PTR be1-248.core.link.npf.
+    253.248.255 IN PTR be1-248.core1.link.npf.
+    254.248.255 IN PTR be1-248.core2.link.npf.
 
   168.192.in-addr.arpa.zone: |
     $ORIGIN 168.192.in-addr.arpa.
