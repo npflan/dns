@@ -57,7 +57,7 @@ data:
       # Mark domains as insecure to serve as local zones
       domain-insecure: "npf."
       domain-insecure: "cluster.local."
-      domain-insecure: "255.10.in-addr.arpa."
+      domain-insecure: "10.in-addr.arpa."
       domain-insecure: "168.192.in-addr.arpa."
       domain-insecure: "svc.npf.dk."
       domain-insecure: "svr.npf.dk."
@@ -97,7 +97,7 @@ data:
       stub-addr: 10.101.128.128
 
     stub-zone:
-      name: "255.10.in-addr.arpa."
+      name: "10.in-addr.arpa."
       stub-addr: 10.96.5.3@5353
 
     stub-zone:
