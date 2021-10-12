@@ -1101,7 +1101,7 @@ data:
     be1-41.core1 IN A 172.20.22.253
     be1-41.core2 IN A 172.20.22.254
 
-    $ORIGIN .dc.npf.
+    $ORIGIN dc.npf.
     nvr.dc.link.npf IN A 10.0.250.10
     open.wifi.wlc IN A 10.248.0.2
     crew.wifi.wlc IN A 10.248.128.2
