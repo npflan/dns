@@ -20,9 +20,13 @@ data:
         allow-update { none; };
     };
 
-    zone "255.10.in-addr.arpa" IN {
+    zone "10.in-addr.arpa" IN {
         type master;
-        file "/bind/config/255.10.in-addr.arpa.zone";
+        file "/bind/config/10.in-addr.arpa.zone";
+    };
+    zone "168.192.in-addr.arpa" IN {
+        type master;
+        file "/bind/config/168.192.in-addr.arpa.zone";
     };
 
   npf.zone: |
@@ -60,34 +64,1594 @@ data:
     archon IN A 172.20.22.104
 
     $ORIGIN access.npf.
-    e1-ab2 IN A 10.255.254.13
-    e1-ac1 IN A 10.255.254.14
-    e1-ad1 IN A 10.255.254.16
-    e1-ad2 IN A 10.255.254.17
-    e1-ae1 IN A 10.255.254.18
-    e1-ae1 IN A 10.255.254.19
-    d13-af2 IN A 10.255.254.21
-    isp2 IN A 10.255.254.200
+    aa1 IN A 10.255.207.10
+    aa1.d7 IN CNAME aa1.access.npf.
+    telemetry IN SRV 0 0 9167 aa1.d7.access.npf.
+    aa2 IN A 10.255.207.11
+    aa2.d7 IN CNAME aa2.access.npf.
+    telemetry IN SRV 0 0 9167 aa2.d7.access.npf.
+    aa3 IN A 10.255.207.12
+    aa3.d7 IN CNAME aa3.access.npf.
+    telemetry IN SRV 0 0 9167 aa3.d7.access.npf.
+    ab1 IN A 10.255.207.13
+    ab1.d7 IN CNAME ab1.access.npf.
+    telemetry IN SRV 0 0 9167 ab1.d7.access.npf.
+    ab2 IN A 10.255.207.14
+    ab2.d7 IN CNAME ab2.access.npf.
+    telemetry IN SRV 0 0 9167 ab2.d7.access.npf.
+    ac1 IN A 10.255.207.15
+    ac1.d7 IN CNAME ac1.access.npf.
+    telemetry IN SRV 0 0 9167 ac1.d7.access.npf.
+    ac2 IN A 10.255.207.16
+    ac2.d7 IN CNAME ac2.access.npf.
+    telemetry IN SRV 0 0 9167 ac2.d7.access.npf.
+    ad1 IN A 10.255.207.17
+    ad1.d7 IN CNAME ad1.access.npf.
+    telemetry IN SRV 0 0 9167 ad1.d7.access.npf.
+    ad2 IN A 10.255.207.18
+    ad2.d7 IN CNAME ad2.access.npf.
+    telemetry IN SRV 0 0 9167 ad2.d7.access.npf.
+    ae1 IN A 10.255.207.19
+    ae1.d7 IN CNAME ae1.access.npf.
+    telemetry IN SRV 0 0 9167 ae1.d7.access.npf.
+    ae2 IN A 10.255.207.20
+    ae2.d7 IN CNAME ae2.access.npf.
+    telemetry IN SRV 0 0 9167 ae2.d7.access.npf.
+    af1 IN A 10.255.207.21
+    af1.d7 IN CNAME af1.access.npf.
+    telemetry IN SRV 0 0 9167 af1.d7.access.npf.
+    af2 IN A 10.255.207.22
+    af2.d7 IN CNAME af2.access.npf.
+    telemetry IN SRV 0 0 9167 af2.d7.access.npf.
+    ag1 IN A 10.255.207.23
+    ag1.d7 IN CNAME ag1.access.npf.
+    telemetry IN SRV 0 0 9167 ag1.d7.access.npf.
+    ag2 IN A 10.255.207.24
+    ag2.d7 IN CNAME ag2.access.npf.
+    telemetry IN SRV 0 0 9167 ag2.d7.access.npf.
+    ca1 IN A 10.255.207.25
+    ca1.d7 IN CNAME ca1.access.npf.
+    telemetry IN SRV 0 0 9167 ca1.d7.access.npf.
+    cb1 IN A 10.255.207.26
+    cb1.d7 IN CNAME cb1.access.npf.
+    telemetry IN SRV 0 0 9167 cb1.d7.access.npf.
+    cc1 IN A 10.255.207.27
+    cc1.d7 IN CNAME cc1.access.npf.
+    telemetry IN SRV 0 0 9167 cc1.d7.access.npf.
+    cd1 IN A 10.255.207.28
+    cd1.d7 IN CNAME cd1.access.npf.
+    telemetry IN SRV 0 0 9167 cd1.d7.access.npf.
+    ah1 IN A 10.255.208.10
+    ah1.d8 IN CNAME ah1.access.npf.
+    telemetry IN SRV 0 0 9167 ah1.d8.access.npf.
+    ah2 IN A 10.255.208.11
+    ah2.d8 IN CNAME ah2.access.npf.
+    telemetry IN SRV 0 0 9167 ah2.d8.access.npf.
+    aj1 IN A 10.255.208.12
+    aj1.d8 IN CNAME aj1.access.npf.
+    telemetry IN SRV 0 0 9167 aj1.d8.access.npf.
+    aj2 IN A 10.255.208.13
+    aj2.d8 IN CNAME aj2.access.npf.
+    telemetry IN SRV 0 0 9167 aj2.d8.access.npf.
+    ak1 IN A 10.255.208.14
+    ak1.d8 IN CNAME ak1.access.npf.
+    telemetry IN SRV 0 0 9167 ak1.d8.access.npf.
+    ak2 IN A 10.255.208.15
+    ak2.d8 IN CNAME ak2.access.npf.
+    telemetry IN SRV 0 0 9167 ak2.d8.access.npf.
+    al1 IN A 10.255.208.16
+    al1.d8 IN CNAME al1.access.npf.
+    telemetry IN SRV 0 0 9167 al1.d8.access.npf.
+    al2 IN A 10.255.208.17
+    al2.d8 IN CNAME al2.access.npf.
+    telemetry IN SRV 0 0 9167 al2.d8.access.npf.
+    am1 IN A 10.255.208.18
+    am1.d8 IN CNAME am1.access.npf.
+    telemetry IN SRV 0 0 9167 am1.d8.access.npf.
+    am2 IN A 10.255.208.19
+    am2.d8 IN CNAME am2.access.npf.
+    telemetry IN SRV 0 0 9167 am2.d8.access.npf.
+    an1 IN A 10.255.208.20
+    an1.d8 IN CNAME an1.access.npf.
+    telemetry IN SRV 0 0 9167 an1.d8.access.npf.
+    an2 IN A 10.255.208.21
+    an2.d8 IN CNAME an2.access.npf.
+    telemetry IN SRV 0 0 9167 an2.d8.access.npf.
+    ap1 IN A 10.255.208.22
+    ap1.d8 IN CNAME ap1.access.npf.
+    telemetry IN SRV 0 0 9167 ap1.d8.access.npf.
+    ap2 IN A 10.255.208.23
+    ap2.d8 IN CNAME ap2.access.npf.
+    telemetry IN SRV 0 0 9167 ap2.d8.access.npf.
+    ce1 IN A 10.255.208.24
+    ce1.d8 IN CNAME ce1.access.npf.
+    telemetry IN SRV 0 0 9167 ce1.d8.access.npf.
+    cf1 IN A 10.255.208.25
+    cf1.d8 IN CNAME cf1.access.npf.
+    telemetry IN SRV 0 0 9167 cf1.d8.access.npf.
+    cg1 IN A 10.255.209.10
+    cg1.d9 IN CNAME cg1.access.npf.
+    telemetry IN SRV 0 0 9167 cg1.d9.access.npf.
+    ch1 IN A 10.255.209.11
+    ch1.d9 IN CNAME ch1.access.npf.
+    telemetry IN SRV 0 0 9167 ch1.d9.access.npf.
+    cc1 IN A 10.255.210.10
+    cc1.d10 IN CNAME cc1.access.npf.
+    telemetry IN SRV 0 0 9167 cc1.d10.access.npf.
+    cc2 IN A 10.255.210.11
+    cc2.d10 IN CNAME cc2.access.npf.
+    telemetry IN SRV 0 0 9167 cc2.d10.access.npf.
+    cc3 IN A 10.255.210.12
+    cc3.d10 IN CNAME cc3.access.npf.
+    telemetry IN SRV 0 0 9167 cc3.d10.access.npf.
+    cc4 IN A 10.255.210.13
+    cc4.d10 IN CNAME cc4.access.npf.
+    telemetry IN SRV 0 0 9167 cc4.d10.access.npf.
+    cc5 IN A 10.255.210.14
+    cc5.d10 IN CNAME cc5.access.npf.
+    telemetry IN SRV 0 0 9167 cc5.d10.access.npf.
+    cc1 IN A 10.255.211.10
+    cc1.d11 IN CNAME cc1.access.npf.
+    telemetry IN SRV 0 0 9167 cc1.d11.access.npf.
+    cc2 IN A 10.255.211.11
+    cc2.d11 IN CNAME cc2.access.npf.
+    telemetry IN SRV 0 0 9167 cc2.d11.access.npf.
+    cc3 IN A 10.255.211.12
+    cc3.d11 IN CNAME cc3.access.npf.
+    telemetry IN SRV 0 0 9167 cc3.d11.access.npf.
+    cc4 IN A 10.255.211.13
+    cc4.d11 IN CNAME cc4.access.npf.
+    telemetry IN SRV 0 0 9167 cc4.d11.access.npf.
+    cc5 IN A 10.255.211.14
+    cc5.d11 IN CNAME cc5.access.npf.
+    telemetry IN SRV 0 0 9167 cc5.d11.access.npf.
+    cc6 IN A 10.255.211.15
+    cc6.d11 IN CNAME cc6.access.npf.
+    telemetry IN SRV 0 0 9167 cc6.d11.access.npf.
+    cc7 IN A 10.255.211.16
+    cc7.d11 IN CNAME cc7.access.npf.
+    telemetry IN SRV 0 0 9167 cc7.d11.access.npf.
+    cc8 IN A 10.255.211.17
+    cc8.d11 IN CNAME cc8.access.npf.
+    telemetry IN SRV 0 0 9167 cc8.d11.access.npf.
+    da1 IN A 10.255.201.10
+    da1.d1 IN CNAME da1.access.npf.
+    telemetry IN SRV 0 0 9167 da1.d1.access.npf.
+    da2 IN A 10.255.201.11
+    da2.d1 IN CNAME da2.access.npf.
+    telemetry IN SRV 0 0 9167 da2.d1.access.npf.
+    db1 IN A 10.255.201.13
+    db1.d1 IN CNAME db1.access.npf.
+    telemetry IN SRV 0 0 9167 db1.d1.access.npf.
+    db2 IN A 10.255.201.14
+    db2.d1 IN CNAME db2.access.npf.
+    telemetry IN SRV 0 0 9167 db2.d1.access.npf.
+    dc1 IN A 10.255.201.16
+    dc1.d1 IN CNAME dc1.access.npf.
+    telemetry IN SRV 0 0 9167 dc1.d1.access.npf.
+    dc2 IN A 10.255.201.17
+    dc2.d1 IN CNAME dc2.access.npf.
+    telemetry IN SRV 0 0 9167 dc2.d1.access.npf.
+    dd1 IN A 10.255.201.19
+    dd1.d1 IN CNAME dd1.access.npf.
+    telemetry IN SRV 0 0 9167 dd1.d1.access.npf.
+    dd2 IN A 10.255.201.20
+    dd2.d1 IN CNAME dd2.access.npf.
+    telemetry IN SRV 0 0 9167 dd2.d1.access.npf.
+    de1 IN A 10.255.201.22
+    de1.d1 IN CNAME de1.access.npf.
+    telemetry IN SRV 0 0 9167 de1.d1.access.npf.
+    de2 IN A 10.255.201.23
+    de2.d1 IN CNAME de2.access.npf.
+    telemetry IN SRV 0 0 9167 de2.d1.access.npf.
+    df1 IN A 10.255.201.25
+    df1.d1 IN CNAME df1.access.npf.
+    telemetry IN SRV 0 0 9167 df1.d1.access.npf.
+    df2 IN A 10.255.201.26
+    df2.d1 IN CNAME df2.access.npf.
+    telemetry IN SRV 0 0 9167 df2.d1.access.npf.
+    dg1 IN A 10.255.201.28
+    dg1.d1 IN CNAME dg1.access.npf.
+    telemetry IN SRV 0 0 9167 dg1.d1.access.npf.
+    dg2 IN A 10.255.201.29
+    dg2.d1 IN CNAME dg2.access.npf.
+    telemetry IN SRV 0 0 9167 dg2.d1.access.npf.
+    fa1 IN A 10.255.201.12
+    fa1.d1 IN CNAME fa1.access.npf.
+    telemetry IN SRV 0 0 9167 fa1.d1.access.npf.
+    fb1 IN A 10.255.201.15
+    fb1.d1 IN CNAME fb1.access.npf.
+    telemetry IN SRV 0 0 9167 fb1.d1.access.npf.
+    fc1 IN A 10.255.201.18
+    fc1.d1 IN CNAME fc1.access.npf.
+    telemetry IN SRV 0 0 9167 fc1.d1.access.npf.
+    fd1 IN A 10.255.201.21
+    fd1.d1 IN CNAME fd1.access.npf.
+    telemetry IN SRV 0 0 9167 fd1.d1.access.npf.
+    fe1 IN A 10.255.201.24
+    fe1.d1 IN CNAME fe1.access.npf.
+    telemetry IN SRV 0 0 9167 fe1.d1.access.npf.
+    ff1 IN A 10.255.201.27
+    ff1.d1 IN CNAME ff1.access.npf.
+    telemetry IN SRV 0 0 9167 ff1.d1.access.npf.
+    fg1 IN A 10.255.201.30
+    fg1.d1 IN CNAME fg1.access.npf.
+    telemetry IN SRV 0 0 9167 fg1.d1.access.npf.
+    ha1 IN A 10.255.201.31
+    ha1.d1 IN CNAME ha1.access.npf.
+    telemetry IN SRV 0 0 9167 ha1.d1.access.npf.
+    hb1 IN A 10.255.201.32
+    hb1.d1 IN CNAME hb1.access.npf.
+    telemetry IN SRV 0 0 9167 hb1.d1.access.npf.
+    hc1 IN A 10.255.201.33
+    hc1.d1 IN CNAME hc1.access.npf.
+    telemetry IN SRV 0 0 9167 hc1.d1.access.npf.
+    hd1 IN A 10.255.201.34
+    hd1.d1 IN CNAME hd1.access.npf.
+    telemetry IN SRV 0 0 9167 hd1.d1.access.npf.
+    he1 IN A 10.255.201.35
+    he1.d1 IN CNAME he1.access.npf.
+    telemetry IN SRV 0 0 9167 he1.d1.access.npf.
+    dh1 IN A 10.255.202.10
+    dh1.d2 IN CNAME dh1.access.npf.
+    telemetry IN SRV 0 0 9167 dh1.d2.access.npf.
+    dh2 IN A 10.255.202.11
+    dh2.d2 IN CNAME dh2.access.npf.
+    telemetry IN SRV 0 0 9167 dh2.d2.access.npf.
+    dj1 IN A 10.255.202.13
+    dj1.d2 IN CNAME dj1.access.npf.
+    telemetry IN SRV 0 0 9167 dj1.d2.access.npf.
+    dj2 IN A 10.255.202.14
+    dj2.d2 IN CNAME dj2.access.npf.
+    telemetry IN SRV 0 0 9167 dj2.d2.access.npf.
+    dk1 IN A 10.255.202.16
+    dk1.d2 IN CNAME dk1.access.npf.
+    telemetry IN SRV 0 0 9167 dk1.d2.access.npf.
+    dk2 IN A 10.255.202.17
+    dk2.d2 IN CNAME dk2.access.npf.
+    telemetry IN SRV 0 0 9167 dk2.d2.access.npf.
+    dl1 IN A 10.255.202.19
+    dl1.d2 IN CNAME dl1.access.npf.
+    telemetry IN SRV 0 0 9167 dl1.d2.access.npf.
+    dl2 IN A 10.255.202.20
+    dl2.d2 IN CNAME dl2.access.npf.
+    telemetry IN SRV 0 0 9167 dl2.d2.access.npf.
+    dm1 IN A 10.255.202.22
+    dm1.d2 IN CNAME dm1.access.npf.
+    telemetry IN SRV 0 0 9167 dm1.d2.access.npf.
+    dm2 IN A 10.255.202.23
+    dm2.d2 IN CNAME dm2.access.npf.
+    telemetry IN SRV 0 0 9167 dm2.d2.access.npf.
+    dn1 IN A 10.255.202.25
+    dn1.d2 IN CNAME dn1.access.npf.
+    telemetry IN SRV 0 0 9167 dn1.d2.access.npf.
+    dn2 IN A 10.255.202.26
+    dn2.d2 IN CNAME dn2.access.npf.
+    telemetry IN SRV 0 0 9167 dn2.d2.access.npf.
+    dp1 IN A 10.255.202.28
+    dp1.d2 IN CNAME dp1.access.npf.
+    telemetry IN SRV 0 0 9167 dp1.d2.access.npf.
+    dp2 IN A 10.255.202.29
+    dp2.d2 IN CNAME dp2.access.npf.
+    telemetry IN SRV 0 0 9167 dp2.d2.access.npf.
+    fh1 IN A 10.255.202.12
+    fh1.d2 IN CNAME fh1.access.npf.
+    telemetry IN SRV 0 0 9167 fh1.d2.access.npf.
+    fj1 IN A 10.255.202.15
+    fj1.d2 IN CNAME fj1.access.npf.
+    telemetry IN SRV 0 0 9167 fj1.d2.access.npf.
+    fk1 IN A 10.255.202.18
+    fk1.d2 IN CNAME fk1.access.npf.
+    telemetry IN SRV 0 0 9167 fk1.d2.access.npf.
+    fl1 IN A 10.255.202.21
+    fl1.d2 IN CNAME fl1.access.npf.
+    telemetry IN SRV 0 0 9167 fl1.d2.access.npf.
+    fm1 IN A 10.255.202.24
+    fm1.d2 IN CNAME fm1.access.npf.
+    telemetry IN SRV 0 0 9167 fm1.d2.access.npf.
+    fn1 IN A 10.255.202.27
+    fn1.d2 IN CNAME fn1.access.npf.
+    telemetry IN SRV 0 0 9167 fn1.d2.access.npf.
+    fp1 IN A 10.255.202.30
+    fp1.d2 IN CNAME fp1.access.npf.
+    telemetry IN SRV 0 0 9167 fp1.d2.access.npf.
+    hg1 IN A 10.255.202.31
+    hg1.d2 IN CNAME hg1.access.npf.
+    telemetry IN SRV 0 0 9167 hg1.d2.access.npf.
+    hh1 IN A 10.255.202.32
+    hh1.d2 IN CNAME hh1.access.npf.
+    telemetry IN SRV 0 0 9167 hh1.d2.access.npf.
+    hj1 IN A 10.255.202.33
+    hj1.d2 IN CNAME hj1.access.npf.
+    telemetry IN SRV 0 0 9167 hj1.d2.access.npf.
+    hk1 IN A 10.255.202.34
+    hk1.d2 IN CNAME hk1.access.npf.
+    telemetry IN SRV 0 0 9167 hk1.d2.access.npf.
+    hl1 IN A 10.255.202.35
+    hl1.d2 IN CNAME hl1.access.npf.
+    telemetry IN SRV 0 0 9167 hl1.d2.access.npf.
+    hm1 IN A 10.255.202.36
+    hm1.d2 IN CNAME hm1.access.npf.
+    telemetry IN SRV 0 0 9167 hm1.d2.access.npf.
+    fn1 IN A 10.255.217.10
+    fn1.g2 IN CNAME fn1.access.npf.
+    telemetry IN SRV 0 0 9167 fn1.g2.access.npf.
+    fp1 IN A 10.255.217.11
+    fp1.g2 IN CNAME fp1.access.npf.
+    telemetry IN SRV 0 0 9167 fp1.g2.access.npf.
+    fq1 IN A 10.255.217.12
+    fq1.g2 IN CNAME fq1.access.npf.
+    telemetry IN SRV 0 0 9167 fq1.g2.access.npf.
+    fr1 IN A 10.255.217.13
+    fr1.g2 IN CNAME fr1.access.npf.
+    telemetry IN SRV 0 0 9167 fr1.g2.access.npf.
+    fs1 IN A 10.255.217.14
+    fs1.g2 IN CNAME fs1.access.npf.
+    telemetry IN SRV 0 0 9167 fs1.g2.access.npf.
+    ft1 IN A 10.255.217.15
+    ft1.g2 IN CNAME ft1.access.npf.
+    telemetry IN SRV 0 0 9167 ft1.g2.access.npf.
+    fu1 IN A 10.255.217.16
+    fu1.g2 IN CNAME fu1.access.npf.
+    telemetry IN SRV 0 0 9167 fu1.g2.access.npf.
+    dq1 IN A 10.255.203.10
+    dq1.d3 IN CNAME dq1.access.npf.
+    telemetry IN SRV 0 0 9167 dq1.d3.access.npf.
+    dq2 IN A 10.255.203.11
+    dq2.d3 IN CNAME dq2.access.npf.
+    telemetry IN SRV 0 0 9167 dq2.d3.access.npf.
+    dr1 IN A 10.255.203.13
+    dr1.d3 IN CNAME dr1.access.npf.
+    telemetry IN SRV 0 0 9167 dr1.d3.access.npf.
+    dr2 IN A 10.255.203.14
+    dr2.d3 IN CNAME dr2.access.npf.
+    telemetry IN SRV 0 0 9167 dr2.d3.access.npf.
+    ds1 IN A 10.255.203.16
+    ds1.d3 IN CNAME ds1.access.npf.
+    telemetry IN SRV 0 0 9167 ds1.d3.access.npf.
+    ds2 IN A 10.255.203.17
+    ds2.d3 IN CNAME ds2.access.npf.
+    telemetry IN SRV 0 0 9167 ds2.d3.access.npf.
+    dt1 IN A 10.255.203.19
+    dt1.d3 IN CNAME dt1.access.npf.
+    telemetry IN SRV 0 0 9167 dt1.d3.access.npf.
+    dt2 IN A 10.255.203.20
+    dt2.d3 IN CNAME dt2.access.npf.
+    telemetry IN SRV 0 0 9167 dt2.d3.access.npf.
+    du1 IN A 10.255.203.22
+    du1.d3 IN CNAME du1.access.npf.
+    telemetry IN SRV 0 0 9167 du1.d3.access.npf.
+    du2 IN A 10.255.203.23
+    du2.d3 IN CNAME du2.access.npf.
+    telemetry IN SRV 0 0 9167 du2.d3.access.npf.
+    dv1 IN A 10.255.203.25
+    dv1.d3 IN CNAME dv1.access.npf.
+    telemetry IN SRV 0 0 9167 dv1.d3.access.npf.
+    dv2 IN A 10.255.203.26
+    dv2.d3 IN CNAME dv2.access.npf.
+    telemetry IN SRV 0 0 9167 dv2.d3.access.npf.
+    dw1 IN A 10.255.203.28
+    dw1.d3 IN CNAME dw1.access.npf.
+    telemetry IN SRV 0 0 9167 dw1.d3.access.npf.
+    dw2 IN A 10.255.203.29
+    dw2.d3 IN CNAME dw2.access.npf.
+    telemetry IN SRV 0 0 9167 dw2.d3.access.npf.
+    fq1 IN A 10.255.203.12
+    fq1.d3 IN CNAME fq1.access.npf.
+    telemetry IN SRV 0 0 9167 fq1.d3.access.npf.
+    fr2 IN A 10.255.203.15
+    fr2.d3 IN CNAME fr2.access.npf.
+    telemetry IN SRV 0 0 9167 fr2.d3.access.npf.
+    fs1 IN A 10.255.203.18
+    fs1.d3 IN CNAME fs1.access.npf.
+    telemetry IN SRV 0 0 9167 fs1.d3.access.npf.
+    ft1 IN A 10.255.203.21
+    ft1.d3 IN CNAME ft1.access.npf.
+    telemetry IN SRV 0 0 9167 ft1.d3.access.npf.
+    fu1 IN A 10.255.203.24
+    fu1.d3 IN CNAME fu1.access.npf.
+    telemetry IN SRV 0 0 9167 fu1.d3.access.npf.
+    fv1 IN A 10.255.203.27
+    fv1.d3 IN CNAME fv1.access.npf.
+    telemetry IN SRV 0 0 9167 fv1.d3.access.npf.
+    fw1 IN A 10.255.203.30
+    fw1.d3 IN CNAME fw1.access.npf.
+    telemetry IN SRV 0 0 9167 fw1.d3.access.npf.
+    dx1 IN A 10.255.204.2
+    dx1.d4 IN CNAME dx1.access.npf.
+    telemetry IN SRV 0 0 9167 dx1.d4.access.npf.
+    dx2 IN A 10.255.204.3
+    dx2.d4 IN CNAME dx2.access.npf.
+    telemetry IN SRV 0 0 9167 dx2.d4.access.npf.
+    dy1 IN A 10.255.204.4
+    dy1.d4 IN CNAME dy1.access.npf.
+    telemetry IN SRV 0 0 9167 dy1.d4.access.npf.
+    dy2 IN A 10.255.204.5
+    dy2.d4 IN CNAME dy2.access.npf.
+    telemetry IN SRV 0 0 9167 dy2.d4.access.npf.
+    dz1 IN A 10.255.204.6
+    dz1.d4 IN CNAME dz1.access.npf.
+    telemetry IN SRV 0 0 9167 dz1.d4.access.npf.
+    dz2 IN A 10.255.204.7
+    dz2.d4 IN CNAME dz2.access.npf.
+    telemetry IN SRV 0 0 9167 dz2.d4.access.npf.
+    ea1 IN A 10.255.204.8
+    ea1.d4 IN CNAME ea1.access.npf.
+    telemetry IN SRV 0 0 9167 ea1.d4.access.npf.
+    ea2 IN A 10.255.204.9
+    ea2.d4 IN CNAME ea2.access.npf.
+    telemetry IN SRV 0 0 9167 ea2.d4.access.npf.
+    eb1 IN A 10.255.204.10
+    eb1.d4 IN CNAME eb1.access.npf.
+    telemetry IN SRV 0 0 9167 eb1.d4.access.npf.
+    eb2 IN A 10.255.204.11
+    eb2.d4 IN CNAME eb2.access.npf.
+    telemetry IN SRV 0 0 9167 eb2.d4.access.npf.
+    ec1 IN A 10.255.204.12
+    ec1.d4 IN CNAME ec1.access.npf.
+    telemetry IN SRV 0 0 9167 ec1.d4.access.npf.
+    ec2 IN A 10.255.204.13
+    ec2.d4 IN CNAME ec2.access.npf.
+    telemetry IN SRV 0 0 9167 ec2.d4.access.npf.
+    ed1 IN A 10.255.204.14
+    ed1.d4 IN CNAME ed1.access.npf.
+    telemetry IN SRV 0 0 9167 ed1.d4.access.npf.
+    ed2 IN A 10.255.204.15
+    ed2.d4 IN CNAME ed2.access.npf.
+    telemetry IN SRV 0 0 9167 ed2.d4.access.npf.
+    ee1 IN A 10.255.204.16
+    ee1.d4 IN CNAME ee1.access.npf.
+    telemetry IN SRV 0 0 9167 ee1.d4.access.npf.
+    ee2 IN A 10.255.204.17
+    ee2.d4 IN CNAME ee2.access.npf.
+    telemetry IN SRV 0 0 9167 ee2.d4.access.npf.
+    ef1 IN A 10.255.204.34
+    ef1.d4 IN CNAME ef1.access.npf.
+    telemetry IN SRV 0 0 9167 ef1.d4.access.npf.
+    ef2 IN A 10.255.204.35
+    ef2.d4 IN CNAME ef2.access.npf.
+    telemetry IN SRV 0 0 9167 ef2.d4.access.npf.
+    fx1 IN A 10.255.204.12
+    fx1.d4 IN CNAME fx1.access.npf.
+    telemetry IN SRV 0 0 9167 fx1.d4.access.npf.
+    fy1 IN A 10.255.204.15
+    fy1.d4 IN CNAME fy1.access.npf.
+    telemetry IN SRV 0 0 9167 fy1.d4.access.npf.
+    fz1 IN A 10.255.204.18
+    fz1.d4 IN CNAME fz1.access.npf.
+    telemetry IN SRV 0 0 9167 fz1.d4.access.npf.
+    ga1 IN A 10.255.204.21
+    ga1.d4 IN CNAME ga1.access.npf.
+    telemetry IN SRV 0 0 9167 ga1.d4.access.npf.
+    gb1 IN A 10.255.204.24
+    gb1.d4 IN CNAME gb1.access.npf.
+    telemetry IN SRV 0 0 9167 gb1.d4.access.npf.
+    gc1 IN A 10.255.204.27
+    gc1.d4 IN CNAME gc1.access.npf.
+    telemetry IN SRV 0 0 9167 gc1.d4.access.npf.
+    gd1 IN A 10.255.204.30
+    gd1.d4 IN CNAME gd1.access.npf.
+    telemetry IN SRV 0 0 9167 gd1.d4.access.npf.
+    ge1 IN A 10.255.204.33
+    ge1.d4 IN CNAME ge1.access.npf.
+    telemetry IN SRV 0 0 9167 ge1.d4.access.npf.
+    gf1 IN A 10.255.204.36
+    gf1.d4 IN CNAME gf1.access.npf.
+    telemetry IN SRV 0 0 9167 gf1.d4.access.npf.
+    expo1 IN A 10.255.205.10
+    expo1.d5 IN CNAME expo1.access.npf.
+    telemetry IN SRV 0 0 9167 expo1.d5.access.npf.
+    expo2 IN A 10.255.205.11
+    expo2.d5 IN CNAME expo2.access.npf.
+    telemetry IN SRV 0 0 9167 expo2.d5.access.npf.
+    expo3 IN A 10.255.205.12
+    expo3.d5 IN CNAME expo3.access.npf.
+    telemetry IN SRV 0 0 9167 expo3.d5.access.npf.
+    expo4 IN A 10.255.205.13
+    expo4.d5 IN CNAME expo4.access.npf.
+    telemetry IN SRV 0 0 9167 expo4.d5.access.npf.
+    expo5 IN A 10.255.205.14
+    expo5.d5 IN CNAME expo5.access.npf.
+    telemetry IN SRV 0 0 9167 expo5.d5.access.npf.
+    crew1 IN A 10.255.254.10
+    crew1.e1 IN CNAME crew1.access.npf.
+    telemetry IN SRV 0 0 9167 crew1.e1.access.npf.
+    crew2 IN A 10.255.254.11
+    crew2.e1 IN CNAME crew2.access.npf.
+    telemetry IN SRV 0 0 9167 crew2.e1.access.npf.
+    crew3 IN A 10.255.254.12
+    crew3.e1 IN CNAME crew3.access.npf.
+    telemetry IN SRV 0 0 9167 crew3.e1.access.npf.
+    crew4 IN A 10.255.254.13
+    crew4.e1 IN CNAME crew4.access.npf.
+    telemetry IN SRV 0 0 9167 crew4.e1.access.npf.
+    crew5 IN A 10.255.254.14
+    crew5.e1 IN CNAME crew5.access.npf.
+    telemetry IN SRV 0 0 9167 crew5.e1.access.npf.
+    crew6 IN A 10.255.254.15
+    crew6.e1 IN CNAME crew6.access.npf.
+    telemetry IN SRV 0 0 9167 crew6.e1.access.npf.
+    crew7 IN A 10.255.254.16
+    crew7.e1 IN CNAME crew7.access.npf.
+    telemetry IN SRV 0 0 9167 crew7.e1.access.npf.
+    crew8 IN A 10.255.254.17
+    crew8.e1 IN CNAME crew8.access.npf.
+    telemetry IN SRV 0 0 9167 crew8.e1.access.npf.
+    crew9 IN A 10.255.254.18
+    crew9.e1 IN CNAME crew9.access.npf.
+    telemetry IN SRV 0 0 9167 crew9.e1.access.npf.
+    crew10 IN A 10.255.254.19
+    crew10.e1 IN CNAME crew10.access.npf.
+    telemetry IN SRV 0 0 9167 crew10.e1.access.npf.
+    crew11 IN A 10.255.254.20
+    crew11.e1 IN CNAME crew11.access.npf.
+    telemetry IN SRV 0 0 9167 crew11.e1.access.npf.
+    crew12 IN A 10.255.254.21
+    crew12.e1 IN CNAME crew12.access.npf.
+    telemetry IN SRV 0 0 9167 crew12.e1.access.npf.
+    crew13 IN A 10.255.254.22
+    crew13.e1 IN CNAME crew13.access.npf.
+    telemetry IN SRV 0 0 9167 crew13.e1.access.npf.
+    crew14 IN A 10.255.254.23
+    crew14.e1 IN CNAME crew14.access.npf.
+    telemetry IN SRV 0 0 9167 crew14.e1.access.npf.
+    crew15 IN A 10.255.254.24
+    crew15.e1 IN CNAME crew15.access.npf.
+    telemetry IN SRV 0 0 9167 crew15.e1.access.npf.
+    scene IN A 10.255.254.25
+    scene.e1 IN CNAME scene.access.npf.
+    telemetry IN SRV 0 0 9167 scene.e1.access.npf.
+    e1-1 IN A 10.255.254.8
+    e1-1.e1 IN CNAME e1-1.access.npf.
+    telemetry IN SRV 0 0 9167 e1-1.e1.access.npf.
+    e1-2 IN A 10.255.254.9
+    e1-2.e1 IN CNAME e1-2.access.npf.
+    telemetry IN SRV 0 0 9167 e1-2.e1.access.npf.
+    shop1 IN A 10.255.253.10
+    shop1.e2 IN CNAME shop1.access.npf.
+    telemetry IN SRV 0 0 9167 shop1.e2.access.npf.
+    shop2 IN A 10.255.253.11
+    shop2.e2 IN CNAME shop2.access.npf.
+    telemetry IN SRV 0 0 9167 shop2.e2.access.npf.
+    shop3 IN A 10.255.253.12
+    shop3.e2 IN CNAME shop3.access.npf.
+    telemetry IN SRV 0 0 9167 shop3.e2.access.npf.
+    shop4 IN A 10.255.253.13
+    shop4.e2 IN CNAME shop4.access.npf.
+    telemetry IN SRV 0 0 9167 shop4.e2.access.npf.
+    shop5 IN A 10.255.253.19
+    shop5.e2 IN CNAME shop5.access.npf.
+    telemetry IN SRV 0 0 9167 shop5.e2.access.npf.
+    billet IN A 10.255.253.20
+    billet.e2 IN CNAME billet.access.npf.
+    telemetry IN SRV 0 0 9167 billet.e2.access.npf.
+    sos1 IN A 10.255.253.14
+    sos1.e2 IN CNAME sos1.access.npf.
+    telemetry IN SRV 0 0 9167 sos1.e2.access.npf.
+    sos2 IN A 10.255.253.15
+    sos2.e2 IN CNAME sos2.access.npf.
+    telemetry IN SRV 0 0 9167 sos2.e2.access.npf.
+    sos3 IN A 10.255.253.16
+    sos3.e2 IN CNAME sos3.access.npf.
+    telemetry IN SRV 0 0 9167 sos3.e2.access.npf.
+    cr1 IN A 10.255.253.17
+    cr1.e2 IN CNAME cr1.access.npf.
+    telemetry IN SRV 0 0 9167 cr1.e2.access.npf.
+    cr2 IN A 10.255.253.18
+    cr2.e2 IN CNAME cr2.access.npf.
+    telemetry IN SRV 0 0 9167 cr2.e2.access.npf.
+    expo1 IN A 10.255.251.10
+    expo1.e4 IN CNAME expo1.access.npf.
+    telemetry IN SRV 0 0 9167 expo1.e4.access.npf.
+    expo2 IN A 10.255.251.11
+    expo2.e4 IN CNAME expo2.access.npf.
+    telemetry IN SRV 0 0 9167 expo2.e4.access.npf.
 
-    telemetry IN SRV 0 0 9167 e1-ab2.access.npf.
-    telemetry IN SRV 0 0 9167 e1-ac1.access.npf.
-    telemetry IN SRV 0 0 9167 e1-ad1.access.npf.
-    telemetry IN SRV 0 0 9167 e1-ad2.access.npf.
-    telemetry IN SRV 0 0 9167 e1-ae1.access.npf.
-    telemetry IN SRV 0 0 9167 e1-ae1.access.npf.
-    telemetry IN SRV 0 0 9167 d13-af2.access.npf.
-    telemetry IN SRV 0 0 9167 isp2.access.npf.
 
     $ORIGIN dist.npf.
-    c1 IN A 10.255.255.1
-    c2 IN A 10.255.255.2
-    isp IN A 10.255.254.250
+    c1 IN A 10.255.255.111
+    c2 IN A 10.255.255.222
+    d1 IN A 10.255.255.1
+    d2 IN A 10.255.255.2
+    d3 IN A 10.255.255.3
+    d4 IN A 10.255.255.4
+    d5 IN A 10.255.255.5
+    d6 IN A 10.255.255.6
+    d7 IN A 10.255.255.7
+    d8 IN A 10.255.255.8
+    d9 IN A 10.255.255.9
+    d10 IN A 10.255.255.10
+    d11 IN A 10.255.255.11
+    d12 IN A 10.255.255.12
+    d13 IN A 10.255.255.13
+    d14 IN A 10.255.255.14
+    d15 IN A 10.255.255.15
+    d16 IN A 10.255.255.16
+    e1 IN A 10.255.255.254
+    e2 IN A 10.255.255.253
+    e3 IN A 10.255.255.252
+    e4 IN A 10.255.255.251
+    s1 IN A 10.255.255.51
+    s2 IN A 10.255.255.52
+    s3 IN A 10.255.255.53
+    n3k1 IN A 10.255.200.11
+    n3k2 IN A 10.255.200.139
+    g2 IN A 10.255.255.17
     telemetry IN SRV 0 0 9167 c1.dist.npf.
     telemetry IN SRV 0 0 9167 c2.dist.npf.
-    telemetry IN SRV 0 0 9167 isp.dist.npf.
+    telemetry IN SRV 0 0 9167 d1.dist.npf.
+    telemetry IN SRV 0 0 9167 d2.dist.npf.
+    telemetry IN SRV 0 0 9167 d3.dist.npf.
+    telemetry IN SRV 0 0 9167 d4.dist.npf.
+    telemetry IN SRV 0 0 9167 d5.dist.npf.
+    telemetry IN SRV 0 0 9167 d6.dist.npf.
+    telemetry IN SRV 0 0 9167 d7.dist.npf.
+    telemetry IN SRV 0 0 9167 d8.dist.npf.
+    telemetry IN SRV 0 0 9167 d9.dist.npf.
+    telemetry IN SRV 0 0 9167 d10.dist.npf.
+    telemetry IN SRV 0 0 9167 d11.dist.npf.
+    telemetry IN SRV 0 0 9167 d12.dist.npf.
+    telemetry IN SRV 0 0 9167 d13.dist.npf.
+    telemetry IN SRV 0 0 9167 d14.dist.npf.
+    telemetry IN SRV 0 0 9167 d15.dist.npf.
+    telemetry IN SRV 0 0 9167 d16.dist.npf.
+    telemetry IN SRV 0 0 9167 e1.dist.npf.
+    telemetry IN SRV 0 0 9167 e2.dist.npf.
+    telemetry IN SRV 0 0 9167 e3.dist.npf.
+    telemetry IN SRV 0 0 9167 e4.dist.npf.
+    telemetry IN SRV 0 0 9167 s1.dist.npf.
+    telemetry IN SRV 0 0 9167 s2.dist.npf.
+    telemetry IN SRV 0 0 9167 s3.dist.npf.
+    telemetry IN SRV 0 0 9167 n3k1.dist.npf.
+    telemetry IN SRV 0 0 9167 n3k2.dist.npf.
+    telemetry IN SRV 0 0 9167 g2.dist.npf.
+    vl11.d1 IN A 10.1.11.1
+    vl12.d1 IN A 10.1.12.1
+    vl13.d1 IN A 10.1.13.1
+    vl14.d1 IN A 10.1.14.1
+    vl15.d1 IN A 10.1.15.1
+    vl16.d1 IN A 10.1.16.1
+    vl17.d1 IN A 10.1.17.1
+    vl18.d1 IN A 10.1.18.1
+    vl240.d1 IN A 10.1.240.1
+    vl248.d1 IN A 10.1.248.1
+    vl250.d1 IN A 10.1.250.1
+    vl11.d2 IN A 10.2.11.1
+    vl12.d2 IN A 10.2.12.1
+    vl13.d2 IN A 10.2.13.1
+    vl14.d2 IN A 10.2.14.1
+    vl15.d2 IN A 10.2.15.1
+    vl16.d2 IN A 10.2.16.1
+    vl17.d2 IN A 10.2.17.1
+    vl18.d2 IN A 10.2.18.1
+    vl240.d2 IN A 10.2.240.1
+    vl248.d2 IN A 10.2.248.1
+    vl250.d2 IN A 10.2.250.1
+    vl11.d3 IN A 10.3.11.1
+    vl12.d3 IN A 10.3.12.1
+    vl13.d3 IN A 10.3.13.1
+    vl14.d3 IN A 10.3.14.1
+    vl15.d3 IN A 10.3.15.1
+    vl16.d3 IN A 10.3.16.1
+    vl17.d3 IN A 10.3.17.1
+    vl18.d3 IN A 10.3.18.1
+    vl240.d3 IN A 10.3.240.1
+    vl248.d3 IN A 10.3.248.1
+    vl250.d3 IN A 10.3.250.1
+    vl11.d4 IN A 10.4.11.1
+    vl12.d4 IN A 10.4.12.1
+    vl13.d4 IN A 10.4.13.1
+    vl14.d4 IN A 10.4.14.1
+    vl15.d4 IN A 10.4.15.1
+    vl16.d4 IN A 10.4.16.1
+    vl17.d4 IN A 10.4.17.1
+    vl18.d4 IN A 10.4.18.1
+    vl240.d4 IN A 10.4.240.1
+    vl248.d4 IN A 10.4.248.1
+    vl250.d4 IN A 10.4.250.1
+    vl11.d5 IN A 10.5.11.1
+    vl12.d5 IN A 10.5.12.1
+    vl13.d5 IN A 10.5.13.1
+    vl14.d5 IN A 10.5.14.1
+    vl15.d5 IN A 10.5.15.1
+    vl16.d5 IN A 10.5.16.1
+    vl17.d5 IN A 10.5.17.1
+    vl18.d5 IN A 10.5.18.1
+    vl240.d5 IN A 10.5.240.1
+    vl248.d5 IN A 10.5.248.1
+    vl250.d5 IN A 10.5.250.1
+    vl11.d6 IN A 10.6.11.1
+    vl12.d6 IN A 10.6.12.1
+    vl13.d6 IN A 10.6.13.1
+    vl14.d6 IN A 10.6.14.1
+    vl15.d6 IN A 10.6.15.1
+    vl16.d6 IN A 10.6.16.1
+    vl17.d6 IN A 10.6.17.1
+    vl18.d6 IN A 10.6.18.1
+    vl240.d6 IN A 10.6.240.1
+    vl248.d6 IN A 10.6.248.1
+    vl250.d6 IN A 10.6.250.1
+    vl11.d7 IN A 10.7.11.1
+    vl12.d7 IN A 10.7.12.1
+    vl13.d7 IN A 10.7.13.1
+    vl14.d7 IN A 10.7.14.1
+    vl15.d7 IN A 10.7.15.1
+    vl16.d7 IN A 10.7.16.1
+    vl17.d7 IN A 10.7.17.1
+    vl18.d7 IN A 10.7.18.1
+    vl240.d7 IN A 10.7.240.1
+    vl248.d7 IN A 10.7.248.1
+    vl250.d7 IN A 10.7.250.1
+    vl11.d8 IN A 10.8.11.1
+    vl12.d8 IN A 10.8.12.1
+    vl13.d8 IN A 10.8.13.1
+    vl14.d8 IN A 10.8.14.1
+    vl15.d8 IN A 10.8.15.1
+    vl16.d8 IN A 10.8.16.1
+    vl17.d8 IN A 10.8.17.1
+    vl18.d8 IN A 10.8.18.1
+    vl240.d8 IN A 10.8.240.1
+    vl248.d8 IN A 10.8.248.1
+    vl250.d8 IN A 10.8.250.1
+    vl11.d9 IN A 10.9.11.1
+    vl12.d9 IN A 10.9.12.1
+    vl13.d9 IN A 10.9.13.1
+    vl14.d9 IN A 10.9.14.1
+    vl15.d9 IN A 10.9.15.1
+    vl16.d9 IN A 10.9.16.1
+    vl17.d9 IN A 10.9.17.1
+    vl18.d9 IN A 10.9.18.1
+    vl240.d9 IN A 10.9.240.1
+    vl248.d9 IN A 10.9.248.1
+    vl250.d9 IN A 10.9.250.1
+    vl11.d10 IN A 10.10.11.1
+    vl12.d10 IN A 10.10.12.1
+    vl13.d10 IN A 10.10.13.1
+    vl14.d10 IN A 10.10.14.1
+    vl15.d10 IN A 10.10.15.1
+    vl16.d10 IN A 10.10.16.1
+    vl17.d10 IN A 10.10.17.1
+    vl18.d10 IN A 10.10.18.1
+    vl240.d10 IN A 10.10.240.1
+    vl248.d10 IN A 10.10.248.1
+    vl250.d10 IN A 10.10.250.1
+    vl11.d11 IN A 10.11.11.1
+    vl12.d11 IN A 10.11.12.1
+    vl13.d11 IN A 10.11.13.1
+    vl14.d11 IN A 10.11.14.1
+    vl15.d11 IN A 10.11.15.1
+    vl16.d11 IN A 10.11.16.1
+    vl17.d11 IN A 10.11.17.1
+    vl18.d11 IN A 10.11.18.1
+    vl240.d11 IN A 10.11.240.1
+    vl248.d11 IN A 10.11.248.1
+    vl250.d11 IN A 10.11.250.1
+    vl11.d12 IN A 10.12.11.1
+    vl12.d12 IN A 10.12.12.1
+    vl13.d12 IN A 10.12.13.1
+    vl14.d12 IN A 10.12.14.1
+    vl15.d12 IN A 10.12.15.1
+    vl16.d12 IN A 10.12.16.1
+    vl17.d12 IN A 10.12.17.1
+    vl18.d12 IN A 10.12.18.1
+    vl240.d12 IN A 10.12.240.1
+    vl248.d12 IN A 10.12.248.1
+    vl250.d12 IN A 10.12.250.1
+    vl11.d13 IN A 10.13.11.1
+    vl12.d13 IN A 10.13.12.1
+    vl13.d13 IN A 10.13.13.1
+    vl14.d13 IN A 10.13.14.1
+    vl15.d13 IN A 10.13.15.1
+    vl16.d13 IN A 10.13.16.1
+    vl17.d13 IN A 10.13.17.1
+    vl18.d13 IN A 10.13.18.1
+    vl240.d13 IN A 10.13.240.1
+    vl248.d13 IN A 10.13.248.1
+    vl250.d13 IN A 10.13.250.1
+    vl11.d14 IN A 10.14.11.1
+    vl12.d14 IN A 10.14.12.1
+    vl13.d14 IN A 10.14.13.1
+    vl14.d14 IN A 10.14.14.1
+    vl15.d14 IN A 10.14.15.1
+    vl16.d14 IN A 10.14.16.1
+    vl17.d14 IN A 10.14.17.1
+    vl18.d14 IN A 10.14.18.1
+    vl240.d14 IN A 10.14.240.1
+    vl248.d14 IN A 10.14.248.1
+    vl250.d14 IN A 10.14.250.1
+    vl11.d15 IN A 10.15.11.1
+    vl12.d15 IN A 10.15.12.1
+    vl13.d15 IN A 10.15.13.1
+    vl14.d15 IN A 10.15.14.1
+    vl15.d15 IN A 10.15.15.1
+    vl16.d15 IN A 10.15.16.1
+    vl17.d15 IN A 10.15.17.1
+    vl18.d15 IN A 10.15.18.1
+    vl240.d15 IN A 10.15.240.1
+    vl248.d15 IN A 10.15.248.1
+    vl250.d15 IN A 10.15.250.1
+    vl11.d16 IN A 10.16.11.1
+    vl12.d16 IN A 10.16.12.1
+    vl13.d16 IN A 10.16.13.1
+    vl14.d16 IN A 10.16.14.1
+    vl15.d16 IN A 10.16.15.1
+    vl16.d16 IN A 10.16.16.1
+    vl17.d16 IN A 10.16.17.1
+    vl18.d16 IN A 10.16.18.1
+    vl240.d16 IN A 10.16.240.1
+    vl248.d16 IN A 10.16.248.1
+    vl250.d16 IN A 10.16.250.1
+    vl11.g2 IN A 10.17.11.1
+    vl12.g2 IN A 10.17.12.1
+    vl13.g2 IN A 10.17.13.1
+    vl14.g2 IN A 10.17.14.1
+    vl15.g2 IN A 10.17.15.1
+    vl16.g2 IN A 10.17.16.1
+    vl17.g2 IN A 10.17.17.1
+    vl18.g2 IN A 10.17.18.1
+    vl11.e4 IN A 10.251.11.1
+    vl12.e4 IN A 10.251.12.1
+    vl13.e4 IN A 10.251.13.1
+    vl14.e4 IN A 10.251.14.1
+    vl15.e4 IN A 10.251.15.1
+    vl16.e4 IN A 10.251.16.1
+    vl17.e4 IN A 10.251.17.1
+    vl18.e4 IN A 10.251.18.1
+    vl240.e4 IN A 10.251.240.1
+    vl248.e4 IN A 10.251.248.1
+    vl250.e4 IN A 10.251.250.1
+    vl11.e3 IN A 10.252.11.1
+    vl12.e3 IN A 10.252.12.1
+    vl13.e3 IN A 10.252.13.1
+    vl14.e3 IN A 10.252.14.1
+    vl15.e3 IN A 10.252.15.1
+    vl16.e3 IN A 10.252.16.1
+    vl17.e3 IN A 10.252.17.1
+    vl18.e3 IN A 10.252.18.1
+    vl240.e3 IN A 10.252.240.1
+    vl248.e3 IN A 10.252.248.1
+    vl250.e3 IN A 10.252.250.1
+    vl11.e2 IN A 10.253.11.1
+    vl12.e2 IN A 10.253.12.1
+    vl13.e2 IN A 10.253.13.1
+    vl14.e2 IN A 10.253.14.1
+    vl15.e2 IN A 10.253.15.1
+    vl16.e2 IN A 10.253.16.1
+    vl17.e2 IN A 10.253.17.1
+    vl18.e2 IN A 10.253.18.1
+    vl240.e2 IN A 10.253.240.1
+    vl248.e2 IN A 10.253.248.1
+    vl250.e2 IN A 10.253.250.1
+    vl11.e1 IN A 10.254.11.1
+    vl12.e1 IN A 10.254.12.1
+    vl13.e1 IN A 10.254.13.1
+    vl14.e1 IN A 10.254.14.1
+    vl15.e1 IN A 10.254.15.1
+    vl16.e1 IN A 10.254.16.1
+    vl17.e1 IN A 10.254.17.1
+    vl18.e1 IN A 10.254.18.1
+    vl240.e1 IN A 10.254.240.1
+    vl248.e1 IN A 10.254.248.1
+    vl250.e1 IN A 10.254.250.1
+    vl193.d1 IN A 10.255.201.1
+    vl193.d2 IN A 10.255.202.1
+    vl193.d3 IN A 10.255.203.1
+    vl193.d4 IN A 10.255.204.1
+    vl193.d5 IN A 10.255.205.1
+    vl193.d6 IN A 10.255.206.1
+    vl193.d7 IN A 10.255.207.1
+    vl193.d8 IN A 10.255.208.1
+    vl193.d9 IN A 10.255.209.1
+    vl193.d10 IN A 10.255.210.1
+    vl193.d11 IN A 10.255.211.1
+    vl193.d12 IN A 10.255.212.1
+    vl193.d13 IN A 10.255.213.1
+    vl193.d14 IN A 10.255.214.1
+    vl193.d15 IN A 10.255.215.1
+    vl193.d16 IN A 10.255.216.1
+    vl193.g2 IN A 10.255.217.1
+    vl193.e4 IN A 10.255.251.1
+    vl193.e3 IN A 10.255.252.1
+    vl193.e2 IN A 10.255.253.1
+    vl193.e1 IN A 10.255.254.1
 
-  255.10.in-addr.arpa.zone: |
-    $ORIGIN 255.10.in-addr.arpa.
+    $ORIGIN link.npf.
+    te1-8.e1 IN A 192.168.255.161
+    te1-1.e1 IN A 192.168.255.178
+    te1-2.e1 IN A 192.168.255.182
+    te1-3.e1 IN A 192.168.255.186
+    te1-4.e1 IN A 192.168.255.190
+    te1-49.d1 IN A 192.168.0.2
+    te1-50.d1 IN A 192.168.0.17
+    te1-49.d2 IN A 192.168.0.18
+    te1-50.d2 IN A 192.168.0.33
+    te1-49.d3 IN A 192.168.0.34
+    te1-50.d3 IN A 192.168.0.49
+    te0-0-0-12.core2 IN A 192.168.0.50
+    te0-0-0-13.core1 IN A 192.168.0.65
+    te1-49.d4 IN A 192.168.0.66
+    te1-50.d4 IN A 192.168.0.81
+    te1-49.d5 IN A 192.168.0.82
+    te1-50.d5 IN A 192.168.0.97
+    te1-49.d6 IN A 192.168.0.98
+    te1-50.d6 IN A 192.168.0.113
+    te0-0-0-13.core2 IN A 192.168.0.114
+    te0-1-0-12.core1 IN A 192.168.0.129
+    te1-49.d7 IN A 192.168.0.130
+    te1-50.d7 IN A 192.168.0.145
+    te1-49.d8 IN A 192.168.0.146
+    te1-50.d8 IN A 192.168.0.161
+    te1-49.d9 IN A 192.168.0.162
+    te1-50.d9 IN A 192.168.0.177
+    te0-1-0-12.core2 IN A 192.168.0.178
+    te0-1-0-13.core1 IN A 192.168.0.193
+    te1-49.d10 IN A 192.168.0.194
+    te1-50.d10 IN A 192.168.0.209
+    te1-49.d11 IN A 192.168.0.210
+    te1-50.d11 IN A 192.168.0.225
+    te1-49.d12 IN A 192.168.0.226
+    te1-50.d12 IN A 192.168.0.241
+    te0-1-0-13.core2 IN A 192.168.0.242
+    te0-0-0-14.core1 IN A 192.168.1.1
+    te1-49.d13 IN A 192.168.1.2
+    te1-50.d13 IN A 192.168.1.17
+    te1-49.d14 IN A 192.168.1.18
+    te1-50.d14 IN A 192.168.1.33
+    te0-0-0-14.core2 IN A 192.168.1.34
+    te0-1-0-14.core1 IN A 192.168.1.49
+    te1-49.d15 IN A 192.168.1.50
+    te1-50.d15 IN A 192.168.1.65
+    te1-49.d16 IN A 192.168.1.66
+    te1-50.d16 IN A 192.168.1.81
+    te0-1-0-14.core2 IN A 192.168.1.82
+    te0-0-0-15.core1 IN A 192.168.1.113
+    te3-1.g2 IN A 192.168.1.114
+    te0-1-0-15.core1 IN A 192.168.1.117
+    te4-1.g2 IN A 192.168.1.118
+    te3-2.g2 IN A 192.168.1.121
+    te0-0-0-15.core2 IN A 192.168.1.122
+    te4-2.g2 IN A 192.168.1.125
+    te0-1-0-15.core2 IN A 192.168.1.126
+    te1-50.e4 IN A 192.168.255.113
+    te0-1-0-16.core2 IN A 192.168.255.114
+    te1-50.e3 IN A 192.168.255.129
+    te1-49.e4 IN A 192.168.255.130
+    te1-50.e2 IN A 192.168.255.145
+    te1-49.e3 IN A 192.168.255.146
+    te1-8.e1 IN A 192.168.255.161
+    te1-49.e2 IN A 192.168.255.162
+    te0-1-0-16.core1 IN A 192.168.255.177
+    te1-1.e1 IN A 192.168.255.178
+    te0-1-0-21.core1 IN A 192.168.255.181
+    te1-2.e1 IN A 192.168.255.182
+    te0-1-0-22.core1 IN A 192.168.255.185
+    te1-3.e1 IN A 192.168.255.186
+    te0-1-0-23.core1 IN A 192.168.255.189
+    te1-4.e1 IN A 192.168.255.190
+    hu0-2-0-0.core1 IN A 192.168.255.209
+    hu0-2-0-0.core2 IN A 192.168.255.210
+    hu0-3-0-0.core1 IN A 192.168.255.213
+    hu0-3-0-0.core2 IN A 192.168.255.214
+    eth2.avatar IN A 10.0.0.1
+    be10-301.core1 IN A 10.0.0.2
+    eth2.leviathan IN A 10.0.0.5
+    be10-302.core1 IN A 10.0.0.6
+    eth2.ragnarok IN A 10.0.0.9
+    be10-301.core2 IN A 10.0.0.10
+    eth2.erabus IN A 10.0.0.13
+    be10-302.core2 IN A 10.0.0.14
+    be1-25.core IN A 10.0.250.1
+    nvr.dc IN A 10.0.250.10
+    be1-25.core1 IN A 10.0.250.253
+    be1-25.core2 IN A 10.0.250.254
+    be1-250.core IN A 10.248.0.1
+    be1-250.core1 IN A 10.248.63.253
+    be1-250.core2 IN A 10.248.63.254
+    be1-251.core IN A 10.248.128.1
+    be1-251.core1 IN A 10.248.143.253
+    be1-251.core2 IN A 10.248.143.254
+    be1-252.core IN A 10.248.160.1
+    be1-252.core1 IN A 10.248.175.253
+    be1-252.core2 IN A 10.248.175.254
+    be1-253.core IN A 10.248.224.1
+    be1-253.core1 IN A 10.248.225.253
+    be1-253.core2 IN A 10.248.225.254
+    be1-254.core IN A 10.248.248.1
+    be1-254.core1 IN A 10.248.251.253
+    be1-254.core2 IN A 10.248.251.254
+    be1-255.core IN A 10.248.255.1
+    be1-255.core1 IN A 10.248.255.253
+    be1-255.core2 IN A 10.248.255.254
+    be1-193.core IN A 10.255.193.1
+    be1-193.core1 IN A 10.255.193.253
+    be1-193.core2 IN A 10.255.193.254
+    be1-248.core IN A 10.255.248.1
+    be1-248.core1 IN A 10.255.248.253
+    be1-248.core2 IN A 10.255.248.254
+    be1-41.core IN A 172.20.22.1
+    be1-41.core1 IN A 172.20.22.253
+    be1-41.core2 IN A 172.20.22.254
+
+    $ORIGIN dc.npf.
+    nvr.dc.link.npf IN A 10.0.250.10
+    open.wifi.wlc IN A 10.248.0.2
+    crew.wifi.wlc IN A 10.248.128.2
+    expo.wifi.wlc IN A 10.248.160.2
+    billet.wifi.wlc IN A 10.248.224.2
+    adm.wifi.wlc IN A 10.248.248.2
+    ap.wlc IN A 10.248.255.2
+    vl193.n5k1 IN A 10.255.193.11
+    vl193.n5k2 IN A 10.255.193.12
+    vl193.b1 IN A 10.255.193.21
+    vl193.b2 IN A 10.255.193.22
+    wlc01.n5k1 IN A 10.255.193.101
+    wlc02.n5k2 IN A 10.255.193.102
+
+
+  10.in-addr.arpa.zone: |
+    $ORIGIN 10.in-addr.arpa.
+    $TTL 600
+
+    @	IN	SOA	ns1.npf.	hostmaster.npf. (
+        2021101225 ; Serial
+        300 ; Refresh
+        150 ; Retry
+        600 ; Expire
+        600) ; Minimum
+
+        IN	NS	ns1.npf.
+
+    2.201.255 IN PTR wifi1.d1.access.npf.
+    3.201.255 IN PTR wifi2.d1.access.npf.
+    4.201.255 IN PTR wifi3.d1.access.npf.
+    2.202.255 IN PTR wifi1.d2.access.npf.
+    2.203.255 IN PTR wifi1.d3.access.npf.
+    2.204.255 IN PTR wifi1.d4.access.npf.
+    2.205.255 IN PTR wifi1.d5.access.npf.
+    2.206.255 IN PTR wifi1.d6.access.npf.
+    2.207.255 IN PTR wifi1.d7.access.npf.
+    2.204.255 IN PTR wifi1.d8.access.npf.
+    2.209.255 IN PTR wifi1.d9.access.npf.
+    2.210.255 IN PTR wifi1.d10.access.npf.
+    2.211.255 IN PTR wifi1.d11.access.npf.
+    2.212.255 IN PTR wifi1.d12.access.npf.
+    2.254.255 IN PTR wifi1.e1.access.npf.
+    2.253.255 IN PTR wifi1.e2.access.npf.
+    3.253.255 IN PTR wifi2.e2.access.npf.
+    2.252.255 IN PTR wifi1.e3.access.npf.
+    2.251.255 IN PTR wifi1.e4.access.npf.
+    10.207.255 IN PTR aa1.d7.access.npf.
+    11.207.255 IN PTR aa2.d7.access.npf.
+    12.207.255 IN PTR aa3.d7.access.npf.
+    13.207.255 IN PTR ab1.d7.access.npf.
+    14.207.255 IN PTR ab2.d7.access.npf.
+    15.207.255 IN PTR ac1.d7.access.npf.
+    16.207.255 IN PTR ac2.d7.access.npf.
+    17.207.255 IN PTR ad1.d7.access.npf.
+    18.207.255 IN PTR ad2.d7.access.npf.
+    19.207.255 IN PTR ae1.d7.access.npf.
+    20.207.255 IN PTR ae2.d7.access.npf.
+    21.207.255 IN PTR af1.d7.access.npf.
+    22.207.255 IN PTR af2.d7.access.npf.
+    23.207.255 IN PTR ag1.d7.access.npf.
+    24.207.255 IN PTR ag2.d7.access.npf.
+    25.207.255 IN PTR ca1.d7.access.npf.
+    26.207.255 IN PTR cb1.d7.access.npf.
+    27.207.255 IN PTR cc1.d7.access.npf.
+    28.207.255 IN PTR cd1.d7.access.npf.
+    10.208.255 IN PTR ah1.d8.access.npf.
+    11.208.255 IN PTR ah2.d8.access.npf.
+    12.208.255 IN PTR aj1.d8.access.npf.
+    13.208.255 IN PTR aj2.d8.access.npf.
+    14.208.255 IN PTR ak1.d8.access.npf.
+    15.208.255 IN PTR ak2.d8.access.npf.
+    16.208.255 IN PTR al1.d8.access.npf.
+    17.208.255 IN PTR al2.d8.access.npf.
+    18.208.255 IN PTR am1.d8.access.npf.
+    19.208.255 IN PTR am2.d8.access.npf.
+    20.208.255 IN PTR an1.d8.access.npf.
+    21.208.255 IN PTR an2.d8.access.npf.
+    22.208.255 IN PTR ap1.d8.access.npf.
+    23.208.255 IN PTR ap2.d8.access.npf.
+    24.208.255 IN PTR ce1.d8.access.npf.
+    25.208.255 IN PTR cf1.d8.access.npf.
+    10.209.255 IN PTR cg1.d9.access.npf.
+    11.209.255 IN PTR ch1.d9.access.npf.
+    10.210.255 IN PTR cc1.d10.access.npf.
+    11.210.255 IN PTR cc2.d10.access.npf.
+    12.210.255 IN PTR cc3.d10.access.npf.
+    13.210.255 IN PTR cc4.d10.access.npf.
+    14.210.255 IN PTR cc5.d10.access.npf.
+    10.211.255 IN PTR cc1.d11.access.npf.
+    11.211.255 IN PTR cc2.d11.access.npf.
+    12.211.255 IN PTR cc3.d11.access.npf.
+    13.211.255 IN PTR cc4.d11.access.npf.
+    14.211.255 IN PTR cc5.d11.access.npf.
+    15.211.255 IN PTR cc6.d11.access.npf.
+    16.211.255 IN PTR cc7.d11.access.npf.
+    17.211.255 IN PTR cc8.d11.access.npf.
+    10.201.255 IN PTR da1.d1.access.npf.
+    11.201.255 IN PTR da2.d1.access.npf.
+    13.201.255 IN PTR db1.d1.access.npf.
+    14.201.255 IN PTR db2.d1.access.npf.
+    16.201.255 IN PTR dc1.d1.access.npf.
+    17.201.255 IN PTR dc2.d1.access.npf.
+    19.201.255 IN PTR dd1.d1.access.npf.
+    20.201.255 IN PTR dd2.d1.access.npf.
+    22.201.255 IN PTR de1.d1.access.npf.
+    23.201.255 IN PTR de2.d1.access.npf.
+    25.201.255 IN PTR df1.d1.access.npf.
+    26.201.255 IN PTR df2.d1.access.npf.
+    28.201.255 IN PTR dg1.d1.access.npf.
+    29.201.255 IN PTR dg2.d1.access.npf.
+    12.201.255 IN PTR fa1.d1.access.npf.
+    15.201.255 IN PTR fb1.d1.access.npf.
+    18.201.255 IN PTR fc1.d1.access.npf.
+    21.201.255 IN PTR fd1.d1.access.npf.
+    24.201.255 IN PTR fe1.d1.access.npf.
+    27.201.255 IN PTR ff1.d1.access.npf.
+    30.201.255 IN PTR fg1.d1.access.npf.
+    31.201.255 IN PTR ha1.d1.access.npf.
+    32.201.255 IN PTR hb1.d1.access.npf.
+    33.201.255 IN PTR hc1.d1.access.npf.
+    34.201.255 IN PTR hd1.d1.access.npf.
+    35.201.255 IN PTR he1.d1.access.npf.
+    10.202.255 IN PTR dh1.d2.access.npf.
+    11.202.255 IN PTR dh2.d2.access.npf.
+    13.202.255 IN PTR dj1.d2.access.npf.
+    14.202.255 IN PTR dj2.d2.access.npf.
+    16.202.255 IN PTR dk1.d2.access.npf.
+    17.202.255 IN PTR dk2.d2.access.npf.
+    19.202.255 IN PTR dl1.d2.access.npf.
+    20.202.255 IN PTR dl2.d2.access.npf.
+    22.202.255 IN PTR dm1.d2.access.npf.
+    23.202.255 IN PTR dm2.d2.access.npf.
+    25.202.255 IN PTR dn1.d2.access.npf.
+    26.202.255 IN PTR dn2.d2.access.npf.
+    28.202.255 IN PTR dp1.d2.access.npf.
+    29.202.255 IN PTR dp2.d2.access.npf.
+    12.202.255 IN PTR fh1.d2.access.npf.
+    15.202.255 IN PTR fj1.d2.access.npf.
+    18.202.255 IN PTR fk1.d2.access.npf.
+    21.202.255 IN PTR fl1.d2.access.npf.
+    24.202.255 IN PTR fm1.d2.access.npf.
+    27.202.255 IN PTR fn1.d2.access.npf.
+    30.202.255 IN PTR fp1.d2.access.npf.
+    31.202.255 IN PTR hg1.d2.access.npf.
+    32.202.255 IN PTR hh1.d2.access.npf.
+    33.202.255 IN PTR hj1.d2.access.npf.
+    34.202.255 IN PTR hk1.d2.access.npf.
+    35.202.255 IN PTR hl1.d2.access.npf.
+    36.202.255 IN PTR hm1.d2.access.npf.
+    10.217.255 IN PTR fn1.g2.access.npf.
+    11.217.255 IN PTR fp1.g2.access.npf.
+    12.217.255 IN PTR fq1.g2.access.npf.
+    13.217.255 IN PTR fr1.g2.access.npf.
+    14.217.255 IN PTR fs1.g2.access.npf.
+    15.217.255 IN PTR ft1.g2.access.npf.
+    16.217.255 IN PTR fu1.g2.access.npf.
+    10.203.255 IN PTR dq1.d3.access.npf.
+    11.203.255 IN PTR dq2.d3.access.npf.
+    13.203.255 IN PTR dr1.d3.access.npf.
+    14.203.255 IN PTR dr2.d3.access.npf.
+    16.203.255 IN PTR ds1.d3.access.npf.
+    17.203.255 IN PTR ds2.d3.access.npf.
+    19.203.255 IN PTR dt1.d3.access.npf.
+    20.203.255 IN PTR dt2.d3.access.npf.
+    22.203.255 IN PTR du1.d3.access.npf.
+    23.203.255 IN PTR du2.d3.access.npf.
+    25.203.255 IN PTR dv1.d3.access.npf.
+    26.203.255 IN PTR dv2.d3.access.npf.
+    28.203.255 IN PTR dw1.d3.access.npf.
+    29.203.255 IN PTR dw2.d3.access.npf.
+    12.203.255 IN PTR fq1.d3.access.npf.
+    15.203.255 IN PTR fr2.d3.access.npf.
+    18.203.255 IN PTR fs1.d3.access.npf.
+    21.203.255 IN PTR ft1.d3.access.npf.
+    24.203.255 IN PTR fu1.d3.access.npf.
+    27.203.255 IN PTR fv1.d3.access.npf.
+    30.203.255 IN PTR fw1.d3.access.npf.
+    2.204.255 IN PTR dx1.d4.access.npf.
+    3.204.255 IN PTR dx2.d4.access.npf.
+    4.204.255 IN PTR dy1.d4.access.npf.
+    5.204.255 IN PTR dy2.d4.access.npf.
+    6.204.255 IN PTR dz1.d4.access.npf.
+    7.204.255 IN PTR dz2.d4.access.npf.
+    8.204.255 IN PTR ea1.d4.access.npf.
+    9.204.255 IN PTR ea2.d4.access.npf.
+    10.204.255 IN PTR eb1.d4.access.npf.
+    11.204.255 IN PTR eb2.d4.access.npf.
+    12.204.255 IN PTR ec1.d4.access.npf.
+    13.204.255 IN PTR ec2.d4.access.npf.
+    14.204.255 IN PTR ed1.d4.access.npf.
+    15.204.255 IN PTR ed2.d4.access.npf.
+    16.204.255 IN PTR ee1.d4.access.npf.
+    17.204.255 IN PTR ee2.d4.access.npf.
+    34.204.255 IN PTR ef1.d4.access.npf.
+    35.204.255 IN PTR ef2.d4.access.npf.
+    12.204.255 IN PTR fx1.d4.access.npf.
+    15.204.255 IN PTR fy1.d4.access.npf.
+    18.204.255 IN PTR fz1.d4.access.npf.
+    21.204.255 IN PTR ga1.d4.access.npf.
+    24.204.255 IN PTR gb1.d4.access.npf.
+    27.204.255 IN PTR gc1.d4.access.npf.
+    30.204.255 IN PTR gd1.d4.access.npf.
+    33.204.255 IN PTR ge1.d4.access.npf.
+    36.204.255 IN PTR gf1.d4.access.npf.
+    10.205.255 IN PTR expo1.d5.access.npf.
+    11.205.255 IN PTR expo2.d5.access.npf.
+    12.205.255 IN PTR expo3.d5.access.npf.
+    13.205.255 IN PTR expo4.d5.access.npf.
+    14.205.255 IN PTR expo5.d5.access.npf.
+    10.254.255 IN PTR crew1.e1.access.npf.
+    11.254.255 IN PTR crew2.e1.access.npf.
+    12.254.255 IN PTR crew3.e1.access.npf.
+    13.254.255 IN PTR crew4.e1.access.npf.
+    14.254.255 IN PTR crew5.e1.access.npf.
+    15.254.255 IN PTR crew6.e1.access.npf.
+    16.254.255 IN PTR crew7.e1.access.npf.
+    17.254.255 IN PTR crew8.e1.access.npf.
+    18.254.255 IN PTR crew9.e1.access.npf.
+    19.254.255 IN PTR crew10.e1.access.npf.
+    20.254.255 IN PTR crew11.e1.access.npf.
+    21.254.255 IN PTR crew12.e1.access.npf.
+    22.254.255 IN PTR crew13.e1.access.npf.
+    23.254.255 IN PTR crew14.e1.access.npf.
+    24.254.255 IN PTR crew15.e1.access.npf.
+    25.254.255 IN PTR scene.e1.access.npf.
+    8.254.255 IN PTR e1-1.e1.access.npf.
+    9.254.255 IN PTR e1-2.e1.access.npf.
+    10.253.255 IN PTR shop1.e2.access.npf.
+    11.253.255 IN PTR shop2.e2.access.npf.
+    12.253.255 IN PTR shop3.e2.access.npf.
+    13.253.255 IN PTR shop4.e2.access.npf.
+    19.253.255 IN PTR shop5.e2.access.npf.
+    20.253.255 IN PTR billet.e2.access.npf.
+    14.253.255 IN PTR sos1.e2.access.npf.
+    15.253.255 IN PTR sos2.e2.access.npf.
+    16.253.255 IN PTR sos3.e2.access.npf.
+    17.253.255 IN PTR cr1.e2.access.npf.
+    18.253.255 IN PTR cr2.e2.access.npf.
+    10.252.255 IN PTR crew1.e3.access.npf.
+    11.252.255 IN PTR crew2.e3.access.npf.
+    12.252.255 IN PTR crew3.e3.access.npf.
+    13.252.255 IN PTR crew4.e3.access.npf.
+    14.252.255 IN PTR crew5.e3.access.npf.
+    15.252.255 IN PTR crew6.e3.access.npf.
+    16.252.255 IN PTR crew7.e3.access.npf.
+    17.252.255 IN PTR crew8.e3.access.npf.
+    18.252.255 IN PTR crew9.e3.access.npf.
+    19.252.255 IN PTR crew10.e3.access.npf.
+    10.251.255 IN PTR expo1.e4.access.npf.
+    11.251.255 IN PTR expo2.e4.access.npf.
+    111.255.255 IN PTR c1.dist.npf.
+    222.255.255 IN PTR c2.dist.npf.
+    1.255.255   IN PTR d1.dist.npf.
+    2.255.255   IN PTR d2.dist.npf.
+    3.255.255   IN PTR d3.dist.npf.
+    4.255.255   IN PTR d4.dist.npf.
+    5.255.255   IN PTR d5.dist.npf.
+    6.255.255   IN PTR d6.dist.npf.
+    7.255.255   IN PTR d7.dist.npf.
+    8.255.255   IN PTR d8.dist.npf.
+    9.255.255   IN PTR d9.dist.npf.
+    10.255.255   IN PTR d10.dist.npf.
+    11.255.255   IN PTR d11.dist.npf.
+    12.255.255   IN PTR d12.dist.npf.
+    13.255.255   IN PTR d13.dist.npf.
+    14.255.255   IN PTR d14.dist.npf.
+    15.255.255   IN PTR d15.dist.npf.
+    16.255.255   IN PTR d16.dist.npf.
+    254.255.255  IN PTR e1.dist.npf.
+    253.255.255  IN PTR e2.dist.npf.
+    252.255.255  IN PTR e3.dist.npf.
+    251.255.255  IN PTR e4.dist.npf.
+    51.255.255   IN PTR s1.dist.npf.
+    52.255.255   IN PTR s2.dist.npf.
+    53.255.255   IN PTR s3.dist.npf.
+    11.200.255  IN PTR n3k1.dist.npf.
+    139.200.255  IN PTR n3k2.dist.npf.
+    1.0.0 IN PTR eth2.avatar.link.npf.
+    2.0.0 IN PTR be10-301.core1.link.npf.
+    5.0.0 IN PTR eth2.leviathan.link.npf.
+    6.0.0 IN PTR be10-302.core1.link.npf.
+    9.0.0 IN PTR eth2.ragnarok.link.npf.
+    10.0.0 IN PTR be10-301.core2.link.npf.
+    13.0.0 IN PTR eth2.erabus.link.npf.
+    14.0.0 IN PTR be10-302.core2.link.npf.
+    1.250.0 IN PTR be1-25.core.link.npf.
+    10.250.0 IN PTR nvr.dc.link.npf.
+    253.250.0 IN PTR be1-25.core1.link.npf.
+    254.250.0 IN PTR be1-25.core2.link.npf.
+    1.0.248 IN PTR be1-250.core.link.npf.
+    253.63.248 IN PTR be1-250.core1.link.npf.
+    254.63.248 IN PTR be1-250.core2.link.npf.
+    1.128.248 IN PTR be1-251.core.link.npf.
+    253.143.248 IN PTR be1-251.core1.link.npf.
+    254.143.248 IN PTR be1-251.core2.link.npf.
+    1.160.248 IN PTR be1-252.core.link.npf.
+    253.175.248 IN PTR be1-252.core1.link.npf.
+    254.175.248 IN PTR be1-252.core2.link.npf.
+    1.224.248 IN PTR be1-253.core.link.npf.
+    253.225.248 IN PTR be1-253.core1.link.npf.
+    254.225.248 IN PTR be1-253.core2.link.npf.
+    1.248.248 IN PTR be1-254.core.link.npf.
+    253.251.248 IN PTR be1-254.core1.link.npf.
+    254.251.248 IN PTR be1-254.core2.link.npf.
+    1.255.248 IN PTR be1-255.core.link.npf.
+    253.255.248 IN PTR be1-255.core1.link.npf.
+    254.255.248 IN PTR be1-255.core2.link.npf.
+    1.193.255 IN PTR be1-193.core.link.npf.
+    253.193.255 IN PTR be1-193.core1.link.npf.
+    254.193.255 IN PTR be1-193.core2.link.npf.
+    1.248.255 IN PTR be1-248.core.link.npf.
+    253.248.255 IN PTR be1-248.core1.link.npf.
+    254.248.255 IN PTR be1-248.core2.link.npf.
+    10.250.0 IN PTR nvr.dc.link.npf.
+    2.0.248 IN PTR open.wifi.wlc.dc.npf.
+    2.128.248 IN PTR crew.wifi.wlc.dc.npf.
+    2.160.248 IN PTR expo.wifi.wlc.dc.npf.
+    2.224.248 IN PTR billet.wifi.wlc.dc.npf.
+    2.248.248 IN PTR adm.wifi.wlc.dc.npf.
+    2.255.248 IN PTR ap.wlc.dc.npf.
+    11.193.255 IN PTR vl193.n5k1.dc.npf.
+    12.193.255 IN PTR vl193.n5k2.dc.npf.
+    21.193.255 IN PTR vl193.b1.dc.npf.
+    22.193.255 IN PTR vl193.b2.dc.npf.
+    101.193.255 IN PTR wlc01.n5k1.dc.npf.
+    102.193.255 IN PTR wlc02.n5k2.dc.npf.
+    1.11.1 IN PTR vl11.d1.dist.npf.
+    1.12.1 IN PTR vl12.d1.dist.npf.
+    1.13.1 IN PTR vl13.d1.dist.npf.
+    1.14.1 IN PTR vl14.d1.dist.npf.
+    1.15.1 IN PTR vl15.d1.dist.npf.
+    1.16.1 IN PTR vl16.d1.dist.npf.
+    1.17.1 IN PTR vl17.d1.dist.npf.
+    1.18.1 IN PTR vl18.d1.dist.npf.
+    1.240.1 IN PTR vl240.d1.dist.npf.
+    1.248.1 IN PTR vl248.d1.dist.npf.
+    1.250.1 IN PTR vl250.d1.dist.npf.
+    1.11.2 IN PTR vl11.d2.dist.npf.
+    1.12.2 IN PTR vl12.d2.dist.npf.
+    1.13.2 IN PTR vl13.d2.dist.npf.
+    1.14.2 IN PTR vl14.d2.dist.npf.
+    1.15.2 IN PTR vl15.d2.dist.npf.
+    1.16.2 IN PTR vl16.d2.dist.npf.
+    1.17.2 IN PTR vl17.d2.dist.npf.
+    1.18.2 IN PTR vl18.d2.dist.npf.
+    1.240.2 IN PTR vl240.d2.dist.npf.
+    1.248.2 IN PTR vl248.d2.dist.npf.
+    1.250.2 IN PTR vl250.d2.dist.npf.
+    1.11.3 IN PTR vl11.d3.dist.npf.
+    1.12.3 IN PTR vl12.d3.dist.npf.
+    1.13.3 IN PTR vl13.d3.dist.npf.
+    1.14.3 IN PTR vl14.d3.dist.npf.
+    1.15.3 IN PTR vl15.d3.dist.npf.
+    1.16.3 IN PTR vl16.d3.dist.npf.
+    1.17.3 IN PTR vl17.d3.dist.npf.
+    1.18.3 IN PTR vl18.d3.dist.npf.
+    1.240.3 IN PTR vl240.d3.dist.npf.
+    1.248.3 IN PTR vl248.d3.dist.npf.
+    1.250.3 IN PTR vl250.d3.dist.npf.
+    1.11.4 IN PTR vl11.d4.dist.npf.
+    1.12.4 IN PTR vl12.d4.dist.npf.
+    1.13.4 IN PTR vl13.d4.dist.npf.
+    1.14.4 IN PTR vl14.d4.dist.npf.
+    1.15.4 IN PTR vl15.d4.dist.npf.
+    1.16.4 IN PTR vl16.d4.dist.npf.
+    1.17.4 IN PTR vl17.d4.dist.npf.
+    1.18.4 IN PTR vl18.d4.dist.npf.
+    1.240.4 IN PTR vl240.d4.dist.npf.
+    1.248.4 IN PTR vl248.d4.dist.npf.
+    1.250.4 IN PTR vl250.d4.dist.npf.
+    1.11.5 IN PTR vl11.d5.dist.npf.
+    1.12.5 IN PTR vl12.d5.dist.npf.
+    1.13.5 IN PTR vl13.d5.dist.npf.
+    1.14.5 IN PTR vl14.d5.dist.npf.
+    1.15.5 IN PTR vl15.d5.dist.npf.
+    1.16.5 IN PTR vl16.d5.dist.npf.
+    1.17.5 IN PTR vl17.d5.dist.npf.
+    1.18.5 IN PTR vl18.d5.dist.npf.
+    1.240.5 IN PTR vl240.d5.dist.npf.
+    1.248.5 IN PTR vl248.d5.dist.npf.
+    1.250.5 IN PTR vl250.d5.dist.npf.
+    1.11.6 IN PTR vl11.d6.dist.npf.
+    1.12.6 IN PTR vl12.d6.dist.npf.
+    1.13.6 IN PTR vl13.d6.dist.npf.
+    1.14.6 IN PTR vl14.d6.dist.npf.
+    1.15.6 IN PTR vl15.d6.dist.npf.
+    1.16.6 IN PTR vl16.d6.dist.npf.
+    1.17.6 IN PTR vl17.d6.dist.npf.
+    1.18.6 IN PTR vl18.d6.dist.npf.
+    1.240.6 IN PTR vl240.d6.dist.npf.
+    1.248.6 IN PTR vl248.d6.dist.npf.
+    1.250.6 IN PTR vl250.d6.dist.npf.
+    1.11.7 IN PTR vl11.d7.dist.npf.
+    1.12.7 IN PTR vl12.d7.dist.npf.
+    1.13.7 IN PTR vl13.d7.dist.npf.
+    1.14.7 IN PTR vl14.d7.dist.npf.
+    1.15.7 IN PTR vl15.d7.dist.npf.
+    1.16.7 IN PTR vl16.d7.dist.npf.
+    1.17.7 IN PTR vl17.d7.dist.npf.
+    1.18.7 IN PTR vl18.d7.dist.npf.
+    1.240.7 IN PTR vl240.d7.dist.npf.
+    1.248.7 IN PTR vl248.d7.dist.npf.
+    1.250.7 IN PTR vl250.d7.dist.npf.
+    1.11.8 IN PTR vl11.d8.dist.npf.
+    1.12.8 IN PTR vl12.d8.dist.npf.
+    1.13.8 IN PTR vl13.d8.dist.npf.
+    1.14.8 IN PTR vl14.d8.dist.npf.
+    1.15.8 IN PTR vl15.d8.dist.npf.
+    1.16.8 IN PTR vl16.d8.dist.npf.
+    1.17.8 IN PTR vl17.d8.dist.npf.
+    1.18.8 IN PTR vl18.d8.dist.npf.
+    1.240.8 IN PTR vl240.d8.dist.npf.
+    1.248.8 IN PTR vl248.d8.dist.npf.
+    1.250.8 IN PTR vl250.d8.dist.npf.
+    1.11.9 IN PTR vl11.d9.dist.npf.
+    1.12.9 IN PTR vl12.d9.dist.npf.
+    1.13.9 IN PTR vl13.d9.dist.npf.
+    1.14.9 IN PTR vl14.d9.dist.npf.
+    1.15.9 IN PTR vl15.d9.dist.npf.
+    1.16.9 IN PTR vl16.d9.dist.npf.
+    1.17.9 IN PTR vl17.d9.dist.npf.
+    1.18.9 IN PTR vl18.d9.dist.npf.
+    1.240.9 IN PTR vl240.d9.dist.npf.
+    1.248.9 IN PTR vl248.d9.dist.npf.
+    1.250.9 IN PTR vl250.d9.dist.npf.
+    1.11.10 IN PTR vl11.d10.dist.npf.
+    1.12.10 IN PTR vl12.d10.dist.npf.
+    1.13.10 IN PTR vl13.d10.dist.npf.
+    1.14.10 IN PTR vl14.d10.dist.npf.
+    1.15.10 IN PTR vl15.d10.dist.npf.
+    1.16.10 IN PTR vl16.d10.dist.npf.
+    1.17.10 IN PTR vl17.d10.dist.npf.
+    1.18.10 IN PTR vl18.d10.dist.npf.
+    1.240.10 IN PTR vl240.d10.dist.npf.
+    1.248.10 IN PTR vl248.d10.dist.npf.
+    1.250.10 IN PTR vl250.d10.dist.npf.
+    1.11.11 IN PTR vl11.d11.dist.npf.
+    1.12.11 IN PTR vl12.d11.dist.npf.
+    1.13.11 IN PTR vl13.d11.dist.npf.
+    1.14.11 IN PTR vl14.d11.dist.npf.
+    1.15.11 IN PTR vl15.d11.dist.npf.
+    1.16.11 IN PTR vl16.d11.dist.npf.
+    1.17.11 IN PTR vl17.d11.dist.npf.
+    1.18.11 IN PTR vl18.d11.dist.npf.
+    1.240.11 IN PTR vl240.d11.dist.npf.
+    1.248.11 IN PTR vl248.d11.dist.npf.
+    1.250.11 IN PTR vl250.d11.dist.npf.
+    1.11.12 IN PTR vl11.d12.dist.npf.
+    1.12.12 IN PTR vl12.d12.dist.npf.
+    1.13.12 IN PTR vl13.d12.dist.npf.
+    1.14.12 IN PTR vl14.d12.dist.npf.
+    1.15.12 IN PTR vl15.d12.dist.npf.
+    1.16.12 IN PTR vl16.d12.dist.npf.
+    1.17.12 IN PTR vl17.d12.dist.npf.
+    1.18.12 IN PTR vl18.d12.dist.npf.
+    1.240.12 IN PTR vl240.d12.dist.npf.
+    1.248.12 IN PTR vl248.d12.dist.npf.
+    1.250.12 IN PTR vl250.d12.dist.npf.
+    1.11.13 IN PTR vl11.d13.dist.npf.
+    1.12.13 IN PTR vl12.d13.dist.npf.
+    1.13.13 IN PTR vl13.d13.dist.npf.
+    1.14.13 IN PTR vl14.d13.dist.npf.
+    1.15.13 IN PTR vl15.d13.dist.npf.
+    1.16.13 IN PTR vl16.d13.dist.npf.
+    1.17.13 IN PTR vl17.d13.dist.npf.
+    1.18.13 IN PTR vl18.d13.dist.npf.
+    1.240.13 IN PTR vl240.d13.dist.npf.
+    1.248.13 IN PTR vl248.d13.dist.npf.
+    1.250.13 IN PTR vl250.d13.dist.npf.
+    1.11.14 IN PTR vl11.d14.dist.npf.
+    1.12.14 IN PTR vl12.d14.dist.npf.
+    1.13.14 IN PTR vl13.d14.dist.npf.
+    1.14.14 IN PTR vl14.d14.dist.npf.
+    1.15.14 IN PTR vl15.d14.dist.npf.
+    1.16.14 IN PTR vl16.d14.dist.npf.
+    1.17.14 IN PTR vl17.d14.dist.npf.
+    1.18.14 IN PTR vl18.d14.dist.npf.
+    1.240.14 IN PTR vl240.d14.dist.npf.
+    1.248.14 IN PTR vl248.d14.dist.npf.
+    1.250.14 IN PTR vl250.d14.dist.npf.
+    1.11.15 IN PTR vl11.d15.dist.npf.
+    1.12.15 IN PTR vl12.d15.dist.npf.
+    1.13.15 IN PTR vl13.d15.dist.npf.
+    1.14.15 IN PTR vl14.d15.dist.npf.
+    1.15.15 IN PTR vl15.d15.dist.npf.
+    1.16.15 IN PTR vl16.d15.dist.npf.
+    1.17.15 IN PTR vl17.d15.dist.npf.
+    1.18.15 IN PTR vl18.d15.dist.npf.
+    1.240.15 IN PTR vl240.d15.dist.npf.
+    1.248.15 IN PTR vl248.d15.dist.npf.
+    1.250.15 IN PTR vl250.d15.dist.npf.
+    1.11.16 IN PTR vl11.d16.dist.npf.
+    1.12.16 IN PTR vl12.d16.dist.npf.
+    1.13.16 IN PTR vl13.d16.dist.npf.
+    1.14.16 IN PTR vl14.d16.dist.npf.
+    1.15.16 IN PTR vl15.d16.dist.npf.
+    1.16.16 IN PTR vl16.d16.dist.npf.
+    1.17.16 IN PTR vl17.d16.dist.npf.
+    1.18.16 IN PTR vl18.d16.dist.npf.
+    1.240.16 IN PTR vl240.d16.dist.npf.
+    1.248.16 IN PTR vl248.d16.dist.npf.
+    1.250.16 IN PTR vl250.d16.dist.npf.
+    1.11.17 IN PTR vl11.g2.dist.npf.
+    1.12.17 IN PTR vl12.g2.dist.npf.
+    1.13.17 IN PTR vl13.g2.dist.npf.
+    1.14.17 IN PTR vl14.g2.dist.npf.
+    1.15.17 IN PTR vl15.g2.dist.npf.
+    1.16.17 IN PTR vl16.g2.dist.npf.
+    1.17.17 IN PTR vl17.g2.dist.npf.
+    1.18.17 IN PTR vl18.g2.dist.npf.
+    1.11.251 IN PTR vl11.e4.dist.npf.
+    1.12.251 IN PTR vl12.e4.dist.npf.
+    1.13.251 IN PTR vl13.e4.dist.npf.
+    1.14.251 IN PTR vl14.e4.dist.npf.
+    1.15.251 IN PTR vl15.e4.dist.npf.
+    1.16.251 IN PTR vl16.e4.dist.npf.
+    1.17.251 IN PTR vl17.e4.dist.npf.
+    1.18.251 IN PTR vl18.e4.dist.npf.
+    1.240.251 IN PTR vl240.e4.dist.npf.
+    1.248.251 IN PTR vl248.e4.dist.npf.
+    1.250.251 IN PTR vl250.e4.dist.npf.
+    1.11.252 IN PTR vl11.e3.dist.npf.
+    1.12.252 IN PTR vl12.e3.dist.npf.
+    1.13.252 IN PTR vl13.e3.dist.npf.
+    1.14.252 IN PTR vl14.e3.dist.npf.
+    1.15.252 IN PTR vl15.e3.dist.npf.
+    1.16.252 IN PTR vl16.e3.dist.npf.
+    1.17.252 IN PTR vl17.e3.dist.npf.
+    1.18.252 IN PTR vl18.e3.dist.npf.
+    1.240.252 IN PTR vl240.e3.dist.npf.
+    1.248.252 IN PTR vl248.e3.dist.npf.
+    1.250.252 IN PTR vl250.e3.dist.npf.
+    1.11.253 IN PTR vl11.e2.dist.npf.
+    1.12.253 IN PTR vl12.e2.dist.npf.
+    1.13.253 IN PTR vl13.e2.dist.npf.
+    1.14.253 IN PTR vl14.e2.dist.npf.
+    1.15.253 IN PTR vl15.e2.dist.npf.
+    1.16.253 IN PTR vl16.e2.dist.npf.
+    1.17.253 IN PTR vl17.e2.dist.npf.
+    1.18.253 IN PTR vl18.e2.dist.npf.
+    1.240.253 IN PTR vl240.e2.dist.npf.
+    1.248.253 IN PTR vl248.e2.dist.npf.
+    1.250.253 IN PTR vl250.e2.dist.npf.
+    1.11.254 IN PTR vl11.e1.dist.npf.
+    1.12.254 IN PTR vl12.e1.dist.npf.
+    1.13.254 IN PTR vl13.e1.dist.npf.
+    1.14.254 IN PTR vl14.e1.dist.npf.
+    1.15.254 IN PTR vl15.e1.dist.npf.
+    1.16.254 IN PTR vl16.e1.dist.npf.
+    1.17.254 IN PTR vl17.e1.dist.npf.
+    1.18.254 IN PTR vl18.e1.dist.npf.
+    1.240.254 IN PTR vl240.e1.dist.npf.
+    1.248.254 IN PTR vl248.e1.dist.npf.
+    1.250.254 IN PTR vl250.e1.dist.npf.
+    1.201.255 IN PTR vl193.d1.dist.npf.
+    1.202.255 IN PTR vl193.d2.dist.npf.
+    1.203.255 IN PTR vl193.d3.dist.npf.
+    1.204.255 IN PTR vl193.d4.dist.npf.
+    1.205.255 IN PTR vl193.d5.dist.npf.
+    1.206.255 IN PTR vl193.d6.dist.npf.
+    1.207.255 IN PTR vl193.d7.dist.npf.
+    1.208.255 IN PTR vl193.d8.dist.npf.
+    1.209.255 IN PTR vl193.d9.dist.npf.
+    1.210.255 IN PTR vl193.d10.dist.npf.
+    1.211.255 IN PTR vl193.d11.dist.npf.
+    1.212.255 IN PTR vl193.d12.dist.npf.
+    1.213.255 IN PTR vl193.d13.dist.npf.
+    1.214.255 IN PTR vl193.d14.dist.npf.
+    1.215.255 IN PTR vl193.d15.dist.npf.
+    1.216.255 IN PTR vl193.d16.dist.npf.
+    1.217.255 IN PTR vl193.g2.dist.npf.
+    1.251.255 IN PTR vl193.e4.dist.npf.
+    1.252.255 IN PTR vl193.e3.dist.npf.
+    1.253.255 IN PTR vl193.e2.dist.npf.
+    1.254.255 IN PTR vl193.e1.dist.npf.
+
+  168.192.in-addr.arpa.zone: |
+    $ORIGIN 168.192.in-addr.arpa.
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
@@ -99,17 +1663,84 @@ data:
 
         IN	NS	ns1.npf.
 
-    13.254 IN PTR e1-ab2.access.npf
-    14.254 IN PTR e1-ac1.access.npf
-    16.254 IN PTR e1-ad1.access.npf
-    17.254 IN PTR e1-ad2.access.npf
-    18.254 IN PTR e1-ae1.access.npf
-    19.254 IN PTR e1-ae1.access.npf
-    21.254 IN PTR d13-af2.access.npf
-    200.254 IN PTR isp2.access.npf
-    250.254 IN PTR isp.dist.npf
-    1.255 IN PTR c1.dist.npf.
-    2.255 IN PTR c2.dist.npf.
+    161.255 IN PTR te1-8.e1.link.npf.
+    178.255 IN PTR te1-1.e1.link.npf.
+    182.255 IN PTR te1-2.e1.link.npf.
+    186.255 IN PTR te1-3.e1.link.npf.
+    190.255 IN PTR te1-4.e1.link.npf.
+    1.0.168.192 IN PTR te0-0-0-12.core1.link.npf.
+    2.0.168 PTR te1-49.d1.link.npf.
+    17.0.16 PTR te1-50.d1.link.npf.
+    18.0.16 PTR te1-49.d2.link.npf.
+    33.0.16 PTR te1-50.d2.link.npf.
+    34.0.16 PTR te1-49.d3.link.npf.
+    49.0.16 PTR te1-50.d3.link.npf.
+    50.0.16 PTR te0-0-0-12.core2.link.npf.
+    65.0.16 PTR te0-0-0-13.core1.link.npf.
+    66.0.16 PTR te1-49.d4.link.npf.
+    81.0.16 PTR te1-50.d4.link.npf.
+    82.0.16 PTR te1-49.d5.link.npf.
+    97.0.16 PTR te1-50.d5.link.npf.
+    98.0.16 PTR te1-49.d6.link.npf.
+    113.0.1N PTR te1-50.d6.link.npf.
+    114.0.1N PTR te0-0-0-13.core2.link.npf.
+    129.0.1N PTR te0-1-0-12.core1.link.npf.
+    130.0.1N PTR te1-49.d7.link.npf.
+    145.0.1N PTR te1-50.d7.link.npf.
+    146.0.1N PTR te1-49.d8.link.npf.
+    161.0.1N PTR te1-50.d8.link.npf.
+    162.0.1N PTR te1-49.d9.link.npf.
+    177.0.1N PTR te1-50.d9.link.npf.
+    178.0.1N PTR te0-1-0-12.core2.link.npf.
+    193.0.1N PTR te0-1-0-13.core1.link.npf.
+    194.0.1N PTR te1-49.d10.link.npf.
+    209.0.1N PTR te1-50.d10.link.npf.
+    210.0.1N PTR te1-49.d11.link.npf.
+    225.0.1N PTR te1-50.d11.link.npf.
+    226.0.1N PTR te1-49.d12.link.npf.
+    241.0.1N PTR te1-50.d12.link.npf.
+    242.0.1N PTR te0-1-0-13.core2.link.npf.
+    1.1.168 PTR te0-0-0-14.core1.link.npf.
+    2.1.168 PTR te1-49.d13.link.npf.
+    17.1.16 PTR te1-50.d13.link.npf.
+    18.1.16 PTR te1-49.d14.link.npf.
+    33.1.16 PTR te1-50.d14.link.npf.
+    34.1.16 PTR te0-0-0-14.core2.link.npf.
+    49.1.16 PTR te0-1-0-14.core1.link.npf.
+    50.1.16 PTR te1-49.d15.link.npf.
+    65.1.16 PTR te1-50.d15.link.npf.
+    66.1.16 PTR te1-49.d16.link.npf.
+    81.1.16 PTR te1-50.d16.link.npf.
+    82.1.16 PTR te0-1-0-14.core2.link.npf.
+    113.1.1N PTR te0-0-0-15.core1.link.npf.
+    114.1.1N PTR te3-1.g2.link.npf.
+    117.1.1N PTR te0-1-0-15.core1.link.npf.
+    118.1.1N PTR te4-1.g2.link.npf.
+    121.1.1N PTR te3-2.g2.link.npf.
+    122.1.1N PTR te0-0-0-15.core2.link.npf.
+    125.1.1N PTR te4-2.g2.link.npf.
+    126.1.1N PTR te0-1-0-15.core2.link.npf.
+    113.255 IN PTR te1-50.e4.link.npf.
+    114.255 IN PTR te0-1-0-16.core2.link.npf.
+    129.255 IN PTR te1-50.e3.link.npf.
+    130.255 IN PTR te1-49.e4.link.npf.
+    145.255 IN PTR te1-50.e2.link.npf.
+    146.255 IN PTR te1-49.e3.link.npf.
+    161.255 IN PTR te1-8.e1.link.npf.
+    162.255 IN PTR te1-49.e2.link.npf.
+    177.255 IN PTR te0-1-0-16.core1.link.npf.
+    181.255 IN PTR te0-1-0-21.core1.link.npf.
+    182.255 IN PTR te1-2.e1.link.npf.
+    185.255 IN PTR te0-1-0-22.core1.link.npf.
+    186.255 IN PTR te1-3.e1.link.npf.
+    189.255 IN PTR te0-1-0-23.core1.link.npf.
+    190.255 IN PTR te1-4.e1.link.npf.
+    209.255 IN PTR hu0-2-0-0.core1.link.npf.
+    210.255 IN PTR hu0-2-0-0.core2.link.npf.
+    213.255 IN PTR hu0-3-0-0.core1.link.npf.
+    214.255 IN PTR hu0-3-0-0.core2.link.npf.
+
+
 
 kind: ConfigMap
 metadata:

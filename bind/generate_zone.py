@@ -89,6 +89,8 @@ dist_to_hostname_map = {'dist1': 'd1',
 
 participants = os.path.join(os.path.dirname(__file__), 'network_data_participants.csv')
 others = os.path.join(os.path.dirname(__file__), 'network_data_other.csv')
+network = os.path.join(os.path.dirname(__file__), 'network_data.csv')
+
 
 
 def gen(filepath):
@@ -115,13 +117,15 @@ def gen_reverse(filepath):
 
 
 zone = zone + '\n$ORIGIN access.npf.\n'
-zone = zone + '\n'.join(gen(participants)) + '\n'
-zone = zone + '\n'.join(gen(others)) + '\n'
+#zone = zone + '\n'.join(gen(participants)) + '\n'
+#zone = zone + '\n'.join(gen(others)) + '\n'
+zone = zone + '\n'.join(gen(network)) + '\n'
 zone = zone + '\n\n'
 zone = zone + open(os.path.join(os.path.dirname(__file__), 'dist')).read()
 print(zone)
 
-reverse_zone = reverse_zone + '\n'.join(gen_reverse(participants)) + '\n'
-reverse_zone = reverse_zone + '\n'.join(gen_reverse(others)) + '\n'
+#reverse_zone = reverse_zone + '\n'.join(gen_reverse(participants)) + '\n'
+#reverse_zone = reverse_zone + '\n'.join(gen_reverse(others)) + '\n'
+reverse_zone = reverse_zone + '\n'.join(gen_reverse(network)) + '\n'
 reverse_zone = reverse_zone + open(os.path.join(os.path.dirname(__file__), 'dist_reverse')).read()
 print(reverse_zone)
