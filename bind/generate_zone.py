@@ -19,6 +19,7 @@ $TTL 600
     IN	NS	ns1.npf.
 
 ns1				IN	A	10.96.5.3
+prom-server     IN  A   10.101.128.200
 dash IN CNAME grafana.grafana.svc.cluster.local.
 prom IN CNAME prometheus.prometheus.svc.cluster.local.
 alert IN CNAME alertmanager.prometheus.svc.cluster.local.
