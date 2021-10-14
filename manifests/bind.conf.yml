@@ -1635,7 +1635,7 @@ data:
     214.255.168 IN PTR hu0-3-0-0.core2.link.npf
 
   20.172.in-addr.arpa.zone: |
-    $ORIGIN 10.in-addr.arpa.
+    $ORIGIN 20.172.in-addr.arpa.
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
