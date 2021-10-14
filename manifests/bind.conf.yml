@@ -43,7 +43,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2021101426 ; Serial
+        2021101427 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -75,673 +75,673 @@ data:
 
     $ORIGIN access.npf.
     wifi1 IN A 10.255.201.2
-    wifi1.d1 IN CNAME wifi1.access.npf.
+    wifi1.d1 IN A 10.255.201.2
     telemetry IN SRV 0 0 9167 wifi1.d1.access.npf.
     wifi2 IN A 10.255.201.3
-    wifi2.d1 IN CNAME wifi2.access.npf.
+    wifi2.d1 IN A 10.255.201.3
     telemetry IN SRV 0 0 9167 wifi2.d1.access.npf.
     wifi3 IN A 10.255.201.4
-    wifi3.d1 IN CNAME wifi3.access.npf.
+    wifi3.d1 IN A 10.255.201.4
     telemetry IN SRV 0 0 9167 wifi3.d1.access.npf.
     wifi1 IN A 10.255.202.2
-    wifi1.d2 IN CNAME wifi1.access.npf.
+    wifi1.d2 IN A 10.255.202.2
     telemetry IN SRV 0 0 9167 wifi1.d2.access.npf.
     wifi1 IN A 10.255.203.2
-    wifi1.d3 IN CNAME wifi1.access.npf.
+    wifi1.d3 IN A 10.255.203.2
     telemetry IN SRV 0 0 9167 wifi1.d3.access.npf.
     wifi1 IN A 10.255.204.2
-    wifi1.d4 IN CNAME wifi1.access.npf.
+    wifi1.d4 IN A 10.255.204.2
     telemetry IN SRV 0 0 9167 wifi1.d4.access.npf.
     wifi1 IN A 10.255.205.2
-    wifi1.d5 IN CNAME wifi1.access.npf.
+    wifi1.d5 IN A 10.255.205.2
     telemetry IN SRV 0 0 9167 wifi1.d5.access.npf.
     wifi1 IN A 10.255.206.2
-    wifi1.d6 IN CNAME wifi1.access.npf.
+    wifi1.d6 IN A 10.255.206.2
     telemetry IN SRV 0 0 9167 wifi1.d6.access.npf.
     wifi1 IN A 10.255.207.2
-    wifi1.d7 IN CNAME wifi1.access.npf.
+    wifi1.d7 IN A 10.255.207.2
     telemetry IN SRV 0 0 9167 wifi1.d7.access.npf.
     wifi1 IN A 10.255.204.2
-    wifi1.d8 IN CNAME wifi1.access.npf.
+    wifi1.d8 IN A 10.255.204.2
     telemetry IN SRV 0 0 9167 wifi1.d8.access.npf.
     wifi1 IN A 10.255.209.2
-    wifi1.d9 IN CNAME wifi1.access.npf.
+    wifi1.d9 IN A 10.255.209.2
     telemetry IN SRV 0 0 9167 wifi1.d9.access.npf.
     wifi1 IN A 10.255.210.2
-    wifi1.d10 IN CNAME wifi1.access.npf.
+    wifi1.d10 IN A 10.255.210.2
     telemetry IN SRV 0 0 9167 wifi1.d10.access.npf.
     wifi1 IN A 10.255.211.2
-    wifi1.d11 IN CNAME wifi1.access.npf.
+    wifi1.d11 IN A 10.255.211.2
     telemetry IN SRV 0 0 9167 wifi1.d11.access.npf.
     wifi1 IN A 10.255.212.2
-    wifi1.d12 IN CNAME wifi1.access.npf.
+    wifi1.d12 IN A 10.255.212.2
     telemetry IN SRV 0 0 9167 wifi1.d12.access.npf.
     wifi1 IN A 10.255.254.2
-    wifi1.e1 IN CNAME wifi1.access.npf.
+    wifi1.e1 IN A 10.255.254.2
     telemetry IN SRV 0 0 9167 wifi1.e1.access.npf.
     wifi1 IN A 10.255.253.2
-    wifi1.e2 IN CNAME wifi1.access.npf.
+    wifi1.e2 IN A 10.255.253.2
     telemetry IN SRV 0 0 9167 wifi1.e2.access.npf.
     wifi2 IN A 10.255.253.3
-    wifi2.e2 IN CNAME wifi2.access.npf.
+    wifi2.e2 IN A 10.255.253.3
     telemetry IN SRV 0 0 9167 wifi2.e2.access.npf.
     wifi1 IN A 10.255.252.2
-    wifi1.e3 IN CNAME wifi1.access.npf.
+    wifi1.e3 IN A 10.255.252.2
     telemetry IN SRV 0 0 9167 wifi1.e3.access.npf.
     wifi1 IN A 10.255.251.2
-    wifi1.e4 IN CNAME wifi1.access.npf.
+    wifi1.e4 IN A 10.255.251.2
     telemetry IN SRV 0 0 9167 wifi1.e4.access.npf.
     aa1 IN A 10.255.207.10
-    aa1.d7 IN CNAME aa1.access.npf.
+    aa1.d7 IN A 10.255.207.10
     telemetry IN SRV 0 0 9167 aa1.d7.access.npf.
     aa2 IN A 10.255.207.11
-    aa2.d7 IN CNAME aa2.access.npf.
+    aa2.d7 IN A 10.255.207.11
     telemetry IN SRV 0 0 9167 aa2.d7.access.npf.
     aa3 IN A 10.255.207.12
-    aa3.d7 IN CNAME aa3.access.npf.
+    aa3.d7 IN A 10.255.207.12
     telemetry IN SRV 0 0 9167 aa3.d7.access.npf.
     ab1 IN A 10.255.207.13
-    ab1.d7 IN CNAME ab1.access.npf.
+    ab1.d7 IN A 10.255.207.13
     telemetry IN SRV 0 0 9167 ab1.d7.access.npf.
     ab2 IN A 10.255.207.14
-    ab2.d7 IN CNAME ab2.access.npf.
+    ab2.d7 IN A 10.255.207.14
     telemetry IN SRV 0 0 9167 ab2.d7.access.npf.
     ac1 IN A 10.255.207.15
-    ac1.d7 IN CNAME ac1.access.npf.
+    ac1.d7 IN A 10.255.207.15
     telemetry IN SRV 0 0 9167 ac1.d7.access.npf.
     ac2 IN A 10.255.207.16
-    ac2.d7 IN CNAME ac2.access.npf.
+    ac2.d7 IN A 10.255.207.16
     telemetry IN SRV 0 0 9167 ac2.d7.access.npf.
     ad1 IN A 10.255.207.17
-    ad1.d7 IN CNAME ad1.access.npf.
+    ad1.d7 IN A 10.255.207.17
     telemetry IN SRV 0 0 9167 ad1.d7.access.npf.
     ad2 IN A 10.255.207.18
-    ad2.d7 IN CNAME ad2.access.npf.
+    ad2.d7 IN A 10.255.207.18
     telemetry IN SRV 0 0 9167 ad2.d7.access.npf.
     ae1 IN A 10.255.207.19
-    ae1.d7 IN CNAME ae1.access.npf.
+    ae1.d7 IN A 10.255.207.19
     telemetry IN SRV 0 0 9167 ae1.d7.access.npf.
     ae2 IN A 10.255.207.20
-    ae2.d7 IN CNAME ae2.access.npf.
+    ae2.d7 IN A 10.255.207.20
     telemetry IN SRV 0 0 9167 ae2.d7.access.npf.
     af1 IN A 10.255.207.21
-    af1.d7 IN CNAME af1.access.npf.
+    af1.d7 IN A 10.255.207.21
     telemetry IN SRV 0 0 9167 af1.d7.access.npf.
     af2 IN A 10.255.207.22
-    af2.d7 IN CNAME af2.access.npf.
+    af2.d7 IN A 10.255.207.22
     telemetry IN SRV 0 0 9167 af2.d7.access.npf.
     ag1 IN A 10.255.207.23
-    ag1.d7 IN CNAME ag1.access.npf.
+    ag1.d7 IN A 10.255.207.23
     telemetry IN SRV 0 0 9167 ag1.d7.access.npf.
     ag2 IN A 10.255.207.24
-    ag2.d7 IN CNAME ag2.access.npf.
+    ag2.d7 IN A 10.255.207.24
     telemetry IN SRV 0 0 9167 ag2.d7.access.npf.
     ca1 IN A 10.255.207.25
-    ca1.d7 IN CNAME ca1.access.npf.
+    ca1.d7 IN A 10.255.207.25
     telemetry IN SRV 0 0 9167 ca1.d7.access.npf.
     cb1 IN A 10.255.207.26
-    cb1.d7 IN CNAME cb1.access.npf.
+    cb1.d7 IN A 10.255.207.26
     telemetry IN SRV 0 0 9167 cb1.d7.access.npf.
     cc1 IN A 10.255.207.27
-    cc1.d7 IN CNAME cc1.access.npf.
+    cc1.d7 IN A 10.255.207.27
     telemetry IN SRV 0 0 9167 cc1.d7.access.npf.
     cd1 IN A 10.255.207.28
-    cd1.d7 IN CNAME cd1.access.npf.
+    cd1.d7 IN A 10.255.207.28
     telemetry IN SRV 0 0 9167 cd1.d7.access.npf.
     ah1 IN A 10.255.208.10
-    ah1.d8 IN CNAME ah1.access.npf.
+    ah1.d8 IN A 10.255.208.10
     telemetry IN SRV 0 0 9167 ah1.d8.access.npf.
     ah2 IN A 10.255.208.11
-    ah2.d8 IN CNAME ah2.access.npf.
+    ah2.d8 IN A 10.255.208.11
     telemetry IN SRV 0 0 9167 ah2.d8.access.npf.
     aj1 IN A 10.255.208.12
-    aj1.d8 IN CNAME aj1.access.npf.
+    aj1.d8 IN A 10.255.208.12
     telemetry IN SRV 0 0 9167 aj1.d8.access.npf.
     aj2 IN A 10.255.208.13
-    aj2.d8 IN CNAME aj2.access.npf.
+    aj2.d8 IN A 10.255.208.13
     telemetry IN SRV 0 0 9167 aj2.d8.access.npf.
     ak1 IN A 10.255.208.14
-    ak1.d8 IN CNAME ak1.access.npf.
+    ak1.d8 IN A 10.255.208.14
     telemetry IN SRV 0 0 9167 ak1.d8.access.npf.
     ak2 IN A 10.255.208.15
-    ak2.d8 IN CNAME ak2.access.npf.
+    ak2.d8 IN A 10.255.208.15
     telemetry IN SRV 0 0 9167 ak2.d8.access.npf.
     al1 IN A 10.255.208.16
-    al1.d8 IN CNAME al1.access.npf.
+    al1.d8 IN A 10.255.208.16
     telemetry IN SRV 0 0 9167 al1.d8.access.npf.
     al2 IN A 10.255.208.17
-    al2.d8 IN CNAME al2.access.npf.
+    al2.d8 IN A 10.255.208.17
     telemetry IN SRV 0 0 9167 al2.d8.access.npf.
     am1 IN A 10.255.208.18
-    am1.d8 IN CNAME am1.access.npf.
+    am1.d8 IN A 10.255.208.18
     telemetry IN SRV 0 0 9167 am1.d8.access.npf.
     am2 IN A 10.255.208.19
-    am2.d8 IN CNAME am2.access.npf.
+    am2.d8 IN A 10.255.208.19
     telemetry IN SRV 0 0 9167 am2.d8.access.npf.
     an1 IN A 10.255.208.20
-    an1.d8 IN CNAME an1.access.npf.
+    an1.d8 IN A 10.255.208.20
     telemetry IN SRV 0 0 9167 an1.d8.access.npf.
     an2 IN A 10.255.208.21
-    an2.d8 IN CNAME an2.access.npf.
+    an2.d8 IN A 10.255.208.21
     telemetry IN SRV 0 0 9167 an2.d8.access.npf.
     ap1 IN A 10.255.208.22
-    ap1.d8 IN CNAME ap1.access.npf.
+    ap1.d8 IN A 10.255.208.22
     telemetry IN SRV 0 0 9167 ap1.d8.access.npf.
     ap2 IN A 10.255.208.23
-    ap2.d8 IN CNAME ap2.access.npf.
+    ap2.d8 IN A 10.255.208.23
     telemetry IN SRV 0 0 9167 ap2.d8.access.npf.
     ce1 IN A 10.255.208.24
-    ce1.d8 IN CNAME ce1.access.npf.
+    ce1.d8 IN A 10.255.208.24
     telemetry IN SRV 0 0 9167 ce1.d8.access.npf.
     cf1 IN A 10.255.208.25
-    cf1.d8 IN CNAME cf1.access.npf.
+    cf1.d8 IN A 10.255.208.25
     telemetry IN SRV 0 0 9167 cf1.d8.access.npf.
     cg1 IN A 10.255.209.10
-    cg1.d9 IN CNAME cg1.access.npf.
+    cg1.d9 IN A 10.255.209.10
     telemetry IN SRV 0 0 9167 cg1.d9.access.npf.
     ch1 IN A 10.255.209.11
-    ch1.d9 IN CNAME ch1.access.npf.
+    ch1.d9 IN A 10.255.209.11
     telemetry IN SRV 0 0 9167 ch1.d9.access.npf.
     cc1 IN A 10.255.210.10
-    cc1.d10 IN CNAME cc1.access.npf.
+    cc1.d10 IN A 10.255.210.10
     telemetry IN SRV 0 0 9167 cc1.d10.access.npf.
     cc2 IN A 10.255.210.11
-    cc2.d10 IN CNAME cc2.access.npf.
+    cc2.d10 IN A 10.255.210.11
     telemetry IN SRV 0 0 9167 cc2.d10.access.npf.
     cc3 IN A 10.255.210.12
-    cc3.d10 IN CNAME cc3.access.npf.
+    cc3.d10 IN A 10.255.210.12
     telemetry IN SRV 0 0 9167 cc3.d10.access.npf.
     cc4 IN A 10.255.210.13
-    cc4.d10 IN CNAME cc4.access.npf.
+    cc4.d10 IN A 10.255.210.13
     telemetry IN SRV 0 0 9167 cc4.d10.access.npf.
     cc5 IN A 10.255.210.14
-    cc5.d10 IN CNAME cc5.access.npf.
+    cc5.d10 IN A 10.255.210.14
     telemetry IN SRV 0 0 9167 cc5.d10.access.npf.
     cc1 IN A 10.255.211.10
-    cc1.d11 IN CNAME cc1.access.npf.
+    cc1.d11 IN A 10.255.211.10
     telemetry IN SRV 0 0 9167 cc1.d11.access.npf.
     cc2 IN A 10.255.211.11
-    cc2.d11 IN CNAME cc2.access.npf.
+    cc2.d11 IN A 10.255.211.11
     telemetry IN SRV 0 0 9167 cc2.d11.access.npf.
     cc3 IN A 10.255.211.12
-    cc3.d11 IN CNAME cc3.access.npf.
+    cc3.d11 IN A 10.255.211.12
     telemetry IN SRV 0 0 9167 cc3.d11.access.npf.
     cc4 IN A 10.255.211.13
-    cc4.d11 IN CNAME cc4.access.npf.
+    cc4.d11 IN A 10.255.211.13
     telemetry IN SRV 0 0 9167 cc4.d11.access.npf.
     cc5 IN A 10.255.211.14
-    cc5.d11 IN CNAME cc5.access.npf.
+    cc5.d11 IN A 10.255.211.14
     telemetry IN SRV 0 0 9167 cc5.d11.access.npf.
     cc6 IN A 10.255.211.15
-    cc6.d11 IN CNAME cc6.access.npf.
+    cc6.d11 IN A 10.255.211.15
     telemetry IN SRV 0 0 9167 cc6.d11.access.npf.
     cc7 IN A 10.255.211.16
-    cc7.d11 IN CNAME cc7.access.npf.
+    cc7.d11 IN A 10.255.211.16
     telemetry IN SRV 0 0 9167 cc7.d11.access.npf.
     cc8 IN A 10.255.211.17
-    cc8.d11 IN CNAME cc8.access.npf.
+    cc8.d11 IN A 10.255.211.17
     telemetry IN SRV 0 0 9167 cc8.d11.access.npf.
     da1 IN A 10.255.201.10
-    da1.d1 IN CNAME da1.access.npf.
+    da1.d1 IN A 10.255.201.10
     telemetry IN SRV 0 0 9167 da1.d1.access.npf.
     da2 IN A 10.255.201.11
-    da2.d1 IN CNAME da2.access.npf.
+    da2.d1 IN A 10.255.201.11
     telemetry IN SRV 0 0 9167 da2.d1.access.npf.
     db1 IN A 10.255.201.13
-    db1.d1 IN CNAME db1.access.npf.
+    db1.d1 IN A 10.255.201.13
     telemetry IN SRV 0 0 9167 db1.d1.access.npf.
     db2 IN A 10.255.201.14
-    db2.d1 IN CNAME db2.access.npf.
+    db2.d1 IN A 10.255.201.14
     telemetry IN SRV 0 0 9167 db2.d1.access.npf.
     dc1 IN A 10.255.201.16
-    dc1.d1 IN CNAME dc1.access.npf.
+    dc1.d1 IN A 10.255.201.16
     telemetry IN SRV 0 0 9167 dc1.d1.access.npf.
     dc2 IN A 10.255.201.17
-    dc2.d1 IN CNAME dc2.access.npf.
+    dc2.d1 IN A 10.255.201.17
     telemetry IN SRV 0 0 9167 dc2.d1.access.npf.
     dd1 IN A 10.255.201.19
-    dd1.d1 IN CNAME dd1.access.npf.
+    dd1.d1 IN A 10.255.201.19
     telemetry IN SRV 0 0 9167 dd1.d1.access.npf.
     dd2 IN A 10.255.201.20
-    dd2.d1 IN CNAME dd2.access.npf.
+    dd2.d1 IN A 10.255.201.20
     telemetry IN SRV 0 0 9167 dd2.d1.access.npf.
     de1 IN A 10.255.201.22
-    de1.d1 IN CNAME de1.access.npf.
+    de1.d1 IN A 10.255.201.22
     telemetry IN SRV 0 0 9167 de1.d1.access.npf.
     de2 IN A 10.255.201.23
-    de2.d1 IN CNAME de2.access.npf.
+    de2.d1 IN A 10.255.201.23
     telemetry IN SRV 0 0 9167 de2.d1.access.npf.
     df1 IN A 10.255.201.25
-    df1.d1 IN CNAME df1.access.npf.
+    df1.d1 IN A 10.255.201.25
     telemetry IN SRV 0 0 9167 df1.d1.access.npf.
     df2 IN A 10.255.201.26
-    df2.d1 IN CNAME df2.access.npf.
+    df2.d1 IN A 10.255.201.26
     telemetry IN SRV 0 0 9167 df2.d1.access.npf.
     dg1 IN A 10.255.201.28
-    dg1.d1 IN CNAME dg1.access.npf.
+    dg1.d1 IN A 10.255.201.28
     telemetry IN SRV 0 0 9167 dg1.d1.access.npf.
     dg2 IN A 10.255.201.29
-    dg2.d1 IN CNAME dg2.access.npf.
+    dg2.d1 IN A 10.255.201.29
     telemetry IN SRV 0 0 9167 dg2.d1.access.npf.
     fa1 IN A 10.255.201.12
-    fa1.d1 IN CNAME fa1.access.npf.
+    fa1.d1 IN A 10.255.201.12
     telemetry IN SRV 0 0 9167 fa1.d1.access.npf.
     fb1 IN A 10.255.201.15
-    fb1.d1 IN CNAME fb1.access.npf.
+    fb1.d1 IN A 10.255.201.15
     telemetry IN SRV 0 0 9167 fb1.d1.access.npf.
     fc1 IN A 10.255.201.18
-    fc1.d1 IN CNAME fc1.access.npf.
+    fc1.d1 IN A 10.255.201.18
     telemetry IN SRV 0 0 9167 fc1.d1.access.npf.
     fd1 IN A 10.255.201.21
-    fd1.d1 IN CNAME fd1.access.npf.
+    fd1.d1 IN A 10.255.201.21
     telemetry IN SRV 0 0 9167 fd1.d1.access.npf.
     fe1 IN A 10.255.201.24
-    fe1.d1 IN CNAME fe1.access.npf.
+    fe1.d1 IN A 10.255.201.24
     telemetry IN SRV 0 0 9167 fe1.d1.access.npf.
     ff1 IN A 10.255.201.27
-    ff1.d1 IN CNAME ff1.access.npf.
+    ff1.d1 IN A 10.255.201.27
     telemetry IN SRV 0 0 9167 ff1.d1.access.npf.
     fg1 IN A 10.255.201.30
-    fg1.d1 IN CNAME fg1.access.npf.
+    fg1.d1 IN A 10.255.201.30
     telemetry IN SRV 0 0 9167 fg1.d1.access.npf.
     ha1 IN A 10.255.201.31
-    ha1.d1 IN CNAME ha1.access.npf.
+    ha1.d1 IN A 10.255.201.31
     telemetry IN SRV 0 0 9167 ha1.d1.access.npf.
     hb1 IN A 10.255.201.32
-    hb1.d1 IN CNAME hb1.access.npf.
+    hb1.d1 IN A 10.255.201.32
     telemetry IN SRV 0 0 9167 hb1.d1.access.npf.
     hc1 IN A 10.255.201.33
-    hc1.d1 IN CNAME hc1.access.npf.
+    hc1.d1 IN A 10.255.201.33
     telemetry IN SRV 0 0 9167 hc1.d1.access.npf.
     hd1 IN A 10.255.201.34
-    hd1.d1 IN CNAME hd1.access.npf.
+    hd1.d1 IN A 10.255.201.34
     telemetry IN SRV 0 0 9167 hd1.d1.access.npf.
     he1 IN A 10.255.201.35
-    he1.d1 IN CNAME he1.access.npf.
+    he1.d1 IN A 10.255.201.35
     telemetry IN SRV 0 0 9167 he1.d1.access.npf.
     dh1 IN A 10.255.202.10
-    dh1.d2 IN CNAME dh1.access.npf.
+    dh1.d2 IN A 10.255.202.10
     telemetry IN SRV 0 0 9167 dh1.d2.access.npf.
     dh2 IN A 10.255.202.11
-    dh2.d2 IN CNAME dh2.access.npf.
+    dh2.d2 IN A 10.255.202.11
     telemetry IN SRV 0 0 9167 dh2.d2.access.npf.
     dj1 IN A 10.255.202.13
-    dj1.d2 IN CNAME dj1.access.npf.
+    dj1.d2 IN A 10.255.202.13
     telemetry IN SRV 0 0 9167 dj1.d2.access.npf.
     dj2 IN A 10.255.202.14
-    dj2.d2 IN CNAME dj2.access.npf.
+    dj2.d2 IN A 10.255.202.14
     telemetry IN SRV 0 0 9167 dj2.d2.access.npf.
     dk1 IN A 10.255.202.16
-    dk1.d2 IN CNAME dk1.access.npf.
+    dk1.d2 IN A 10.255.202.16
     telemetry IN SRV 0 0 9167 dk1.d2.access.npf.
     dk2 IN A 10.255.202.17
-    dk2.d2 IN CNAME dk2.access.npf.
+    dk2.d2 IN A 10.255.202.17
     telemetry IN SRV 0 0 9167 dk2.d2.access.npf.
     dl1 IN A 10.255.202.19
-    dl1.d2 IN CNAME dl1.access.npf.
+    dl1.d2 IN A 10.255.202.19
     telemetry IN SRV 0 0 9167 dl1.d2.access.npf.
     dl2 IN A 10.255.202.20
-    dl2.d2 IN CNAME dl2.access.npf.
+    dl2.d2 IN A 10.255.202.20
     telemetry IN SRV 0 0 9167 dl2.d2.access.npf.
     dm1 IN A 10.255.202.22
-    dm1.d2 IN CNAME dm1.access.npf.
+    dm1.d2 IN A 10.255.202.22
     telemetry IN SRV 0 0 9167 dm1.d2.access.npf.
     dm2 IN A 10.255.202.23
-    dm2.d2 IN CNAME dm2.access.npf.
+    dm2.d2 IN A 10.255.202.23
     telemetry IN SRV 0 0 9167 dm2.d2.access.npf.
     dn1 IN A 10.255.202.25
-    dn1.d2 IN CNAME dn1.access.npf.
+    dn1.d2 IN A 10.255.202.25
     telemetry IN SRV 0 0 9167 dn1.d2.access.npf.
     dn2 IN A 10.255.202.26
-    dn2.d2 IN CNAME dn2.access.npf.
+    dn2.d2 IN A 10.255.202.26
     telemetry IN SRV 0 0 9167 dn2.d2.access.npf.
     dp1 IN A 10.255.202.28
-    dp1.d2 IN CNAME dp1.access.npf.
+    dp1.d2 IN A 10.255.202.28
     telemetry IN SRV 0 0 9167 dp1.d2.access.npf.
     dp2 IN A 10.255.202.29
-    dp2.d2 IN CNAME dp2.access.npf.
+    dp2.d2 IN A 10.255.202.29
     telemetry IN SRV 0 0 9167 dp2.d2.access.npf.
     fh1 IN A 10.255.202.12
-    fh1.d2 IN CNAME fh1.access.npf.
+    fh1.d2 IN A 10.255.202.12
     telemetry IN SRV 0 0 9167 fh1.d2.access.npf.
     fj1 IN A 10.255.202.15
-    fj1.d2 IN CNAME fj1.access.npf.
+    fj1.d2 IN A 10.255.202.15
     telemetry IN SRV 0 0 9167 fj1.d2.access.npf.
     fk1 IN A 10.255.202.18
-    fk1.d2 IN CNAME fk1.access.npf.
+    fk1.d2 IN A 10.255.202.18
     telemetry IN SRV 0 0 9167 fk1.d2.access.npf.
     fl1 IN A 10.255.202.21
-    fl1.d2 IN CNAME fl1.access.npf.
+    fl1.d2 IN A 10.255.202.21
     telemetry IN SRV 0 0 9167 fl1.d2.access.npf.
     fm1 IN A 10.255.202.24
-    fm1.d2 IN CNAME fm1.access.npf.
+    fm1.d2 IN A 10.255.202.24
     telemetry IN SRV 0 0 9167 fm1.d2.access.npf.
     fn1 IN A 10.255.202.27
-    fn1.d2 IN CNAME fn1.access.npf.
+    fn1.d2 IN A 10.255.202.27
     telemetry IN SRV 0 0 9167 fn1.d2.access.npf.
     fp1 IN A 10.255.202.30
-    fp1.d2 IN CNAME fp1.access.npf.
+    fp1.d2 IN A 10.255.202.30
     telemetry IN SRV 0 0 9167 fp1.d2.access.npf.
     hg1 IN A 10.255.202.31
-    hg1.d2 IN CNAME hg1.access.npf.
+    hg1.d2 IN A 10.255.202.31
     telemetry IN SRV 0 0 9167 hg1.d2.access.npf.
     hh1 IN A 10.255.202.32
-    hh1.d2 IN CNAME hh1.access.npf.
+    hh1.d2 IN A 10.255.202.32
     telemetry IN SRV 0 0 9167 hh1.d2.access.npf.
     hj1 IN A 10.255.202.33
-    hj1.d2 IN CNAME hj1.access.npf.
+    hj1.d2 IN A 10.255.202.33
     telemetry IN SRV 0 0 9167 hj1.d2.access.npf.
     hk1 IN A 10.255.202.34
-    hk1.d2 IN CNAME hk1.access.npf.
+    hk1.d2 IN A 10.255.202.34
     telemetry IN SRV 0 0 9167 hk1.d2.access.npf.
     hl1 IN A 10.255.202.35
-    hl1.d2 IN CNAME hl1.access.npf.
+    hl1.d2 IN A 10.255.202.35
     telemetry IN SRV 0 0 9167 hl1.d2.access.npf.
     hm1 IN A 10.255.202.36
-    hm1.d2 IN CNAME hm1.access.npf.
+    hm1.d2 IN A 10.255.202.36
     telemetry IN SRV 0 0 9167 hm1.d2.access.npf.
     fn1 IN A 10.255.217.10
-    fn1.g2 IN CNAME fn1.access.npf.
+    fn1.g2 IN A 10.255.217.10
     telemetry IN SRV 0 0 9167 fn1.g2.access.npf.
     fp1 IN A 10.255.217.11
-    fp1.g2 IN CNAME fp1.access.npf.
+    fp1.g2 IN A 10.255.217.11
     telemetry IN SRV 0 0 9167 fp1.g2.access.npf.
     fq1 IN A 10.255.217.12
-    fq1.g2 IN CNAME fq1.access.npf.
+    fq1.g2 IN A 10.255.217.12
     telemetry IN SRV 0 0 9167 fq1.g2.access.npf.
     fr1 IN A 10.255.217.13
-    fr1.g2 IN CNAME fr1.access.npf.
+    fr1.g2 IN A 10.255.217.13
     telemetry IN SRV 0 0 9167 fr1.g2.access.npf.
     fs1 IN A 10.255.217.14
-    fs1.g2 IN CNAME fs1.access.npf.
+    fs1.g2 IN A 10.255.217.14
     telemetry IN SRV 0 0 9167 fs1.g2.access.npf.
     ft1 IN A 10.255.217.15
-    ft1.g2 IN CNAME ft1.access.npf.
+    ft1.g2 IN A 10.255.217.15
     telemetry IN SRV 0 0 9167 ft1.g2.access.npf.
     fu1 IN A 10.255.217.16
-    fu1.g2 IN CNAME fu1.access.npf.
+    fu1.g2 IN A 10.255.217.16
     telemetry IN SRV 0 0 9167 fu1.g2.access.npf.
     dq1 IN A 10.255.203.10
-    dq1.d3 IN CNAME dq1.access.npf.
+    dq1.d3 IN A 10.255.203.10
     telemetry IN SRV 0 0 9167 dq1.d3.access.npf.
     dq2 IN A 10.255.203.11
-    dq2.d3 IN CNAME dq2.access.npf.
+    dq2.d3 IN A 10.255.203.11
     telemetry IN SRV 0 0 9167 dq2.d3.access.npf.
     dr1 IN A 10.255.203.13
-    dr1.d3 IN CNAME dr1.access.npf.
+    dr1.d3 IN A 10.255.203.13
     telemetry IN SRV 0 0 9167 dr1.d3.access.npf.
     dr2 IN A 10.255.203.14
-    dr2.d3 IN CNAME dr2.access.npf.
+    dr2.d3 IN A 10.255.203.14
     telemetry IN SRV 0 0 9167 dr2.d3.access.npf.
     ds1 IN A 10.255.203.16
-    ds1.d3 IN CNAME ds1.access.npf.
+    ds1.d3 IN A 10.255.203.16
     telemetry IN SRV 0 0 9167 ds1.d3.access.npf.
     ds2 IN A 10.255.203.17
-    ds2.d3 IN CNAME ds2.access.npf.
+    ds2.d3 IN A 10.255.203.17
     telemetry IN SRV 0 0 9167 ds2.d3.access.npf.
     dt1 IN A 10.255.203.19
-    dt1.d3 IN CNAME dt1.access.npf.
+    dt1.d3 IN A 10.255.203.19
     telemetry IN SRV 0 0 9167 dt1.d3.access.npf.
     dt2 IN A 10.255.203.20
-    dt2.d3 IN CNAME dt2.access.npf.
+    dt2.d3 IN A 10.255.203.20
     telemetry IN SRV 0 0 9167 dt2.d3.access.npf.
     du1 IN A 10.255.203.22
-    du1.d3 IN CNAME du1.access.npf.
+    du1.d3 IN A 10.255.203.22
     telemetry IN SRV 0 0 9167 du1.d3.access.npf.
     du2 IN A 10.255.203.23
-    du2.d3 IN CNAME du2.access.npf.
+    du2.d3 IN A 10.255.203.23
     telemetry IN SRV 0 0 9167 du2.d3.access.npf.
     dv1 IN A 10.255.203.25
-    dv1.d3 IN CNAME dv1.access.npf.
+    dv1.d3 IN A 10.255.203.25
     telemetry IN SRV 0 0 9167 dv1.d3.access.npf.
     dv2 IN A 10.255.203.26
-    dv2.d3 IN CNAME dv2.access.npf.
+    dv2.d3 IN A 10.255.203.26
     telemetry IN SRV 0 0 9167 dv2.d3.access.npf.
     dw1 IN A 10.255.203.28
-    dw1.d3 IN CNAME dw1.access.npf.
+    dw1.d3 IN A 10.255.203.28
     telemetry IN SRV 0 0 9167 dw1.d3.access.npf.
     dw2 IN A 10.255.203.29
-    dw2.d3 IN CNAME dw2.access.npf.
+    dw2.d3 IN A 10.255.203.29
     telemetry IN SRV 0 0 9167 dw2.d3.access.npf.
     fq1 IN A 10.255.203.12
-    fq1.d3 IN CNAME fq1.access.npf.
+    fq1.d3 IN A 10.255.203.12
     telemetry IN SRV 0 0 9167 fq1.d3.access.npf.
     fr2 IN A 10.255.203.15
-    fr2.d3 IN CNAME fr2.access.npf.
+    fr2.d3 IN A 10.255.203.15
     telemetry IN SRV 0 0 9167 fr2.d3.access.npf.
     fs1 IN A 10.255.203.18
-    fs1.d3 IN CNAME fs1.access.npf.
+    fs1.d3 IN A 10.255.203.18
     telemetry IN SRV 0 0 9167 fs1.d3.access.npf.
     ft1 IN A 10.255.203.21
-    ft1.d3 IN CNAME ft1.access.npf.
+    ft1.d3 IN A 10.255.203.21
     telemetry IN SRV 0 0 9167 ft1.d3.access.npf.
     fu1 IN A 10.255.203.24
-    fu1.d3 IN CNAME fu1.access.npf.
+    fu1.d3 IN A 10.255.203.24
     telemetry IN SRV 0 0 9167 fu1.d3.access.npf.
     fv1 IN A 10.255.203.27
-    fv1.d3 IN CNAME fv1.access.npf.
+    fv1.d3 IN A 10.255.203.27
     telemetry IN SRV 0 0 9167 fv1.d3.access.npf.
     fw1 IN A 10.255.203.30
-    fw1.d3 IN CNAME fw1.access.npf.
+    fw1.d3 IN A 10.255.203.30
     telemetry IN SRV 0 0 9167 fw1.d3.access.npf.
     dx1 IN A 10.255.204.2
-    dx1.d4 IN CNAME dx1.access.npf.
+    dx1.d4 IN A 10.255.204.2
     telemetry IN SRV 0 0 9167 dx1.d4.access.npf.
     dx2 IN A 10.255.204.3
-    dx2.d4 IN CNAME dx2.access.npf.
+    dx2.d4 IN A 10.255.204.3
     telemetry IN SRV 0 0 9167 dx2.d4.access.npf.
     dy1 IN A 10.255.204.4
-    dy1.d4 IN CNAME dy1.access.npf.
+    dy1.d4 IN A 10.255.204.4
     telemetry IN SRV 0 0 9167 dy1.d4.access.npf.
     dy2 IN A 10.255.204.5
-    dy2.d4 IN CNAME dy2.access.npf.
+    dy2.d4 IN A 10.255.204.5
     telemetry IN SRV 0 0 9167 dy2.d4.access.npf.
     dz1 IN A 10.255.204.6
-    dz1.d4 IN CNAME dz1.access.npf.
+    dz1.d4 IN A 10.255.204.6
     telemetry IN SRV 0 0 9167 dz1.d4.access.npf.
     dz2 IN A 10.255.204.7
-    dz2.d4 IN CNAME dz2.access.npf.
+    dz2.d4 IN A 10.255.204.7
     telemetry IN SRV 0 0 9167 dz2.d4.access.npf.
     ea1 IN A 10.255.204.8
-    ea1.d4 IN CNAME ea1.access.npf.
+    ea1.d4 IN A 10.255.204.8
     telemetry IN SRV 0 0 9167 ea1.d4.access.npf.
     ea2 IN A 10.255.204.9
-    ea2.d4 IN CNAME ea2.access.npf.
+    ea2.d4 IN A 10.255.204.9
     telemetry IN SRV 0 0 9167 ea2.d4.access.npf.
     eb1 IN A 10.255.204.10
-    eb1.d4 IN CNAME eb1.access.npf.
+    eb1.d4 IN A 10.255.204.10
     telemetry IN SRV 0 0 9167 eb1.d4.access.npf.
     eb2 IN A 10.255.204.11
-    eb2.d4 IN CNAME eb2.access.npf.
+    eb2.d4 IN A 10.255.204.11
     telemetry IN SRV 0 0 9167 eb2.d4.access.npf.
     ec1 IN A 10.255.204.12
-    ec1.d4 IN CNAME ec1.access.npf.
+    ec1.d4 IN A 10.255.204.12
     telemetry IN SRV 0 0 9167 ec1.d4.access.npf.
     ec2 IN A 10.255.204.13
-    ec2.d4 IN CNAME ec2.access.npf.
+    ec2.d4 IN A 10.255.204.13
     telemetry IN SRV 0 0 9167 ec2.d4.access.npf.
     ed1 IN A 10.255.204.14
-    ed1.d4 IN CNAME ed1.access.npf.
+    ed1.d4 IN A 10.255.204.14
     telemetry IN SRV 0 0 9167 ed1.d4.access.npf.
     ed2 IN A 10.255.204.15
-    ed2.d4 IN CNAME ed2.access.npf.
+    ed2.d4 IN A 10.255.204.15
     telemetry IN SRV 0 0 9167 ed2.d4.access.npf.
     ee1 IN A 10.255.204.16
-    ee1.d4 IN CNAME ee1.access.npf.
+    ee1.d4 IN A 10.255.204.16
     telemetry IN SRV 0 0 9167 ee1.d4.access.npf.
     ee2 IN A 10.255.204.17
-    ee2.d4 IN CNAME ee2.access.npf.
+    ee2.d4 IN A 10.255.204.17
     telemetry IN SRV 0 0 9167 ee2.d4.access.npf.
     ef1 IN A 10.255.204.34
-    ef1.d4 IN CNAME ef1.access.npf.
+    ef1.d4 IN A 10.255.204.34
     telemetry IN SRV 0 0 9167 ef1.d4.access.npf.
     ef2 IN A 10.255.204.35
-    ef2.d4 IN CNAME ef2.access.npf.
+    ef2.d4 IN A 10.255.204.35
     telemetry IN SRV 0 0 9167 ef2.d4.access.npf.
     fx1 IN A 10.255.204.12
-    fx1.d4 IN CNAME fx1.access.npf.
+    fx1.d4 IN A 10.255.204.12
     telemetry IN SRV 0 0 9167 fx1.d4.access.npf.
     fy1 IN A 10.255.204.15
-    fy1.d4 IN CNAME fy1.access.npf.
+    fy1.d4 IN A 10.255.204.15
     telemetry IN SRV 0 0 9167 fy1.d4.access.npf.
     fz1 IN A 10.255.204.18
-    fz1.d4 IN CNAME fz1.access.npf.
+    fz1.d4 IN A 10.255.204.18
     telemetry IN SRV 0 0 9167 fz1.d4.access.npf.
     ga1 IN A 10.255.204.21
-    ga1.d4 IN CNAME ga1.access.npf.
+    ga1.d4 IN A 10.255.204.21
     telemetry IN SRV 0 0 9167 ga1.d4.access.npf.
     gb1 IN A 10.255.204.24
-    gb1.d4 IN CNAME gb1.access.npf.
+    gb1.d4 IN A 10.255.204.24
     telemetry IN SRV 0 0 9167 gb1.d4.access.npf.
     gc1 IN A 10.255.204.27
-    gc1.d4 IN CNAME gc1.access.npf.
+    gc1.d4 IN A 10.255.204.27
     telemetry IN SRV 0 0 9167 gc1.d4.access.npf.
     gd1 IN A 10.255.204.30
-    gd1.d4 IN CNAME gd1.access.npf.
+    gd1.d4 IN A 10.255.204.30
     telemetry IN SRV 0 0 9167 gd1.d4.access.npf.
     ge1 IN A 10.255.204.33
-    ge1.d4 IN CNAME ge1.access.npf.
+    ge1.d4 IN A 10.255.204.33
     telemetry IN SRV 0 0 9167 ge1.d4.access.npf.
     gf1 IN A 10.255.204.36
-    gf1.d4 IN CNAME gf1.access.npf.
+    gf1.d4 IN A 10.255.204.36
     telemetry IN SRV 0 0 9167 gf1.d4.access.npf.
     expo1 IN A 10.255.205.10
-    expo1.d5 IN CNAME expo1.access.npf.
+    expo1.d5 IN A 10.255.205.10
     telemetry IN SRV 0 0 9167 expo1.d5.access.npf.
     expo2 IN A 10.255.205.11
-    expo2.d5 IN CNAME expo2.access.npf.
+    expo2.d5 IN A 10.255.205.11
     telemetry IN SRV 0 0 9167 expo2.d5.access.npf.
     expo3 IN A 10.255.205.12
-    expo3.d5 IN CNAME expo3.access.npf.
+    expo3.d5 IN A 10.255.205.12
     telemetry IN SRV 0 0 9167 expo3.d5.access.npf.
     expo4 IN A 10.255.205.13
-    expo4.d5 IN CNAME expo4.access.npf.
+    expo4.d5 IN A 10.255.205.13
     telemetry IN SRV 0 0 9167 expo4.d5.access.npf.
     expo5 IN A 10.255.205.14
-    expo5.d5 IN CNAME expo5.access.npf.
+    expo5.d5 IN A 10.255.205.14
     telemetry IN SRV 0 0 9167 expo5.d5.access.npf.
     crew1 IN A 10.255.254.10
-    crew1.e1 IN CNAME crew1.access.npf.
+    crew1.e1 IN A 10.255.254.10
     telemetry IN SRV 0 0 9167 crew1.e1.access.npf.
     crew2 IN A 10.255.254.11
-    crew2.e1 IN CNAME crew2.access.npf.
+    crew2.e1 IN A 10.255.254.11
     telemetry IN SRV 0 0 9167 crew2.e1.access.npf.
     crew3 IN A 10.255.254.12
-    crew3.e1 IN CNAME crew3.access.npf.
+    crew3.e1 IN A 10.255.254.12
     telemetry IN SRV 0 0 9167 crew3.e1.access.npf.
     crew4 IN A 10.255.254.13
-    crew4.e1 IN CNAME crew4.access.npf.
+    crew4.e1 IN A 10.255.254.13
     telemetry IN SRV 0 0 9167 crew4.e1.access.npf.
     crew5 IN A 10.255.254.14
-    crew5.e1 IN CNAME crew5.access.npf.
+    crew5.e1 IN A 10.255.254.14
     telemetry IN SRV 0 0 9167 crew5.e1.access.npf.
     crew6 IN A 10.255.254.15
-    crew6.e1 IN CNAME crew6.access.npf.
+    crew6.e1 IN A 10.255.254.15
     telemetry IN SRV 0 0 9167 crew6.e1.access.npf.
     crew7 IN A 10.255.254.16
-    crew7.e1 IN CNAME crew7.access.npf.
+    crew7.e1 IN A 10.255.254.16
     telemetry IN SRV 0 0 9167 crew7.e1.access.npf.
     crew8 IN A 10.255.254.17
-    crew8.e1 IN CNAME crew8.access.npf.
+    crew8.e1 IN A 10.255.254.17
     telemetry IN SRV 0 0 9167 crew8.e1.access.npf.
     crew9 IN A 10.255.254.18
-    crew9.e1 IN CNAME crew9.access.npf.
+    crew9.e1 IN A 10.255.254.18
     telemetry IN SRV 0 0 9167 crew9.e1.access.npf.
     crew10 IN A 10.255.254.19
-    crew10.e1 IN CNAME crew10.access.npf.
+    crew10.e1 IN A 10.255.254.19
     telemetry IN SRV 0 0 9167 crew10.e1.access.npf.
     crew11 IN A 10.255.254.20
-    crew11.e1 IN CNAME crew11.access.npf.
+    crew11.e1 IN A 10.255.254.20
     telemetry IN SRV 0 0 9167 crew11.e1.access.npf.
     crew12 IN A 10.255.254.21
-    crew12.e1 IN CNAME crew12.access.npf.
+    crew12.e1 IN A 10.255.254.21
     telemetry IN SRV 0 0 9167 crew12.e1.access.npf.
     crew13 IN A 10.255.254.22
-    crew13.e1 IN CNAME crew13.access.npf.
+    crew13.e1 IN A 10.255.254.22
     telemetry IN SRV 0 0 9167 crew13.e1.access.npf.
     crew14 IN A 10.255.254.23
-    crew14.e1 IN CNAME crew14.access.npf.
+    crew14.e1 IN A 10.255.254.23
     telemetry IN SRV 0 0 9167 crew14.e1.access.npf.
     crew15 IN A 10.255.254.24
-    crew15.e1 IN CNAME crew15.access.npf.
+    crew15.e1 IN A 10.255.254.24
     telemetry IN SRV 0 0 9167 crew15.e1.access.npf.
     scene IN A 10.255.254.25
-    scene.e1 IN CNAME scene.access.npf.
+    scene.e1 IN A 10.255.254.25
     telemetry IN SRV 0 0 9167 scene.e1.access.npf.
     e1-1 IN A 10.255.254.8
-    e1-1.e1 IN CNAME e1-1.access.npf.
+    e1-1.e1 IN A 10.255.254.8
     telemetry IN SRV 0 0 9167 e1-1.e1.access.npf.
     e1-2 IN A 10.255.254.9
-    e1-2.e1 IN CNAME e1-2.access.npf.
+    e1-2.e1 IN A 10.255.254.9
     telemetry IN SRV 0 0 9167 e1-2.e1.access.npf.
     shop1 IN A 10.255.253.10
-    shop1.e2 IN CNAME shop1.access.npf.
+    shop1.e2 IN A 10.255.253.10
     telemetry IN SRV 0 0 9167 shop1.e2.access.npf.
     shop2 IN A 10.255.253.11
-    shop2.e2 IN CNAME shop2.access.npf.
+    shop2.e2 IN A 10.255.253.11
     telemetry IN SRV 0 0 9167 shop2.e2.access.npf.
     shop3 IN A 10.255.253.12
-    shop3.e2 IN CNAME shop3.access.npf.
+    shop3.e2 IN A 10.255.253.12
     telemetry IN SRV 0 0 9167 shop3.e2.access.npf.
     shop4 IN A 10.255.253.13
-    shop4.e2 IN CNAME shop4.access.npf.
+    shop4.e2 IN A 10.255.253.13
     telemetry IN SRV 0 0 9167 shop4.e2.access.npf.
     shop5 IN A 10.255.253.19
-    shop5.e2 IN CNAME shop5.access.npf.
+    shop5.e2 IN A 10.255.253.19
     telemetry IN SRV 0 0 9167 shop5.e2.access.npf.
     billet IN A 10.255.253.20
-    billet.e2 IN CNAME billet.access.npf.
+    billet.e2 IN A 10.255.253.20
     telemetry IN SRV 0 0 9167 billet.e2.access.npf.
     sos1 IN A 10.255.253.14
-    sos1.e2 IN CNAME sos1.access.npf.
+    sos1.e2 IN A 10.255.253.14
     telemetry IN SRV 0 0 9167 sos1.e2.access.npf.
     sos2 IN A 10.255.253.15
-    sos2.e2 IN CNAME sos2.access.npf.
+    sos2.e2 IN A 10.255.253.15
     telemetry IN SRV 0 0 9167 sos2.e2.access.npf.
     sos3 IN A 10.255.253.16
-    sos3.e2 IN CNAME sos3.access.npf.
+    sos3.e2 IN A 10.255.253.16
     telemetry IN SRV 0 0 9167 sos3.e2.access.npf.
     cr1 IN A 10.255.253.17
-    cr1.e2 IN CNAME cr1.access.npf.
+    cr1.e2 IN A 10.255.253.17
     telemetry IN SRV 0 0 9167 cr1.e2.access.npf.
     cr2 IN A 10.255.253.18
-    cr2.e2 IN CNAME cr2.access.npf.
+    cr2.e2 IN A 10.255.253.18
     telemetry IN SRV 0 0 9167 cr2.e2.access.npf.
     crew1 IN A 10.255.252.10
-    crew1.e3 IN CNAME crew1.access.npf.
+    crew1.e3 IN A 10.255.252.10
     telemetry IN SRV 0 0 9167 crew1.e3.access.npf.
     crew2 IN A 10.255.252.11
-    crew2.e3 IN CNAME crew2.access.npf.
+    crew2.e3 IN A 10.255.252.11
     telemetry IN SRV 0 0 9167 crew2.e3.access.npf.
     crew3 IN A 10.255.252.12
-    crew3.e3 IN CNAME crew3.access.npf.
+    crew3.e3 IN A 10.255.252.12
     telemetry IN SRV 0 0 9167 crew3.e3.access.npf.
     crew4 IN A 10.255.252.13
-    crew4.e3 IN CNAME crew4.access.npf.
+    crew4.e3 IN A 10.255.252.13
     telemetry IN SRV 0 0 9167 crew4.e3.access.npf.
     crew5 IN A 10.255.252.14
-    crew5.e3 IN CNAME crew5.access.npf.
+    crew5.e3 IN A 10.255.252.14
     telemetry IN SRV 0 0 9167 crew5.e3.access.npf.
     crew6 IN A 10.255.252.15
-    crew6.e3 IN CNAME crew6.access.npf.
+    crew6.e3 IN A 10.255.252.15
     telemetry IN SRV 0 0 9167 crew6.e3.access.npf.
     crew7 IN A 10.255.252.16
-    crew7.e3 IN CNAME crew7.access.npf.
+    crew7.e3 IN A 10.255.252.16
     telemetry IN SRV 0 0 9167 crew7.e3.access.npf.
     crew8 IN A 10.255.252.17
-    crew8.e3 IN CNAME crew8.access.npf.
+    crew8.e3 IN A 10.255.252.17
     telemetry IN SRV 0 0 9167 crew8.e3.access.npf.
     crew9 IN A 10.255.252.18
-    crew9.e3 IN CNAME crew9.access.npf.
+    crew9.e3 IN A 10.255.252.18
     telemetry IN SRV 0 0 9167 crew9.e3.access.npf.
     crew10 IN A 10.255.252.19
-    crew10.e3 IN CNAME crew10.access.npf.
+    crew10.e3 IN A 10.255.252.19
     telemetry IN SRV 0 0 9167 crew10.e3.access.npf.
     expo1 IN A 10.255.251.10
-    expo1.e4 IN CNAME expo1.access.npf.
+    expo1.e4 IN A 10.255.251.10
     telemetry IN SRV 0 0 9167 expo1.e4.access.npf.
     expo2 IN A 10.255.251.11
-    expo2.e4 IN CNAME expo2.access.npf.
+    expo2.e4 IN A 10.255.251.11
     telemetry IN SRV 0 0 9167 expo2.e4.access.npf.
 
 
@@ -1228,7 +1228,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2021101426 ; Serial
+        2021101427 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -1553,7 +1553,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2021101426 ; Serial
+        2021101427 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -1639,7 +1639,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2021101426 ; Serial
+        2021101427 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
