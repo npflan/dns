@@ -29,9 +29,9 @@ data:
         type master;
         file "/bind/config/10.in-addr.arpa.zone";
     };
-    zone "192.in-addr.arpa" IN {
+    zone "168.192.in-addr.arpa" IN {
         type master;
-        file "/bind/config/192.in-addr.arpa.zone";
+        file "/bind/config/168.192.in-addr.arpa.zone";
     };
     zone "172.in-addr.arpa" IN {
         type master;
@@ -43,7 +43,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2021101425 ; Serial
+        2021101426 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -1228,7 +1228,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2021101425 ; Serial
+        2021101426 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -1548,12 +1548,12 @@ data:
     253.255 IN PTR lo1.e2.dist.npf
     254.255 IN PTR lo1.e1.dist.npf
 
-  192.in-addr.arpa.zone: |
-    $ORIGIN 192.in-addr.arpa.
+  168.192.in-addr.arpa.zone: |
+    $ORIGIN 168.192.in-addr.arpa.
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2021101425 ; Serial
+        2021101426 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -1639,7 +1639,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2021101425 ; Serial
+        2021101426 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
