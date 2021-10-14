@@ -79,10 +79,10 @@ items:
                 path: npf.zone
               - key: 10.in-addr.arpa.zone
                 path: 10.in-addr.arpa.zone
-              - key: 192.in-addr.arpa.zone
-                path: 192.in-addr.arpa.zone
               - key: 172.in-addr.arpa.zone
                 path: 172.in-addr.arpa.zone
+              - key: 168.192.in-addr.arpa.zone
+                path: 168.192.in-addr.arpa.zone
 - kind: Service
   apiVersion: v1
   metadata:
