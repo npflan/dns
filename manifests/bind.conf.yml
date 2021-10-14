@@ -43,7 +43,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2021101436 ; Serial
+        2021101437 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
