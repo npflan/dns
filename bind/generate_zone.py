@@ -64,6 +64,8 @@ data:
 
     ns1			IN  A   10.96.5.3
     prom-server IN  A   10.101.128.200
+    get5-academy IN A   10.101.224.36
+    get5-tournament IN A 10.101.240.56
 
     alert IN CNAME prometheus-alertmanager.prometheus.svc.cluster.local.
     argo IN CNAME argocd-server.argocd.svc.cluster.local.
