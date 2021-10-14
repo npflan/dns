@@ -43,7 +43,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2021101425 ; Serial
+        2021101426 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -1228,7 +1228,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2021101425 ; Serial
+        2021101426 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -1549,11 +1549,11 @@ data:
     254.255.255 IN PTR lo1.e1.dist.npf
 
   168.192.in-addr.arpa.zone: |
-    $ORIGIN 10.in-addr.arpa.
+    $ORIGIN 168.192.in-addr.arpa.
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2021101425 ; Serial
+        2021101426 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
