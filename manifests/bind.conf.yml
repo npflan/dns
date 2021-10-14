@@ -668,12 +668,12 @@ data:
     scene IN A 10.255.254.25
     scene.e1 IN CNAME scene.access.npf.
     telemetry IN SRV 0 0 9167 scene.e1.access.npf.
-    e1_1 IN A 10.255.254.8
-    e1_1.e1 IN CNAME e1_1.access.npf.
-    telemetry IN SRV 0 0 9167 e1_1.e1.access.npf.
-    e1_2 IN A 10.255.254.9
-    e1_2.e1 IN CNAME e1_2.access.npf.
-    telemetry IN SRV 0 0 9167 e1_2.e1.access.npf.
+    e1-1 IN A 10.255.254.8
+    e1-1.e1 IN CNAME e1-1.access.npf.
+    telemetry IN SRV 0 0 9167 e1-1.e1.access.npf.
+    e1-2 IN A 10.255.254.9
+    e1-2.e1 IN CNAME e1-2.access.npf.
+    telemetry IN SRV 0 0 9167 e1-2.e1.access.npf.
     shop1 IN A 10.255.253.10
     shop1.e2 IN CNAME shop1.access.npf.
     telemetry IN SRV 0 0 9167 shop1.e2.access.npf.
