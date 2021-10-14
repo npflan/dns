@@ -1647,22 +1647,22 @@ data:
 
         IN	NS	ns1.npf.
 
-    1.22.20 IN PTR be1-41.core.link.npf
-    253.22.20 IN PTR be1-41.core1.link.npf
-    254.22.20 IN PTR be1-41.core2.link.npf
-    10.22.20 IN PTR brigitte.kube.npf
-    11.22.20 IN PTR soldier76.kube.npf
-    14.22.20 IN PTR mercy.kube.npf
-    15.22.20 IN PTR diva.kube.npf
-    16.22.20 IN PTR winston.kube.npf
-    17.22.20 IN PTR roadhog.kube.npf
-    18.22.20 IN PTR bastion.kube.npf
-    30.22.20 IN PTR reinhart.kube.npf
-    31.22.20 IN PTR doomfist.kube.npf
-    32.22.20 IN PTR junkrat.kube.npf
-    33.22.20 IN PTR sigma.kube.npf
-    34.22.20 IN PTR baptiste.kube.npf
-    35.22.20 IN PTR tracer.kube.npf
-    36.22.20 IN PTR mei.kube.npf
-    50.22.20 IN PTR wreckingball.kube.npf
+    1.22 IN PTR be1-41.core.link.npf
+    253.22 IN PTR be1-41.core1.link.npf
+    254.22 IN PTR be1-41.core2.link.npf
+    10.22 IN PTR brigitte.kube.npf
+    11.22 IN PTR soldier76.kube.npf
+    14.22 IN PTR mercy.kube.npf
+    15.22 IN PTR diva.kube.npf
+    16.22 IN PTR winston.kube.npf
+    17.22 IN PTR roadhog.kube.npf
+    18.22 IN PTR bastion.kube.npf
+    30.22 IN PTR reinhart.kube.npf
+    31.22 IN PTR doomfist.kube.npf
+    32.22 IN PTR junkrat.kube.npf
+    33.22 IN PTR sigma.kube.npf
+    34.22 IN PTR baptiste.kube.npf
+    35.22 IN PTR tracer.kube.npf
+    36.22 IN PTR mei.kube.npf
+    50.22 IN PTR wreckingball.kube.npf
 
