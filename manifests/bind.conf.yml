@@ -43,7 +43,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2021101426 ; Serial
+        2021101428 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -1228,7 +1228,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2021101426 ; Serial
+        2021101428 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -1553,7 +1553,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2021101426 ; Serial
+        2021101428 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -1633,4 +1633,36 @@ data:
     210.255.168 IN PTR hu0-2-0-0.core2.link.npf
     213.255.168 IN PTR hu0-3-0-0.core1.link.npf
     214.255.168 IN PTR hu0-3-0-0.core2.link.npf
+
+  20.172.in-addr.arpa.zone: |
+    $ORIGIN 10.in-addr.arpa.
+    $TTL 600
+
+    @	IN	SOA	ns1.npf.	hostmaster.npf. (
+        2021101428 ; Serial
+        300 ; Refresh
+        150 ; Retry
+        600 ; Expire
+        600) ; Minimum
+
+        IN	NS	ns1.npf.
+
+    1.22.20 IN PTR be1-41.core.link.npf
+    253.22.20 IN PTR be1-41.core1.link.npf
+    254.22.20 IN PTR be1-41.core2.link.npf
+    10.22.20 IN PTR brigitte.kube.npf
+    11.22.20 IN PTR soldier76.kube.npf
+    14.22.20 IN PTR mercy.kube.npf
+    15.22.20 IN PTR diva.kube.npf
+    16.22.20 IN PTR winston.kube.npf
+    17.22.20 IN PTR roadhog.kube.npf
+    18.22.20 IN PTR bastion.kube.npf
+    30.22.20 IN PTR reinhart.kube.npf
+    31.22.20 IN PTR doomfist.kube.npf
+    32.22.20 IN PTR junkrat.kube.npf
+    33.22.20 IN PTR sigma.kube.npf
+    34.22.20 IN PTR baptiste.kube.npf
+    35.22.20 IN PTR tracer.kube.npf
+    36.22.20 IN PTR mei.kube.npf
+    50.22.20 IN PTR wreckingball.kube.npf
 
