@@ -43,7 +43,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2021101424 ; Serial
+        2021101423 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -1228,7 +1228,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2021101424 ; Serial
+        2021101423 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -1553,7 +1553,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2021101424 ; Serial
+        2021101423 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -1639,7 +1639,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2021101424 ; Serial
+        2021101423 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
