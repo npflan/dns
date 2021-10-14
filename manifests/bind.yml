@@ -83,7 +83,6 @@ items:
                 path: 168.192.in-addr.arpa.zone
               - key: 20.172.in-addr.arpa.zone
                 path: 20.172.in-addr.arpa.zone
----
 - kind: Service
   apiVersion: v1
   metadata:
