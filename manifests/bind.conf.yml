@@ -43,7 +43,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2021101439 ; Serial
+        2021101440 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -564,8 +564,8 @@ data:
     ed1 IN A 10.255.204.14
     ed1.d4 IN A 10.255.204.14
     telemetry IN SRV 0 0 9167 ed1.d4.access.npf.
-    ed2 IN A 10.255.204.15
-    ed2.d4 IN A 10.255.204.15
+    ed2 IN A 10.255.204.42
+    ed2.d4 IN A 10.255.204.42
     telemetry IN SRV 0 0 9167 ed2.d4.access.npf.
     ee1 IN A 10.255.204.16
     ee1.d4 IN A 10.255.204.16
