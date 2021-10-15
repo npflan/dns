@@ -43,7 +43,7 @@ data:
     $TTL 600
 
     @	IN	SOA	ns1.npf.	hostmaster.npf. (
-        2021101436 ; Serial
+        2021101439 ; Serial
         300 ; Refresh
         150 ; Retry
         600 ; Expire
@@ -141,7 +141,6 @@ data:
     telemetry IN SRV 0 0 9167 aa2.d7.access.npf.
     aa3 IN A 10.255.207.12
     aa3.d7 IN A 10.255.207.12
-    telemetry IN SRV 0 0 9167 aa3.d7.access.npf.
     ab1 IN A 10.255.207.13
     ab1.d7 IN A 10.255.207.13
     telemetry IN SRV 0 0 9167 ab1.d7.access.npf.
@@ -667,9 +666,9 @@ data:
     crew15 IN A 10.255.254.24
     crew15.e1 IN A 10.255.254.24
     telemetry IN SRV 0 0 9167 crew15.e1.access.npf.
-    scene IN A 10.255.254.25
-    scene.e1 IN A 10.255.254.25
-    telemetry IN SRV 0 0 9167 scene.e1.access.npf.
+    scene IN A 10.255.212.50
+    scene.d12 IN A 10.255.212.50
+    telemetry IN SRV 0 0 9167 scene.d12.access.npf.
     e1-1 IN A 10.255.254.8
     e1-1.e1 IN A 10.255.254.8
     telemetry IN SRV 0 0 9167 e1-1.e1.access.npf.
@@ -789,16 +788,10 @@ data:
     telemetry IN SRV 0 0 9167 d9.dist.npf.
     telemetry IN SRV 0 0 9167 d10.dist.npf.
     telemetry IN SRV 0 0 9167 d11.dist.npf.
-    telemetry IN SRV 0 0 9167 d12.dist.npf.
-    telemetry IN SRV 0 0 9167 d13.dist.npf.
-    telemetry IN SRV 0 0 9167 d14.dist.npf.
-    telemetry IN SRV 0 0 9167 d15.dist.npf.
-    telemetry IN SRV 0 0 9167 d16.dist.npf.
     telemetry IN SRV 0 0 9167 e1.dist.npf.
     telemetry IN SRV 0 0 9167 e2.dist.npf.
     telemetry IN SRV 0 0 9167 e3.dist.npf.
     telemetry IN SRV 0 0 9167 e4.dist.npf.
-    telemetry IN SRV 0 0 9167 s1.dist.npf.
     telemetry IN SRV 0 0 9167 s2.dist.npf.
     telemetry IN SRV 0 0 9167 s3.dist.npf.
     telemetry IN SRV 0 0 9167 n3k1.dist.npf.
