@@ -688,12 +688,12 @@ data:
     shop4 IN A 10.255.253.13
     shop4.e2 IN A 10.255.253.13
     telemetry IN SRV 0 0 9167 shop4.e2.access.npf.
-    shop5 IN A 10.255.253.19
-    shop5.e2 IN A 10.255.253.19
-    telemetry IN SRV 0 0 9167 shop5.e2.access.npf.
-    billet IN A 10.255.253.20
-    billet.e2 IN A 10.255.253.20
-    telemetry IN SRV 0 0 9167 billet.e2.access.npf.
+    shop5 IN A 10.255.252.19
+    shop5.e3 IN A 10.255.252.19
+    telemetry IN SRV 0 0 9167 shop5.e3.access.npf.
+    billet IN A 10.255.252.20
+    billet.e3 IN A 10.255.252.20
+    telemetry IN SRV 0 0 9167 billet.e3.access.npf.
     sos1 IN A 10.255.253.14
     sos1.e2 IN A 10.255.253.14
     telemetry IN SRV 0 0 9167 sos1.e2.access.npf.
