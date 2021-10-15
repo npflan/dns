@@ -124,9 +124,9 @@ data:
     wifi1 IN A 10.255.253.2
     wifi1.e2 IN A 10.255.253.2
     telemetry IN SRV 0 0 9167 wifi1.e2.access.npf.
-    wifi2 IN A 10.255.253.3
-    wifi2.e2 IN A 10.255.253.3
-    telemetry IN SRV 0 0 9167 wifi2.e2.access.npf.
+    wifi2 IN A 10.255.252.200
+    wifi2.e3 IN A 10.255.252.200
+    telemetry IN SRV 0 0 9167 wifi2.e3.access.npf.
     wifi1 IN A 10.255.252.2
     wifi1.e3 IN A 10.255.252.2
     telemetry IN SRV 0 0 9167 wifi1.e3.access.npf.
