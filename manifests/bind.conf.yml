@@ -1645,8 +1645,8 @@ data:
     1.22 IN PTR be1-41.core.link.npf
     253.22 IN PTR be1-41.core1.link.npf
     254.22 IN PTR be1-41.core2.link.npf
-    10.22 IN PTR brigitte.kube.npf
-    11.22 IN PTR soldier76.kube.npf
+    10.22 IN PTR brigitte.kube.npf.
+    11.22 IN PTR soldier76.kube.npf.
     14.22 IN PTR mercy.kube.npf
     15.22 IN PTR diva.kube.npf
     16.22 IN PTR winston.kube.npf
