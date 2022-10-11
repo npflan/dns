@@ -442,26 +442,26 @@ data:
     hm1.d2 IN A 10.255.202.36
     telemetry IN SRV 0 0 9167 hm1.d2.access.npf.
     fn1 IN A 10.255.217.10
-    fn1.g2 IN A 10.255.217.10
-    telemetry IN SRV 0 0 9167 fn1.g2.access.npf.
+    fn1.g3 IN A 10.255.217.10
+    telemetry IN SRV 0 0 9167 fn1.g3.access.npf.
     fp1 IN A 10.255.217.11
-    fp1.g2 IN A 10.255.217.11
-    telemetry IN SRV 0 0 9167 fp1.g2.access.npf.
+    fp1.g3 IN A 10.255.217.11
+    telemetry IN SRV 0 0 9167 fp1.g3.access.npf.
     fq1 IN A 10.255.217.12
-    fq1.g2 IN A 10.255.217.12
-    telemetry IN SRV 0 0 9167 fq1.g2.access.npf.
+    fq1.g3 IN A 10.255.217.12
+    telemetry IN SRV 0 0 9167 fq1.g3.access.npf.
     fr1 IN A 10.255.217.13
-    fr1.g2 IN A 10.255.217.13
-    telemetry IN SRV 0 0 9167 fr1.g2.access.npf.
+    fr1.g3 IN A 10.255.217.13
+    telemetry IN SRV 0 0 9167 fr1.g3.access.npf.
     fs1 IN A 10.255.217.14
-    fs1.g2 IN A 10.255.217.14
-    telemetry IN SRV 0 0 9167 fs1.g2.access.npf.
+    fs1.g3 IN A 10.255.217.14
+    telemetry IN SRV 0 0 9167 fs1.g3.access.npf.
     ft1 IN A 10.255.217.15
-    ft1.g2 IN A 10.255.217.15
-    telemetry IN SRV 0 0 9167 ft1.g2.access.npf.
+    ft1.g3 IN A 10.255.217.15
+    telemetry IN SRV 0 0 9167 ft1.g3.access.npf.
     fu1 IN A 10.255.217.16
-    fu1.g2 IN A 10.255.217.16
-    telemetry IN SRV 0 0 9167 fu1.g2.access.npf.
+    fu1.g3 IN A 10.255.217.16
+    telemetry IN SRV 0 0 9167 fu1.g3.access.npf.
     dq1 IN A 10.255.203.10
     dq1.d3 IN A 10.255.203.10
     telemetry IN SRV 0 0 9167 dq1.d3.access.npf.
@@ -774,7 +774,7 @@ data:
     s3 IN A 10.255.255.53
     n3k1 IN A 10.255.200.11
     n3k2 IN A 10.255.200.139
-    g2 IN A 10.255.255.17
+    g3 IN A 10.255.255.18
     telemetry IN SRV 0 0 9167 c1.dist.npf.
     telemetry IN SRV 0 0 9167 c2.dist.npf.
     telemetry IN SRV 0 0 9167 d1.dist.npf.
@@ -796,7 +796,7 @@ data:
     telemetry IN SRV 0 0 9167 s3.dist.npf.
     telemetry IN SRV 0 0 9167 n3k1.dist.npf.
     telemetry IN SRV 0 0 9167 n3k2.dist.npf.
-    telemetry IN SRV 0 0 9167 g2.dist.npf.
+    telemetry IN SRV 0 0 9167 g3.dist.npf.
     vl11.d1 IN A 10.1.11.1
     vl12.d1 IN A 10.1.12.1
     vl13.d1 IN A 10.1.13.1
@@ -973,14 +973,14 @@ data:
     vl240.d16 IN A 10.16.240.1
     vl248.d16 IN A 10.16.248.1
     vl250.d16 IN A 10.16.250.1
-    vl11.g2 IN A 10.17.11.1
-    vl12.g2 IN A 10.17.12.1
-    vl13.g2 IN A 10.17.13.1
-    vl14.g2 IN A 10.17.14.1
-    vl15.g2 IN A 10.17.15.1
-    vl16.g2 IN A 10.17.16.1
-    vl17.g2 IN A 10.17.17.1
-    vl18.g2 IN A 10.17.18.1
+    vl11.g3 IN A 10.18.11.1
+    vl12.g3 IN A 10.18.12.1
+    vl13.g3 IN A 10.18.13.1
+    vl14.g3 IN A 10.18.14.1
+    vl15.g3 IN A 10.18.15.1
+    vl16.g3 IN A 10.18.16.1
+    vl17.g3 IN A 10.18.17.1
+    vl18.g3 IN A 10.18.18.1
     vl11.e4 IN A 10.251.11.1
     vl12.e4 IN A 10.251.12.1
     vl13.e4 IN A 10.251.13.1
@@ -1041,7 +1041,7 @@ data:
     vl193.d14 IN A 10.255.214.1
     vl193.d15 IN A 10.255.215.1
     vl193.d16 IN A 10.255.216.1
-    vl193.g2 IN A 10.255.217.1
+    vl193.g3 IN A 10.255.218.1
     vl193.e4 IN A 10.255.251.1
     vl193.e3 IN A 10.255.252.1
     vl193.e2 IN A 10.255.253.1
@@ -1062,7 +1062,7 @@ data:
     lo1.d14 IN A 10.255.255.14
     lo1.d15 IN A 10.255.255.15
     lo1.d16 IN A 10.255.255.16
-    lo1.g2 IN A 10.255.255.17
+    lo1.g3 IN A 10.255.255.18
     lo1.s1 IN A 10.255.255.51
     lo1.s2 IN A 10.255.255.52
     lo1.s3 IN A 10.255.255.53
@@ -1158,12 +1158,12 @@ data:
     te1-50.d16 IN A 192.168.1.81
     te0-1-0-14.core2 IN A 192.168.1.82
     te0-0-0-15.core1 IN A 192.168.1.113
-    te3-1.g2 IN A 192.168.1.114
+    te1-0-1.g3 IN A 192.168.1.114
     te0-1-0-15.core1 IN A 192.168.1.117
-    te4-1.g2 IN A 192.168.1.118
-    te3-2.g2 IN A 192.168.1.121
+    te1-0-2.g3 IN A 192.168.1.118
+    te1-0-23.g3 IN A 192.168.1.121
     te0-0-0-15.core2 IN A 192.168.1.122
-    te4-2.g2 IN A 192.168.1.125
+    te1-0-24.g3 IN A 192.168.1.125
     te0-1-0-15.core2 IN A 192.168.1.126
     te1-50.e4 IN A 192.168.255.113
     te0-1-0-16.core2 IN A 192.168.255.114
@@ -1443,14 +1443,14 @@ data:
     1.240.16 IN PTR vl240.d16.dist.npf.
     1.248.16 IN PTR vl248.d16.dist.npf.
     1.250.16 IN PTR vl250.d16.dist.npf.
-    1.11.17 IN PTR vl11.g2.dist.npf.
-    1.12.17 IN PTR vl12.g2.dist.npf.
-    1.13.17 IN PTR vl13.g2.dist.npf.
-    1.14.17 IN PTR vl14.g2.dist.npf.
-    1.15.17 IN PTR vl15.g2.dist.npf.
-    1.16.17 IN PTR vl16.g2.dist.npf.
-    1.17.17 IN PTR vl17.g2.dist.npf.
-    1.18.17 IN PTR vl18.g2.dist.npf.
+    1.11.18 IN PTR vl11.g3.dist.npf.
+    1.12.18 IN PTR vl12.g3.dist.npf.
+    1.13.18 IN PTR vl13.g3.dist.npf.
+    1.14.18 IN PTR vl14.g3.dist.npf.
+    1.15.18 IN PTR vl15.g3.dist.npf.
+    1.16.18 IN PTR vl16.g3.dist.npf.
+    1.17.18 IN PTR vl17.g3.dist.npf.
+    1.18.18 IN PTR vl18.g3.dist.npf.
     1.11.251 IN PTR vl11.e4.dist.npf.
     1.12.251 IN PTR vl12.e4.dist.npf.
     1.13.251 IN PTR vl13.e4.dist.npf.
@@ -1511,7 +1511,7 @@ data:
     1.214.255 IN PTR vl193.d14.dist.npf.
     1.215.255 IN PTR vl193.d15.dist.npf.
     1.216.255 IN PTR vl193.d16.dist.npf.
-    1.217.255 IN PTR vl193.g2.dist.npf.
+    1.218.255 IN PTR vl193.g3.dist.npf.
     1.251.255 IN PTR vl193.e4.dist.npf.
     1.252.255 IN PTR vl193.e3.dist.npf.
     1.253.255 IN PTR vl193.e2.dist.npf.
@@ -1532,7 +1532,7 @@ data:
     14.255.255 IN PTR lo1.d14.dist.npf.
     15.255.255 IN PTR lo1.d15.dist.npf.
     16.255.255 IN PTR lo1.d16.dist.npf.
-    17.255.255 IN PTR lo1.g2.dist.npf.
+    18.255.255 IN PTR lo1.g3.dist.npf.
     51.255.255 IN PTR lo1.s1.dist.npf.
     52.255.255 IN PTR lo1.s2.dist.npf.
     53.255.255 IN PTR lo1.s3.dist.npf.
@@ -1601,12 +1601,12 @@ data:
     81.1 IN PTR te1-50.d16.link.npf.
     82.1 IN PTR te0-1-0-14.core2.link.npf.
     113.1 IN PTR te0-0-0-15.core1.link.npf.
-    114.1 IN PTR te3-1.g2.link.npf.
+    114.1 IN PTR te1-0-1.g3.link.npf.
     117.1 IN PTR te0-1-0-15.core1.link.npf.
-    118.1 IN PTR te4-1.g2.link.npf.
-    121.1 IN PTR te3-2.g2.link.npf.
+    118.1 IN PTR te1-0-2.g3.link.npf.
+    121.1 IN PTR te1-0-23.g3.link.npf.
     122.1 IN PTR te0-0-0-15.core2.link.npf.
-    125.1 IN PTR te4-2.g2.link.npf.
+    125.1 IN PTR te1-0-24.g3.link.npf.
     126.1 IN PTR te0-1-0-15.core2.link.npf.
     113.255 IN PTR te1-50.e4.link.npf.
     114.255 IN PTR te0-1-0-16.core2.link.npf.
