@@ -722,8 +722,8 @@ data:
     s1 IN A 10.255.255.51
     s2 IN A 10.255.255.52
     s3 IN A 10.255.255.53
-    n3k1 IN A 10.255.200.11
-    n3k2 IN A 10.255.200.139
+    n3k1 IN A 10.255.200.111
+    n3k2 IN A 10.255.200.222
     g3 IN A 10.255.255.18
     telemetry IN SRV 0 0 9167 c1.dist.npf.
     telemetry IN SRV 0 0 9167 c2.dist.npf.
