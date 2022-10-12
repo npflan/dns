@@ -367,12 +367,27 @@ data:
     fm1 IN A 10.255.202.24
     fm1.d2 IN A 10.255.202.24
     telemetry IN SRV 0 0 9167 fm1.d2.access.npf.
-    fn1 IN A 10.255.202.27
-    fn1.d2 IN A 10.255.202.27
-    telemetry IN SRV 0 0 9167 fn1.d2.access.npf.
-    fp1 IN A 10.255.202.30
-    fp1.d2 IN A 10.255.202.30
-    telemetry IN SRV 0 0 9167 fp1.d2.access.npf.
+    fn1 IN A 10.255.218.10
+    fn1.g3 IN A 10.255.218.10
+    telemetry IN SRV 0 0 9167 fn1.g3.access.npf.
+    fp1 IN A 10.255.218.11
+    fp1.g3 IN A 10.255.218.11
+    telemetry IN SRV 0 0 9167 fp1.g3.access.npf.
+    fq1 IN A 10.255.218.12
+    fq1.g3 IN A 10.255.218.12
+    telemetry IN SRV 0 0 9167 fq1.g3.access.npf.
+    fr1 IN A 10.255.218.13
+    fr1.g3 IN A 10.255.218.13
+    telemetry IN SRV 0 0 9167 fr1.g3.access.npf.
+    fs1 IN A 10.255.218.14
+    fs1.g3 IN A 10.255.218.14
+    telemetry IN SRV 0 0 9167 fs1.g3.access.npf.
+    ft1 IN A 10.255.218.15
+    ft1.g3 IN A 10.255.218.15
+    telemetry IN SRV 0 0 9167 ft1.g3.access.npf.
+    fu1 IN A 10.255.218.16
+    fu1.g3 IN A 10.255.218.16
+    telemetry IN SRV 0 0 9167 fu1.g3.access.npf.
     hg1 IN A 10.255.202.31
     hg1.d2 IN A 10.255.202.31
     telemetry IN SRV 0 0 9167 hg1.d2.access.npf.
@@ -391,27 +406,6 @@ data:
     hm1 IN A 10.255.202.36
     hm1.d2 IN A 10.255.202.36
     telemetry IN SRV 0 0 9167 hm1.d2.access.npf.
-    fn1 IN A 10.255.217.10
-    fn1.g3 IN A 10.255.217.10
-    telemetry IN SRV 0 0 9167 fn1.g3.access.npf.
-    fp1 IN A 10.255.217.11
-    fp1.g3 IN A 10.255.217.11
-    telemetry IN SRV 0 0 9167 fp1.g3.access.npf.
-    fq1 IN A 10.255.217.12
-    fq1.g3 IN A 10.255.217.12
-    telemetry IN SRV 0 0 9167 fq1.g3.access.npf.
-    fr1 IN A 10.255.217.13
-    fr1.g3 IN A 10.255.217.13
-    telemetry IN SRV 0 0 9167 fr1.g3.access.npf.
-    fs1 IN A 10.255.217.14
-    fs1.g3 IN A 10.255.217.14
-    telemetry IN SRV 0 0 9167 fs1.g3.access.npf.
-    ft1 IN A 10.255.217.15
-    ft1.g3 IN A 10.255.217.15
-    telemetry IN SRV 0 0 9167 ft1.g3.access.npf.
-    fu1 IN A 10.255.217.16
-    fu1.g3 IN A 10.255.217.16
-    telemetry IN SRV 0 0 9167 fu1.g3.access.npf.
     dq1 IN A 10.255.203.10
     dq1.d3 IN A 10.255.203.10
     telemetry IN SRV 0 0 9167 dq1.d3.access.npf.
@@ -454,21 +448,12 @@ data:
     dw2 IN A 10.255.203.29
     dw2.d3 IN A 10.255.203.29
     telemetry IN SRV 0 0 9167 dw2.d3.access.npf.
-    fq1 IN A 10.255.203.12
-    fq1.d3 IN A 10.255.203.12
-    telemetry IN SRV 0 0 9167 fq1.d3.access.npf.
     fr2 IN A 10.255.203.15
     fr2.d3 IN A 10.255.203.15
     telemetry IN SRV 0 0 9167 fr2.d3.access.npf.
     fs1 IN A 10.255.203.18
     fs1.d3 IN A 10.255.203.18
     telemetry IN SRV 0 0 9167 fs1.d3.access.npf.
-    ft1 IN A 10.255.203.21
-    ft1.d3 IN A 10.255.203.21
-    telemetry IN SRV 0 0 9167 ft1.d3.access.npf.
-    fu1 IN A 10.255.203.24
-    fu1.d3 IN A 10.255.203.24
-    telemetry IN SRV 0 0 9167 fu1.d3.access.npf.
     fv1 IN A 10.255.203.27
     fv1.d3 IN A 10.255.203.27
     telemetry IN SRV 0 0 9167 fv1.d3.access.npf.
