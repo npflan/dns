@@ -103,8 +103,8 @@ data:
     wifi1 IN A 10.255.207.2
     wifi1.d7 IN A 10.255.207.2
     telemetry IN SRV 0 0 9167 wifi1.d7.access.npf.
-    wifi1 IN A 10.255.204.2
-    wifi1.d8 IN A 10.255.204.2
+    wifi1 IN A 10.255.208.2
+    wifi1.d8 IN A 10.255.208.2
     telemetry IN SRV 0 0 9167 wifi1.d8.access.npf.
     wifi1 IN A 10.255.209.2
     wifi1.d9 IN A 10.255.209.2
@@ -243,6 +243,42 @@ data:
     ch1 IN A 10.255.209.11
     ch1.d9 IN A 10.255.209.11
     telemetry IN SRV 0 0 9167 ch1.d9.access.npf.
+    ay1 IN A 10.255.210.12
+    ay1.d10 IN A 10.255.210.12
+    telemetry IN SRV 0 0 9167 ay1.d10.access.npf.
+    ay2 IN A 10.255.210.13
+    ay2.d10 IN A 10.255.210.13
+    telemetry IN SRV 0 0 9167 ay2.d10.access.npf.
+    az1 IN A 10.255.210.14
+    az1.d10 IN A 10.255.207.14
+    telemetry IN SRV 0 0 9167 az1.d10.access.npf.
+    az2 IN A 10.255.210.15
+    az2.d10 IN A 10.255.207.15
+    telemetry IN SRV 0 0 9167 az2.d10.access.npf.
+    ba1 IN A 10.255.210.16
+    ba1.d10 IN A 10.255.210.16
+    telemetry IN SRV 0 0 9167 ba1.d10.access.npf.
+    ba2 IN A 10.255.210.17
+    ba2.d10 IN A 10.255.210.17
+    telemetry IN SRV 0 0 9167 ba2.d10.access.npf.
+    bb1 IN A 10.255.210.18
+    bb1.d10 IN A 10.255.210.18
+    telemetry IN SRV 0 0 9167 bb1.d10.access.npf.
+    bb2 IN A 10.255.210.19
+    bb2.d10 IN A 10.255.210.19
+    telemetry IN SRV 0 0 9167 bb2.d10.access.npf.
+    bc1 IN A 10.255.210.20
+    bc1.d10 IN A 10.255.210.20
+    telemetry IN SRV 0 0 9167 bc1.d10.access.npf.
+    bc2 IN A 10.255.210.21
+    bc2.d10 IN A 10.255.210.21
+    telemetry IN SRV 0 0 9167 bc1.d10.access.npf.
+    bd1 IN A 10.255.210.22
+    bd1.d10 IN A 10.255.210.22
+    telemetry IN SRV 0 0 9167 bd1.d10.access.npf.
+    bd2 IN A 10.255.210.23
+    bd2.d10 IN A 10.255.210.24
+    telemetry IN SRV 0 0 9167 bd2.d10.access.npf.
     cc1 IN A 10.255.210.10
     cc1.d10 IN A 10.255.210.10
     telemetry IN SRV 0 0 9167 cc1.d10.access.npf.
