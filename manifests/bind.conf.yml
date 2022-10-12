@@ -67,9 +67,9 @@ data:
     shinobi IN CNAME shinobi.shinobi.svc.cluster.local.
     shutdown IN CNAME shutdown-svc.cisco.svc.cluster.local.
 
-    avatar IN A 10.0.0.1
+    avatar IN A 10.0.0.9
     leviathan IN A 10.0.0.5
-    ragnarok IN A 10.0.0.9
+    ragnarok IN A 10.0.0.1
     erebus IN A 10.0.0.13
     kubectl IN A 172.20.11.102
     chimera IN A 172.20.11.104
@@ -272,7 +272,7 @@ data:
     telemetry IN SRV 0 0 9167 bc1.d10.access.npf.
     bc2 IN A 10.255.210.21
     bc2.d10 IN A 10.255.210.21
-    telemetry IN SRV 0 0 9167 bc1.d10.access.npf.
+    telemetry IN SRV 0 0 9167 bc2.d10.access.npf.
     bd1 IN A 10.255.210.22
     bd1.d10 IN A 10.255.210.22
     telemetry IN SRV 0 0 9167 bd1.d10.access.npf.
@@ -1110,11 +1110,11 @@ data:
     lo1.e1 IN A 10.255.255.254
 
     $ORIGIN link.npf.
-    mce1.avatar IN A 10.0.0.1
+    mce1.avatar IN A 10.0.0.9
     be10-301.core1 IN A 10.0.0.2
     mce1.leviathan IN A 10.0.0.5
     be10-302.core1 IN A 10.0.0.6
-    mce1.ragnarok IN A 10.0.0.9
+    mce1.ragnarok IN A 10.0.0.1
     be10-301.core2 IN A 10.0.0.10
     mce1.erabus IN A 10.0.0.13
     be10-302.core2 IN A 10.0.0.14
@@ -1267,11 +1267,11 @@ data:
 
         IN	NS	ns1.npf.
 
-    1.0.0 IN PTR mce1.avatar.link.npf.
+    9.0.0 IN PTR mce1.avatar.link.npf.
     2.0.0 IN PTR be10-301.core1.link.npf.
     5.0.0 IN PTR mce1.leviathan.link.npf.
     6.0.0 IN PTR be10-302.core1.link.npf.
-    9.0.0 IN PTR mce1.ragnarok.link.npf.
+    1.0.0 IN PTR mce1.ragnarok.link.npf.
     10.0.0 IN PTR be10-301.core2.link.npf.
     13.0.0 IN PTR mce1.erabus.link.npf.
     14.0.0 IN PTR be10-302.core2.link.npf.
