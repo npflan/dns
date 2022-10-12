@@ -732,18 +732,16 @@ data:
     telemetry IN SRV 0 0 9167 d3.dist.npf.
     telemetry IN SRV 0 0 9167 d4.dist.npf.
     telemetry IN SRV 0 0 9167 d5.dist.npf.
-    telemetry IN SRV 0 0 9167 d6.dist.npf.
     telemetry IN SRV 0 0 9167 d7.dist.npf.
     telemetry IN SRV 0 0 9167 d8.dist.npf.
     telemetry IN SRV 0 0 9167 d9.dist.npf.
     telemetry IN SRV 0 0 9167 d10.dist.npf.
     telemetry IN SRV 0 0 9167 d11.dist.npf.
+    telemetry IN SRV 0 0 9167 d12.dist.npf.
     telemetry IN SRV 0 0 9167 e1.dist.npf.
     telemetry IN SRV 0 0 9167 e2.dist.npf.
     telemetry IN SRV 0 0 9167 e3.dist.npf.
     telemetry IN SRV 0 0 9167 e4.dist.npf.
-    telemetry IN SRV 0 0 9167 s2.dist.npf.
-    telemetry IN SRV 0 0 9167 s3.dist.npf.
     telemetry IN SRV 0 0 9167 n3k1.dist.npf.
     telemetry IN SRV 0 0 9167 n3k2.dist.npf.
     telemetry IN SRV 0 0 9167 g3.dist.npf.
