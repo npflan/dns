@@ -133,50 +133,6 @@ data:
     wifi1 IN A 10.255.251.2
     wifi1.e4 IN A 10.255.251.2
     telemetry IN SRV 0 0 9167 wifi1.e4.access.npf.
-    aa1 IN A 10.255.207.10
-    aa1.d7 IN A 10.255.207.10
-    telemetry IN SRV 0 0 9167 aa1.d7.access.npf.
-    aa2 IN A 10.255.207.11
-    aa2.d7 IN A 10.255.207.11
-    telemetry IN SRV 0 0 9167 aa2.d7.access.npf.
-    aa3 IN A 10.255.207.12
-    aa3.d7 IN A 10.255.207.12
-    ab1 IN A 10.255.207.13
-    ab1.d7 IN A 10.255.207.13
-    telemetry IN SRV 0 0 9167 ab1.d7.access.npf.
-    ab2 IN A 10.255.207.14
-    ab2.d7 IN A 10.255.207.14
-    telemetry IN SRV 0 0 9167 ab2.d7.access.npf.
-    ac1 IN A 10.255.207.15
-    ac1.d7 IN A 10.255.207.15
-    telemetry IN SRV 0 0 9167 ac1.d7.access.npf.
-    ac2 IN A 10.255.207.16
-    ac2.d7 IN A 10.255.207.16
-    telemetry IN SRV 0 0 9167 ac2.d7.access.npf.
-    ad1 IN A 10.255.207.17
-    ad1.d7 IN A 10.255.207.17
-    telemetry IN SRV 0 0 9167 ad1.d7.access.npf.
-    ad2 IN A 10.255.207.18
-    ad2.d7 IN A 10.255.207.18
-    telemetry IN SRV 0 0 9167 ad2.d7.access.npf.
-    ae1 IN A 10.255.207.19
-    ae1.d7 IN A 10.255.207.19
-    telemetry IN SRV 0 0 9167 ae1.d7.access.npf.
-    ae2 IN A 10.255.207.20
-    ae2.d7 IN A 10.255.207.20
-    telemetry IN SRV 0 0 9167 ae2.d7.access.npf.
-    af1 IN A 10.255.207.21
-    af1.d7 IN A 10.255.207.21
-    telemetry IN SRV 0 0 9167 af1.d7.access.npf.
-    af2 IN A 10.255.207.22
-    af2.d7 IN A 10.255.207.22
-    telemetry IN SRV 0 0 9167 af2.d7.access.npf.
-    ag1 IN A 10.255.207.23
-    ag1.d7 IN A 10.255.207.23
-    telemetry IN SRV 0 0 9167 ag1.d7.access.npf.
-    ag2 IN A 10.255.207.24
-    ag2.d7 IN A 10.255.207.24
-    telemetry IN SRV 0 0 9167 ag2.d7.access.npf.
     ca1 IN A 10.255.207.25
     ca1.d7 IN A 10.255.207.25
     telemetry IN SRV 0 0 9167 ca1.d7.access.npf.
@@ -189,48 +145,6 @@ data:
     cd1 IN A 10.255.207.28
     cd1.d7 IN A 10.255.207.28
     telemetry IN SRV 0 0 9167 cd1.d7.access.npf.
-    ah1 IN A 10.255.208.10
-    ah1.d8 IN A 10.255.208.10
-    telemetry IN SRV 0 0 9167 ah1.d8.access.npf.
-    ah2 IN A 10.255.208.11
-    ah2.d8 IN A 10.255.208.11
-    telemetry IN SRV 0 0 9167 ah2.d8.access.npf.
-    aj1 IN A 10.255.208.12
-    aj1.d8 IN A 10.255.208.12
-    telemetry IN SRV 0 0 9167 aj1.d8.access.npf.
-    aj2 IN A 10.255.208.13
-    aj2.d8 IN A 10.255.208.13
-    telemetry IN SRV 0 0 9167 aj2.d8.access.npf.
-    ak1 IN A 10.255.208.14
-    ak1.d8 IN A 10.255.208.14
-    telemetry IN SRV 0 0 9167 ak1.d8.access.npf.
-    ak2 IN A 10.255.208.15
-    ak2.d8 IN A 10.255.208.15
-    telemetry IN SRV 0 0 9167 ak2.d8.access.npf.
-    al1 IN A 10.255.208.16
-    al1.d8 IN A 10.255.208.16
-    telemetry IN SRV 0 0 9167 al1.d8.access.npf.
-    al2 IN A 10.255.208.17
-    al2.d8 IN A 10.255.208.17
-    telemetry IN SRV 0 0 9167 al2.d8.access.npf.
-    am1 IN A 10.255.208.18
-    am1.d8 IN A 10.255.208.18
-    telemetry IN SRV 0 0 9167 am1.d8.access.npf.
-    am2 IN A 10.255.208.19
-    am2.d8 IN A 10.255.208.19
-    telemetry IN SRV 0 0 9167 am2.d8.access.npf.
-    an1 IN A 10.255.208.20
-    an1.d8 IN A 10.255.208.20
-    telemetry IN SRV 0 0 9167 an1.d8.access.npf.
-    an2 IN A 10.255.208.21
-    an2.d8 IN A 10.255.208.21
-    telemetry IN SRV 0 0 9167 an2.d8.access.npf.
-    ap1 IN A 10.255.208.22
-    ap1.d8 IN A 10.255.208.22
-    telemetry IN SRV 0 0 9167 ap1.d8.access.npf.
-    ap2 IN A 10.255.208.23
-    ap2.d8 IN A 10.255.208.23
-    telemetry IN SRV 0 0 9167 ap2.d8.access.npf.
     ce1 IN A 10.255.208.24
     ce1.d8 IN A 10.255.208.24
     telemetry IN SRV 0 0 9167 ce1.d8.access.npf.
