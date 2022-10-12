@@ -475,41 +475,41 @@ data:
     fw1 IN A 10.255.203.30
     fw1.d3 IN A 10.255.203.30
     telemetry IN SRV 0 0 9167 fw1.d3.access.npf.
-    dx1 IN A 10.255.204.2
-    dx1.d4 IN A 10.255.204.2
+    dx1 IN A 10.255.204.10
+    dx1.d4 IN A 10.255.204.10
     telemetry IN SRV 0 0 9167 dx1.d4.access.npf.
-    dx2 IN A 10.255.204.3
-    dx2.d4 IN A 10.255.204.3
+    dx2 IN A 10.255.204.11
+    dx2.d4 IN A 10.255.204.11
     telemetry IN SRV 0 0 9167 dx2.d4.access.npf.
-    dy1 IN A 10.255.204.4
-    dy1.d4 IN A 10.255.204.4
+    dy1 IN A 10.255.204.13
+    dy1.d4 IN A 10.255.204.13
     telemetry IN SRV 0 0 9167 dy1.d4.access.npf.
-    dy2 IN A 10.255.204.5
-    dy2.d4 IN A 10.255.204.5
+    dy2 IN A 10.255.204.14
+    dy2.d4 IN A 10.255.204.15
     telemetry IN SRV 0 0 9167 dy2.d4.access.npf.
-    dz1 IN A 10.255.204.6
-    dz1.d4 IN A 10.255.204.6
+    dz1 IN A 10.255.204.16
+    dz1.d4 IN A 10.255.204.16
     telemetry IN SRV 0 0 9167 dz1.d4.access.npf.
-    dz2 IN A 10.255.204.7
-    dz2.d4 IN A 10.255.204.7
+    dz2 IN A 10.255.204.17
+    dz2.d4 IN A 10.255.204.17
     telemetry IN SRV 0 0 9167 dz2.d4.access.npf.
-    ea1 IN A 10.255.204.8
-    ea1.d4 IN A 10.255.204.8
+    ea1 IN A 10.255.204.19
+    ea1.d4 IN A 10.255.204.19
     telemetry IN SRV 0 0 9167 ea1.d4.access.npf.
-    ea2 IN A 10.255.204.9
-    ea2.d4 IN A 10.255.204.9
+    ea2 IN A 10.255.204.20
+    ea2.d4 IN A 10.255.204.20
     telemetry IN SRV 0 0 9167 ea2.d4.access.npf.
-    eb1 IN A 10.255.204.10
-    eb1.d4 IN A 10.255.204.10
+    eb1 IN A 10.255.204.22
+    eb1.d4 IN A 10.255.204.22
     telemetry IN SRV 0 0 9167 eb1.d4.access.npf.
-    eb2 IN A 10.255.204.11
-    eb2.d4 IN A 10.255.204.11
+    eb2 IN A 10.255.204.23
+    eb2.d4 IN A 10.255.204.23
     telemetry IN SRV 0 0 9167 eb2.d4.access.npf.
-    ec1 IN A 10.255.204.12
-    ec1.d4 IN A 10.255.204.12
+    ec1 IN A 10.255.204.25
+    ec1.d4 IN A 10.255.204.25
     telemetry IN SRV 0 0 9167 ec1.d4.access.npf.
-    ec2 IN A 10.255.204.13
-    ec2.d4 IN A 10.255.204.13
+    ec2 IN A 10.255.204.26
+    ec2.d4 IN A 10.255.204.26
     telemetry IN SRV 0 0 9167 ec2.d4.access.npf.
     ed1 IN A 10.255.204.14
     ed1.d4 IN A 10.255.204.14
