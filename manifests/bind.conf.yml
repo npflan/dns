@@ -158,42 +158,102 @@ data:
     ch1 IN A 10.255.209.25
     ch1.d9 IN A 10.255.209.25
     telemetry IN SRV 0 0 9167 ch1.d9.access.npf.
-    ay1 IN A 10.255.210.12
-    ay1.d10 IN A 10.255.210.12
+    aw1 IN A 10.255.210.12
+    aw1.d10 IN A 10.255.210.12
+    telemetry IN SRV 0 0 9167 aw1.d10.access.npf.
+    aw2 IN A 10.255.210.13
+    aw2.d10 IN A 10.255.210.13
+    telemetry IN SRV 0 0 9167 aw2.d10.access.npf.
+    ax1 IN A 10.255.210.14
+    ax1.d10 IN A 10.255.207.14
+    telemetry IN SRV 0 0 9167 ax1.d10.access.npf.
+    ax2 IN A 10.255.210.15
+    ax2.d10 IN A 10.255.207.15
+    telemetry IN SRV 0 0 9167 ax2.d10.access.npf.
+    ay1 IN A 10.255.210.16
+    ay1.d10 IN A 10.255.210.16
     telemetry IN SRV 0 0 9167 ay1.d10.access.npf.
-    ay2 IN A 10.255.210.13
-    ay2.d10 IN A 10.255.210.13
+    ay2 IN A 10.255.210.17
+    ay2.d10 IN A 10.255.210.17
     telemetry IN SRV 0 0 9167 ay2.d10.access.npf.
-    az1 IN A 10.255.210.14
-    az1.d10 IN A 10.255.207.14
+    az1 IN A 10.255.210.18
+    az1.d10 IN A 10.255.210.18
     telemetry IN SRV 0 0 9167 az1.d10.access.npf.
-    az2 IN A 10.255.210.15
-    az2.d10 IN A 10.255.207.15
+    az2 IN A 10.255.210.19
+    az2.d10 IN A 10.255.210.19
     telemetry IN SRV 0 0 9167 az2.d10.access.npf.
-    ba1 IN A 10.255.210.16
-    ba1.d10 IN A 10.255.210.16
+    ba1 IN A 10.255.210.20
+    ba1.d10 IN A 10.255.210.20
     telemetry IN SRV 0 0 9167 ba1.d10.access.npf.
-    ba2 IN A 10.255.210.17
-    ba2.d10 IN A 10.255.210.17
+    ba2 IN A 10.255.210.21
+    ba2.d10 IN A 10.255.210.21
     telemetry IN SRV 0 0 9167 ba2.d10.access.npf.
-    bb1 IN A 10.255.210.18
-    bb1.d10 IN A 10.255.210.18
+    bb1 IN A 10.255.210.22
+    bb1.d10 IN A 10.255.210.22
     telemetry IN SRV 0 0 9167 bb1.d10.access.npf.
-    bb2 IN A 10.255.210.19
-    bb2.d10 IN A 10.255.210.19
+    bb2 IN A 10.255.210.23
+    bb2.d10 IN A 10.255.210.24
     telemetry IN SRV 0 0 9167 bb2.d10.access.npf.
-    bc1 IN A 10.255.210.20
-    bc1.d10 IN A 10.255.210.20
-    telemetry IN SRV 0 0 9167 bc1.d10.access.npf.
-    bc2 IN A 10.255.210.21
-    bc2.d10 IN A 10.255.210.21
-    telemetry IN SRV 0 0 9167 bc2.d10.access.npf.
-    bd1 IN A 10.255.210.22
-    bd1.d10 IN A 10.255.210.22
-    telemetry IN SRV 0 0 9167 bd1.d10.access.npf.
-    bd2 IN A 10.255.210.23
-    bd2.d10 IN A 10.255.210.24
-    telemetry IN SRV 0 0 9167 bd2.d10.access.npf.
+    bc1 IN A 10.255.211.10
+    bc1.d11 IN A 10.255.211.10
+    telemetry IN SRV 0 0 9167 bc1.d11.access.npf.
+    bc2 IN A 10.255.211.11
+    bc2.d11 IN A 10.255.211.11
+    telemetry IN SRV 0 0 9167 bc2.d11.access.npf.
+    bd1 IN A 10.255.211.12
+    bd1.d11 IN A 10.255.211.12
+    telemetry IN SRV 0 0 9167 bd1.d11.access.npf.
+    bd2 IN A 10.255.211.13
+    bd2.d11 IN A 10.255.211.13
+    telemetry IN SRV 0 0 9167 bd2.d11.access.npf.
+    be1 IN A 10.255.211.14
+    be1.d11 IN A 10.255.211.14
+    telemetry IN SRV 0 0 9167 be1.d11.access.npf.
+    be2 IN A 10.255.211.15
+    be2.d11 IN A 10.255.211.15
+    telemetry IN SRV 0 0 9167 be2.d11.access.npf.
+    bf1 IN A 10.255.211.16
+    bf1.d11 IN A 10.255.211.16
+    telemetry IN SRV 0 0 9167 bf1.d11.access.npf.
+    bf2 IN A 10.255.211.17
+    bf2.d11 IN A 10.255.211.17
+    telemetry IN SRV 0 0 9167 bf2.d11.access.npf.
+    bg1 IN A 10.255.211.18
+    bg1.d11 IN A 10.255.211.18
+    telemetry IN SRV 0 0 9167 bg1.d11.access.npf.
+    bg2 IN A 10.255.211.19
+    bg2.d11 IN A 10.255.211.19
+    telemetry IN SRV 0 0 9167 bg2.d11.access.npf.
+    bh1 IN A 10.255.211.20
+    bh1.d11 IN A 10.255.211.20
+    telemetry IN SRV 0 0 9167 bh1.d11.access.npf.
+    bh2 IN A 10.255.211.21
+    bh2.d11 IN A 10.255.211.21
+    telemetry IN SRV 0 0 9167 bh2.d11.access.npf.
+    bj1 IN A 10.255.211.22
+    bj1.d11 IN A 10.255.211.22
+    telemetry IN SRV 0 0 9167 bj1.d11.access.npf.
+    bj2 IN A 10.255.211.23
+    bj2.d11 IN A 10.255.211.23
+    telemetry IN SRV 0 0 9167 bj2.d11.access.npf.
+    bk1 IN A 10.255.212.10
+    bk1.d12 IN A 10.255.212.10
+    telemetry IN SRV 0 0 9167 bk1.d12.access.npf.
+    bk2 IN A 10.255.212.11
+    bk2.d12 IN A 10.255.212.11
+    telemetry IN SRV 0 0 9167 bk2.d12.access.npf.
+    bl1 IN A 10.255.212.12
+    bl1.d12 IN A 10.255.212.12
+    telemetry IN SRV 0 0 9167 bl1.d12.access.npf.
+    bl2 IN A 10.255.212.13
+    bl2.d12 IN A 10.255.212.13
+    telemetry IN SRV 0 0 9167 bl2.d12.access.npf.
+    bm1 IN A 10.255.212.14
+    bm1.d12 IN A 10.255.212.14
+    telemetry IN SRV 0 0 9167 bm1.d12.access.npf.
+    bm2 IN A 10.255.212.15
+    bm2.d12 IN A 10.255.212.15
+    telemetry IN SRV 0 0 9167 bm2.d12.access.npf.
     cc1 IN A 10.255.210.10
     cc1.d10 IN A 10.255.210.10
     telemetry IN SRV 0 0 9167 cc1.d10.access.npf.
