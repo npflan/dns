@@ -641,21 +641,6 @@ data:
     crew10 IN A 10.255.254.19
     crew10.e1 IN A 10.255.254.19
     telemetry IN SRV 0 0 9167 crew10.e1.access.npf.
-    crew11 IN A 10.255.254.20
-    crew11.e1 IN A 10.255.254.20
-    telemetry IN SRV 0 0 9167 crew11.e1.access.npf.
-    crew12 IN A 10.255.254.21
-    crew12.e1 IN A 10.255.254.21
-    telemetry IN SRV 0 0 9167 crew12.e1.access.npf.
-    crew13 IN A 10.255.254.22
-    crew13.e1 IN A 10.255.254.22
-    telemetry IN SRV 0 0 9167 crew13.e1.access.npf.
-    crew14 IN A 10.255.254.23
-    crew14.e1 IN A 10.255.254.23
-    telemetry IN SRV 0 0 9167 crew14.e1.access.npf.
-    crew15 IN A 10.255.254.24
-    crew15.e1 IN A 10.255.254.24
-    telemetry IN SRV 0 0 9167 crew15.e1.access.npf.
     scene IN A 10.255.254.20
     scene.e1 IN A 10.255.254.20
     telemetry IN SRV 0 0 9167 scene.e1.access.npf.
@@ -728,6 +713,9 @@ data:
     crew10 IN A 10.255.252.19
     crew10.e3 IN A 10.255.252.19
     telemetry IN SRV 0 0 9167 crew10.e3.access.npf.
+    crew11 IN A 10.255.252.20
+    crew11.e3 IN A 10.255.252.20
+    telemetry IN SRV 0 0 9167 crew11.e3.access.npf.
     expo1 IN A 10.255.251.10
     expo1.e4 IN A 10.255.251.10
     telemetry IN SRV 0 0 9167 expo1.e4.access.npf.
