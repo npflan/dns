@@ -254,45 +254,33 @@ data:
     bm2 IN A 10.255.212.15
     bm2.d12 IN A 10.255.212.15
     telemetry IN SRV 0 0 9167 bm2.d12.access.npf.
-    cc1 IN A 10.255.210.10
-    cc1.d10 IN A 10.255.210.10
-    telemetry IN SRV 0 0 9167 cc1.d10.access.npf.
-    cc2 IN A 10.255.210.11
-    cc2.d10 IN A 10.255.210.11
-    telemetry IN SRV 0 0 9167 cc2.d10.access.npf.
-    cc3 IN A 10.255.210.12
-    cc3.d10 IN A 10.255.210.12
-    telemetry IN SRV 0 0 9167 cc3.d10.access.npf.
-    cc4 IN A 10.255.210.13
-    cc4.d10 IN A 10.255.210.13
-    telemetry IN SRV 0 0 9167 cc4.d10.access.npf.
-    cc5 IN A 10.255.210.14
-    cc5.d10 IN A 10.255.210.14
-    telemetry IN SRV 0 0 9167 cc5.d10.access.npf.
-    cc1 IN A 10.255.211.10
-    cc1.d11 IN A 10.255.211.10
+    cc1 IN A 10.255.211.24
+    cc1.d11 IN A 10.255.211.24
     telemetry IN SRV 0 0 9167 cc1.d11.access.npf.
-    cc2 IN A 10.255.211.11
-    cc2.d11 IN A 10.255.211.11
+    cc2 IN A 10.255.211.25
+    cc2.d11 IN A 10.255.211.25
     telemetry IN SRV 0 0 9167 cc2.d11.access.npf.
-    cc3 IN A 10.255.211.12
-    cc3.d11 IN A 10.255.211.12
+    cc3 IN A 10.255.211.26
+    cc3.d11 IN A 10.255.211.26
     telemetry IN SRV 0 0 9167 cc3.d11.access.npf.
-    cc4 IN A 10.255.211.13
-    cc4.d11 IN A 10.255.211.13
+    cc4 IN A 10.255.211.27
+    cc4.d11 IN A 10.255.211.27
     telemetry IN SRV 0 0 9167 cc4.d11.access.npf.
-    cc5 IN A 10.255.211.14
-    cc5.d11 IN A 10.255.211.14
+    cc5 IN A 10.255.211.28
+    cc5.d11 IN A 10.255.211.28
     telemetry IN SRV 0 0 9167 cc5.d11.access.npf.
-    cc6 IN A 10.255.211.15
-    cc6.d11 IN A 10.255.211.15
+    cc6 IN A 10.255.211.29
+    cc6.d11 IN A 10.255.211.29
     telemetry IN SRV 0 0 9167 cc6.d11.access.npf.
-    cc7 IN A 10.255.211.16
-    cc7.d11 IN A 10.255.211.16
+    cc7 IN A 10.255.211.30
+    cc7.d11 IN A 10.255.211.30
     telemetry IN SRV 0 0 9167 cc7.d11.access.npf.
-    cc8 IN A 10.255.211.17
-    cc8.d11 IN A 10.255.211.17
+    cc8 IN A 10.255.211.31
+    cc8.d11 IN A 10.255.211.31
     telemetry IN SRV 0 0 9167 cc8.d11.access.npf.
+    cc9 IN A 10.255.211.32
+    cc9.d11 IN A 10.255.211.32
+    telemetry IN SRV 0 0 9167 cc9.d11.access.npf.
     da1 IN A 10.255.201.10
     da1.d1 IN A 10.255.201.10
     telemetry IN SRV 0 0 9167 da1.d1.access.npf.
