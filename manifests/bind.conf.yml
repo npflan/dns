@@ -152,11 +152,11 @@ data:
     cf1 IN A 10.255.208.25
     cf1.d8 IN A 10.255.208.25
     telemetry IN SRV 0 0 9167 cf1.d8.access.npf.
-    cg1 IN A 10.255.209.10
-    cg1.d9 IN A 10.255.209.10
+    cg1 IN A 10.255.209.24
+    cg1.d9 IN A 10.255.209.24
     telemetry IN SRV 0 0 9167 cg1.d9.access.npf.
-    ch1 IN A 10.255.209.11
-    ch1.d9 IN A 10.255.209.11
+    ch1 IN A 10.255.209.25
+    ch1.d9 IN A 10.255.209.25
     telemetry IN SRV 0 0 9167 ch1.d9.access.npf.
     ay1 IN A 10.255.210.12
     ay1.d10 IN A 10.255.210.12
