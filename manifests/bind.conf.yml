@@ -165,10 +165,10 @@ data:
     aw2.d10 IN A 10.255.210.13
     telemetry IN SRV 0 0 9167 aw2.d10.access.npf.
     ax1 IN A 10.255.210.14
-    ax1.d10 IN A 10.255.207.14
+    ax1.d10 IN A 10.255.210.14
     telemetry IN SRV 0 0 9167 ax1.d10.access.npf.
     ax2 IN A 10.255.210.15
-    ax2.d10 IN A 10.255.207.15
+    ax2.d10 IN A 10.255.210.15
     telemetry IN SRV 0 0 9167 ax2.d10.access.npf.
     ay1 IN A 10.255.210.16
     ay1.d10 IN A 10.255.210.16
@@ -192,7 +192,7 @@ data:
     bb1.d10 IN A 10.255.210.22
     telemetry IN SRV 0 0 9167 bb1.d10.access.npf.
     bb2 IN A 10.255.210.23
-    bb2.d10 IN A 10.255.210.24
+    bb2.d10 IN A 10.255.210.23
     telemetry IN SRV 0 0 9167 bb2.d10.access.npf.
     bc1 IN A 10.255.211.10
     bc1.d11 IN A 10.255.211.10
