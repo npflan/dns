@@ -611,18 +611,6 @@ data:
     expo3 IN A 10.255.205.12
     expo3.d5 IN A 10.255.205.12
     telemetry IN SRV 0 0 9167 expo3.d5.access.npf.
-    gz1 IN A 10.255.205.13
-    gz1.d5 IN A 10.255.205.13
-    telemetry IN SRV 0 0 9167 gz1.d5.access.npf.
-    gz2 IN A 10.255.205.14
-    gz2.d5 IN A 10.255.205.14
-    telemetry IN SRV 0 0 9167 gz2.d5.access.npf.
-    gz3 IN A 10.255.205.15
-    gz3.d5 IN A 10.255.205.15
-    telemetry IN SRV 0 0 9167 gz3.d5.access.npf.
-    gz4 IN A 10.255.205.16
-    gz4.d5 IN A 10.255.205.16
-    telemetry IN SRV 0 0 9167 gz4.d5.access.npf.
     crew1 IN A 10.255.254.10
     crew1.e1 IN A 10.255.254.10
     telemetry IN SRV 0 0 9167 crew1.e1.access.npf.
