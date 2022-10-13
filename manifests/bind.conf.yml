@@ -551,12 +551,18 @@ data:
     expo3 IN A 10.255.205.12
     expo3.d5 IN A 10.255.205.12
     telemetry IN SRV 0 0 9167 expo3.d5.access.npf.
-    expo4 IN A 10.255.205.13
-    expo4.d5 IN A 10.255.205.13
-    telemetry IN SRV 0 0 9167 expo4.d5.access.npf.
-    expo5 IN A 10.255.205.14
-    expo5.d5 IN A 10.255.205.14
-    telemetry IN SRV 0 0 9167 expo5.d5.access.npf.
+    gz1 IN A 10.255.205.13
+    gz1.d5 IN A 10.255.205.13
+    telemetry IN SRV 0 0 9167 gz1.d5.access.npf.
+    gz2 IN A 10.255.205.14
+    gz2.d5 IN A 10.255.205.14
+    telemetry IN SRV 0 0 9167 gz2.d5.access.npf.
+    gz3 IN A 10.255.205.15
+    gz3.d5 IN A 10.255.205.15
+    telemetry IN SRV 0 0 9167 gz3.d5.access.npf.
+    gz4 IN A 10.255.205.16
+    gz4.d5 IN A 10.255.205.16
+    telemetry IN SRV 0 0 9167 gz4.d5.access.npf.
     crew1 IN A 10.255.254.10
     crew1.e1 IN A 10.255.254.10
     telemetry IN SRV 0 0 9167 crew1.e1.access.npf.
@@ -602,9 +608,9 @@ data:
     crew15 IN A 10.255.254.24
     crew15.e1 IN A 10.255.254.24
     telemetry IN SRV 0 0 9167 crew15.e1.access.npf.
-    scene IN A 10.255.212.50
-    scene.d12 IN A 10.255.212.50
-    telemetry IN SRV 0 0 9167 scene.d12.access.npf.
+    scene IN A 10.255.254.20
+    scene.e1 IN A 10.255.254.20
+    telemetry IN SRV 0 0 9167 scene.e1.access.npf.
     e1-1 IN A 10.255.254.8
     e1-1.e1 IN A 10.255.254.8
     telemetry IN SRV 0 0 9167 e1-1.e1.access.npf.
@@ -674,16 +680,9 @@ data:
     crew10 IN A 10.255.252.19
     crew10.e3 IN A 10.255.252.19
     telemetry IN SRV 0 0 9167 crew10.e3.access.npf.
-    crew11 IN A 10.255.252.20
-    crew11.e3 IN A 10.255.252.20
-    telemetry IN SRV 0 0 9167 crew11.e3.access.npf.
     expo1 IN A 10.255.251.10
     expo1.e4 IN A 10.255.251.10
     telemetry IN SRV 0 0 9167 expo1.e4.access.npf.
-    expo2 IN A 10.255.251.11
-    expo2.e4 IN A 10.255.251.11
-    telemetry IN SRV 0 0 9167 expo2.e4.access.npf.
-
 
     $ORIGIN dist.npf.
     c1 IN A 10.255.255.111
