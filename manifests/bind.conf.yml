@@ -76,6 +76,8 @@ data:
     archon IN A 172.20.22.104
     api.kube IN A 172.20.22.10
 
+    npfdisk IN A 10.254.13.3
+
     $ORIGIN access.npf.
     wifi1 IN A 10.255.201.2
     wifi1.d1 IN A 10.255.201.2
