@@ -626,15 +626,9 @@ data:
     crew5 IN A 10.255.254.14
     crew5.e1 IN A 10.255.254.14
     telemetry IN SRV 0 0 9167 crew5.e1.access.npf.
-    crew6 IN A 10.255.254.15
-    crew6.e1 IN A 10.255.254.15
-    telemetry IN SRV 0 0 9167 crew6.e1.access.npf.
     crew7 IN A 10.255.254.16
     crew7.e1 IN A 10.255.254.16
     telemetry IN SRV 0 0 9167 crew7.e1.access.npf.
-    crew8 IN A 10.255.254.17
-    crew8.e1 IN A 10.255.254.17
-    telemetry IN SRV 0 0 9167 crew8.e1.access.npf.
     crew9 IN A 10.255.254.18
     crew9.e1 IN A 10.255.254.18
     telemetry IN SRV 0 0 9167 crew9.e1.access.npf.
@@ -644,12 +638,6 @@ data:
     scene IN A 10.255.254.20
     scene.e1 IN A 10.255.254.20
     telemetry IN SRV 0 0 9167 scene.e1.access.npf.
-    e1-1 IN A 10.255.254.8
-    e1-1.e1 IN A 10.255.254.8
-    telemetry IN SRV 0 0 9167 e1-1.e1.access.npf.
-    e1-2 IN A 10.255.254.9
-    e1-2.e1 IN A 10.255.254.9
-    telemetry IN SRV 0 0 9167 e1-2.e1.access.npf.
     shop1 IN A 10.255.253.10
     shop1.e2 IN A 10.255.253.10
     telemetry IN SRV 0 0 9167 shop1.e2.access.npf.
@@ -674,14 +662,11 @@ data:
     sos2 IN A 10.255.253.15
     sos2.e2 IN A 10.255.253.15
     telemetry IN SRV 0 0 9167 sos2.e2.access.npf.
-    sos3 IN A 10.255.253.16
-    sos3.e2 IN A 10.255.253.16
-    telemetry IN SRV 0 0 9167 sos3.e2.access.npf.
-    cr1 IN A 10.255.253.17
-    cr1.e2 IN A 10.255.253.17
+    cr1 IN A 10.255.253.16
+    cr1.e2 IN A 10.255.253.16
     telemetry IN SRV 0 0 9167 cr1.e2.access.npf.
-    cr2 IN A 10.255.253.18
-    cr2.e2 IN A 10.255.253.18
+    cr2 IN A 10.255.253.17
+    cr2.e2 IN A 10.255.253.17
     telemetry IN SRV 0 0 9167 cr2.e2.access.npf.
     crew1 IN A 10.255.252.10
     crew1.e3 IN A 10.255.252.10
