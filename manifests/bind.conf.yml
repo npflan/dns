@@ -646,9 +646,6 @@ data:
     sos1 IN A 10.255.253.14
     sos1.e2 IN A 10.255.253.14
     telemetry IN SRV 0 0 9167 sos1.e2.access.npf.
-    sos2 IN A 10.255.253.15
-    sos2.e2 IN A 10.255.253.15
-    telemetry IN SRV 0 0 9167 sos2.e2.access.npf.
     cr1 IN A 10.255.253.16
     cr1.e2 IN A 10.255.253.16
     telemetry IN SRV 0 0 9167 cr1.e2.access.npf.
