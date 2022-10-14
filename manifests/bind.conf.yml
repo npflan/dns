@@ -631,9 +631,6 @@ data:
     shop1 IN A 10.255.253.10
     shop1.e2 IN A 10.255.253.10
     telemetry IN SRV 0 0 9167 shop1.e2.access.npf.
-    shop2 IN A 10.255.253.11
-    shop2.e2 IN A 10.255.253.11
-    telemetry IN SRV 0 0 9167 shop2.e2.access.npf.
     shop3 IN A 10.255.253.12
     shop3.e2 IN A 10.255.253.12
     telemetry IN SRV 0 0 9167 shop3.e2.access.npf.
