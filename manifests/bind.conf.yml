@@ -147,13 +147,13 @@ data:
     bb1.d2 IN A 10.255.202.13
     telemetry IN SRV 0 0 9167 bb1.d2.access.npf.
     bb2 IN A 10.255.202.14
-    bb.d2 IN A 10.255.202.14
+    bb2.d2 IN A 10.255.202.14
     telemetry IN SRV 0 0 9167 bb2.d2.access.npf.
     bc1 IN A 10.255.202.15
     bc1.d2 IN A 10.255.202.15
     telemetry IN SRV 0 0 9167 bc1.d2.access.npf.
     bc2 IN A 10.255.202.16
-    bc.d2 IN A 10.255.202.16
+    bc2.d2 IN A 10.255.202.16
     telemetry IN SRV 0 0 9167 bc2.d2.access.npf.
     bd1 IN A 10.255.202.17
     bd1.d2 IN A 10.255.202.17
