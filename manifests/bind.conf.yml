@@ -197,8 +197,56 @@ data:
     bk2 IN A 10.255.202.30
     bk2.d2 IN A 10.255.202.30
     telemetry IN SRV 0 0 9167 bk2.d2.access.npf.
+    crew1 IN A 10.255.253.11
+    crew1.e2 IN A 10.255.253.11
+    telemetry IN SRV 0 0 9167 crew1.e2.access.npf.
+    crew2 IN A 10.255.253.12
+    crew2.e2 IN A 10.255.253.12
+    telemetry IN SRV 0 0 9167 crew2.e2.access.npf.
+    crew3 IN A 10.255.253.13
+    crew3.e2 IN A 10.255.253.13
+    telemetry IN SRV 0 0 9167 crew3.e2.access.npf.
+    scene1 IN A 10.255.253.14
+    scene1.e2 IN A 10.255.253.14
+    telemetry IN SRV 0 0 9167 scene1.e2.access.npf.
+    scene2 IN A 10.255.253.15
+    scene2.e2 IN A 10.255.253.15
+    telemetry IN SRV 0 0 9167 scene1.e2.access.npf.
+    cc1 IN A 10.255.253.16
+    cc1.e2 IN A 10.255.253.16
+    telemetry IN SRV 0 0 9167 cc1.e2.access.npf.
+    cc2 IN A 10.255.253.17
+    cc2.e2 IN A 10.255.253.17
+    telemetry IN SRV 0 0 9167 cc2.e2.access.npf.
+    cc3 IN A 10.255.253.18
+    cc3.e2 IN A 10.255.253.18
+    telemetry IN SRV 0 0 9167 cc3.e2.access.npf.
+    cc4 IN A 10.255.253.19
+    cc4.e2 IN A 10.255.253.19
+    telemetry IN SRV 0 0 9167 cc4.e2.access.npf.
+    ccmid IN A 10.255.253.20
+    ccmid.e2 IN A 10.255.253.20
+    telemetry IN SRV 0 0 9167 ccmid.e2.access.npf.
+    crew1 IN A 10.255.254.11
+    crew1.e1 IN A 10.255.254.11
+    telemetry IN SRV 0 0 9167 crew1.e1.access.npf.
+    crew2 IN A 10.255.254.12
+    crew2.e1 IN A 10.255.254.12
+    telemetry IN SRV 0 0 9167 crew2.e1.access.npf.
+    crew3 IN A 10.255.254.13
+    crew3.e1 IN A 10.255.254.13
+    telemetry IN SRV 0 0 9167 crew3.e1.access.npf.
+    crew4 IN A 10.255.254.14
+    crew4.e1 IN A 10.255.254.14
+    telemetry IN SRV 0 0 9167 crew4.e1.access.npf.
+    helpdesk IN A 10.255.254.15
+    helpdesk.e1 IN A 10.255.254.15
+    telemetry IN SRV 0 0 9167 helpdesk.e1.access.npf.
+    shop IN A 10.255.254.16
+    shop.e1 IN A 10.255.254.16
+    telemetry IN SRV 0 0 9167 shop.e1.access.npf.
 
-
+    
 
     $ORIGIN dist.npf.
     c1 IN A 10.255.255.111
